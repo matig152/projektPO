@@ -22,6 +22,7 @@ namespace Hotel
     {
         public MainWindow()
         {
+            Osoba osoba = new Osoba();
             InitializeComponent();
         }
     }
