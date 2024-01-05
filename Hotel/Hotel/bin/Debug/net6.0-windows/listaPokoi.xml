@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListaPokoi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pokoje>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>11A</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>12A</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>13A</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>14A</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>15A</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>21A</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>22A</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>23A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>24A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>25A</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>31A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>32A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>33A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>34A</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>A</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>35A</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>11B</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>12B</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>13B</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>14B</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>15B</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>21B</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>22B</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>23B</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>24B</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>25B</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>31B</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>32B</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>33B</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>34B</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>B</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>35B</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>11C</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>12C</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>13C</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>14C</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>15C</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>21C</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>22C</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>23C</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>24C</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>25C</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>31C</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>32C</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>33C</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>34C</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>C</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>35C</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>11D</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>12D</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>13D</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>14D</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>pierwsze</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>15D</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>21D</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>22D</IdPokoju>
+      <Rozmiar>4</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>23D</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>24D</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>drugie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>25D</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>jeden</NrPokoju>
+      <IdPokoju>31D</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>dwa</NrPokoju>
+      <IdPokoju>32D</IdPokoju>
+      <Rozmiar>1</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>trzy</NrPokoju>
+      <IdPokoju>33D</IdPokoju>
+      <Rozmiar>5</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>cztery</NrPokoju>
+      <IdPokoju>34D</IdPokoju>
+      <Rozmiar>2</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+    <Pokoj>
+      <Budynek>D</Budynek>
+      <Pietro>trzecie</Pietro>
+      <NrPokoju>piec</NrPokoju>
+      <IdPokoju>35D</IdPokoju>
+      <Rozmiar>3</Rozmiar>
+      <Czysty>true</Czysty>
+      <ListaPobytow />
+    </Pokoj>
+  </pokoje>
+</ListaPokoi>
