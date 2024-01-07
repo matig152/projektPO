@@ -6,5 +6,6 @@ Aby założyć jakąś rezerwację, uprzednio trzeba utworzyć gościa oraz prac
 Do zrobienia tutaj jeszcze: 
  - ujednolicić pola w tych klasach, niektóre są niepotrzebne
  - zaimplementować automatyczne i ręczne wybieranie pokoju do rezerwacji (tutaj będzie trzeba wziąć pod uwagę żeby pobyty w danych pokojach się czasowo nie nachodziły)
+ - stworzyć klasy agregujace Gości oraz Kadrę, tak żeby móc odczytywać i zapisywać zmiany (wygenerować wstępne dane w postaci plików XML)
 
 Poza tym zostaje całe GUI.
