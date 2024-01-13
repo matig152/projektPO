@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Kadra xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListaPracownikow>
+    <Pracownik>
+      <Imie>Jan</Imie>
+      <Nazwisko>Aba</Nazwisko>
+      <Pesel>12345678901</Pesel>
+      <Adres>
+        <Ulica>Szeroka</Ulica>
+        <NrDomu>12</NrDomu>
+        <NrLokalu>0</NrLokalu>
+        <Miejscowosc>Kraków</Miejscowosc>
+        <KodPocztowy>94-100</KodPocztowy>
+      </Adres>
+      <Wydzial>Recepcja</Wydzial>
+      <DataWstapienia>2023-01-01T00:00:00</DataWstapienia>
+    </Pracownik>
+  </ListaPracownikow>
+</Kadra>
