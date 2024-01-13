@@ -5,11 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hotel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1000" Width="1000">
+        Title="MainWindow" Height="400" Width="600">
     <Grid>
-        <TextBlock Name="TextBox1" HorizontalAlignment="Center" Height="309" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="734" Margin="0,38,0,0"/>
-        <TextBlock Name="TextBox2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="210" Width="734" Margin="0,374,0,0"/>
-        <TextBlock Name="TextBox3" HorizontalAlignment="Left" Margin="133,589,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="203" Width="775"/>
-
+        <TextBox ScrollViewer.VerticalScrollBarVisibility="Auto" Name="TextBox1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="580" Height="364"/>
     </Grid>
 </Window>

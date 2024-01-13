@@ -22,9 +22,8 @@ namespace Hotel
         EnumNrPokoju nrPokoju;
         string idPokoju;
         int rozmiar;
-        bool czysty;
-        List<Pobyt> listaPobytow;
         static int liczbaPokoi;
+        List<string> idPobytow;
         #endregion
 
         #region Metody Dostepowe
@@ -33,7 +32,7 @@ namespace Hotel
         public EnumNrPokoju NrPokoju { get => nrPokoju; set => nrPokoju = value; }
         public string IdPokoju { get => idPokoju; set => idPokoju = value; }
         public int Rozmiar { get => rozmiar; set => rozmiar = value; }
-        public bool Czysty { get => czysty; set => czysty = value; }
+        public List<string> IdPobytow { get => idPobytow; set => idPobytow = value; }
         #endregion
 
         #region Konstruktory
@@ -48,53 +47,47 @@ namespace Hotel
             this.nrPokoju = nrPokoju;
             idPokoju = $"{(int)pietro}{(int)nrPokoju}{budynek}";
             this.rozmiar = rozmiar;
-            czysty = true;
-            listaPobytow = new List<Pobyt>();
+            idPobytow = new List<string>();
             liczbaPokoi++;
         }
         #endregion
 
         #region Metody
-        public void DodajPobyt(Pobyt p)
+        public void DodajIdPobytu(string p) => idPobytow.Add(p);
+        public void ZapisXml(string nazwaPliku)
         {
-            listaPobytow = new List<Pobyt>();
-            listaPobytow.Add(p);
+            using StreamWriter sw = new(nazwaPliku); XmlSerializer xs =
+            new(typeof(Pokoj)); xs.Serialize(sw, this);
         }
-
-
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            if (listaPobytow != null)
-            {
-                foreach (Pobyt p in listaPobytow) { sb.AppendLine(p.ToString()); }
-            }
-            return $"{idPokoju}, {rozmiar}-osobowy (budynek {budynek})" + sb.ToString();
+            if (idPobytow.Count > 0) { foreach (string p in idPobytow) { sb.AppendLine(" - Pobyt numer: " + p); } }
+            return $"Pokój {idPokoju}, {rozmiar}-osobowy \n{sb.ToString()}";
         }
         #endregion
     }
 
     public class ListaPokoi
     {
+        #region Pola
         public List<Pokoj> pokoje;
+        #endregion
+
+        #region Metody Dostepowe
+        #endregion
+
+        #region Konstruktory
         public ListaPokoi() { }
         public ListaPokoi(List<Pokoj> lista) { this.pokoje = lista; }
+        #endregion
+
+        #region Metody
         public Pokoj WybierzPokoj(string id)
         {
             foreach (Pokoj p in pokoje) { if (p.IdPokoju == id) return p; }
             throw new BrakPokojuException();
         }
-
-        //TO DO
-        //JAK SPRAWDZIC CZY POKOJ JEST WOLNY W DANYM OKRESIE?
-        public Pokoj ZnajdzWolnyPokoj(int liczbaOsob)
-        {
-            Pokoj p = pokoje.FirstOrDefault();
-            if(p == null) { throw new BrakPokojuException(); }
-            return p;
-        }
-
-
         public static ListaPokoi? OdczytXml(string nazwaPliku)
         {
             using StreamReader sr = new(nazwaPliku);
@@ -104,8 +97,17 @@ namespace Hotel
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            foreach(Pokoj p in pokoje) { sb.AppendLine(p.ToString()); }
-            return sb.ToString();   
+            foreach (Pokoj p in pokoje) { sb.AppendLine(p.ToString()); }
+            return sb.ToString();
         }
+        //TO DO
+        //JAK SPRAWDZIC CZY POKOJ JEST WOLNY W DANYM OKRESIE?
+        public Pokoj ZnajdzWolnyPokoj(int liczbaOsob)
+        {
+            Pokoj p = pokoje.FirstOrDefault();
+            if (p == null) { throw new BrakPokojuException(); }
+            return p;
+        }
+        #endregion
     }
 }
