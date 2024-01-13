@@ -1,7 +1,8 @@
-# projektPO
+# Projekt - System Obsługi Hotelu
 
 # BACKEND
-Zaczytujemy wykaz pokojów z pliku listaPokoi.xml (jest ich 60, po 5 na każdym z trzech pięter w 4 budynkach). Liczba pokoi jest zablokowana na 60 - jeżeli spróbujemy utworzyć nowy powinno nam wyrzucić wyjątek.
+Zaczytujemy wykaz pokojów z pliku listaPokoi.xml (jest ich 60, po 5 na każdym z trzech pięter w 4 budynkach). Liczba pokoi jest zablokowana na 60 - jeżeli spróbujemy utworzyć nowy powinno nam wyrzucić wyjątek. Zaczytujemy również rejestr gości oraz kadrę z plików XML. 
+
 Aby założyć jakąś rezerwację, uprzednio trzeba utworzyć gościa oraz pracownika, który taką rezerwację założy. Zakładanie rezerwacji jest metodą w klasie Gosc. 
 Do zrobienia tutaj jeszcze: 
  - ujednolicić pola w tych klasach, niektóre są niepotrzebne
@@ -9,3 +10,6 @@ Do zrobienia tutaj jeszcze:
  - stworzyć klasy agregujace Gości oraz Kadrę, tak żeby móc odczytywać i zapisywać zmiany (wygenerować wstępne dane w postaci plików XML)
 
 Poza tym zostaje całe GUI.
+
+Diagram UML:
+![Diagram](./umlDiagram.jpg)
