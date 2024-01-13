@@ -11,5 +11,7 @@ Do zrobienia tutaj jeszcze:
 
 Poza tym zostaje całe GUI.
 
-Diagram UML:
+Diagram UML: ([link do edycji](https://lucid.app/lucidchart/aff13f31-4b23-4d71-bead-9306d98ce140/edit?viewport_loc=-140%2C-481%2C3111%2C1460%2CHWEp-vi-RSFO&invitationId=inv_88ea429b-d3f0-4630-8f70-d7bfa86d66b6)
 ![Diagram](./umlDiagram.jpg)
+
+ 
