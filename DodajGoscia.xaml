@@ -1,0 +1,35 @@
+﻿<Window x:Class="Hotel.DodajGoscia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj Gościa" Height="550" Width="400">
+    <StackPanel Margin="10">
+        <Label>Imię:</Label>
+        <TextBox x:Name="txtImie"/>
+
+        <Label>Nazwisko:</Label>
+        <TextBox x:Name="txtNazwisko"/>
+
+        <Label>PESEL:</Label>
+        <TextBox x:Name="txtPesel"/>
+
+        <Label>Ulica:</Label>
+        <TextBox x:Name="txtUlica"/>
+
+        <Label>Numer Domu:</Label>
+        <TextBox x:Name="txtNrDomu"/>
+
+        <Label>Numer Lokalu (opcjonalnie):</Label>
+        <TextBox x:Name="txtNrLokalu"/>
+
+        <Label>Miejscowość:</Label>
+        <TextBox x:Name="txtMiejscowosc"/>
+
+        <Label>Kod Pocztowy:</Label>
+        <TextBox x:Name="txtKodPocztowy"/>
+
+        <Label>Data Urodzenia:</Label>
+        <DatePicker x:Name="dpDataUrodzenia"/>
+
+        <Button Content="Dodaj" Click="Dodaj_Click"/>
+    </StackPanel>
+</Window>
