@@ -12,12 +12,24 @@ using System.Xml.Serialization;
 
 namespace Hotel
 {
-    public class TworzenieNowegoPokojuException : Exception { }
-    public class BrakPokojuException : Exception { }
+    #region Wyjatki
+    public class TworzenieNowegoPokojuException : Exception
+    {
+        public TworzenieNowegoPokojuException() : base("Nie można stworzyć nowego pokoju!") { }
+    }
+    public class BrakPokojuException : Exception
+    {
+        public BrakPokojuException() : base("Brak takiego pokoju!") { }
+    }
+    #endregion
+    
+    #region Typy Wyliczeniowe
     public enum EnumBudynek { A, B, C, D }
     public enum EnumPietro { pierwsze = 1, drugie = 2, trzecie = 3 }
     public enum EnumNrPokoju { jeden = 1, dwa = 2, trzy = 3, cztery = 4, piec = 5 }
-    public class Pokoj
+    #endregion
+    
+    public class Pokoj : IComparable<Pokoj>
     {
         #region Pola
         EnumBudynek budynek;
@@ -86,6 +98,13 @@ namespace Hotel
             if (idPobytow.Count > 0) { foreach (string p in idPobytow) { sb.AppendLine(" - Pobyt numer: " + p); } }
             return $"Pokój {idPokoju}, {rozmiar}-osobowy \n{sb.ToString()}";
         }
+        
+        public int CompareTo(Pokoj? other)
+        {
+            if (other is null) { return 1; }
+            return NrPokoju.CompareTo((other as Pokoj).NrPokoju);
+        }
+        
         #endregion
     }
 
