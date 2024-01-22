@@ -132,10 +132,10 @@ namespace Hotel
             
         }
 
-        public static List<Pokoj> FiltrujPokojePoGosciach(Gosc gosc, string nazwaRejestru)
+        public static List<Pokoj> FiltrujPokojePoGosciach(Gosc gosc, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
-            List<Gosc>? listaGosci = OdczytRejestruGosciXml(nazwaRejestru).ListaGosci;
+            List<Gosc>? listaGosci = rejestr.ListaGosci;
             foreach (Gosc g in listaGosci)
             {
                 if (g.Equals(gosc))
@@ -153,10 +153,10 @@ namespace Hotel
             return res;
         }
 
-        public static List<Pokoj> FiltrujPokojePoDacie(DateTime data, string nazwaRejestru)
+        public static List<Pokoj> FiltrujPokojePoDacie(DateTime data, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
-            List<Gosc>? listaGosci = OdczytRejestruGosciXml(nazwaRejestru).ListaGosci;
+            List<Gosc>? listaGosci = rejestr.ListaGosci;
             foreach (Gosc g in listaGosci)
             {
                 foreach (Pobyt p in g.ListaPobytow)
@@ -172,10 +172,10 @@ namespace Hotel
             return res;
         }
 
-        public static List<Pokoj> PokojeZajeteWPodanymCzasie(DateTime poczatek, DateTime koniec, string nazwaRejestru)
+        public static List<Pokoj> PokojeZajeteWPodanymCzasie(DateTime poczatek, DateTime koniec, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
-            List<Gosc>? listaGosci = OdczytRejestruGosciXml(nazwaRejestru).ListaGosci;
+            List<Gosc>? listaGosci = rejestr.ListaGosci;
             foreach (Gosc g in listaGosci)
             {
                 foreach (Pobyt p in g.ListaPobytow)
@@ -194,13 +194,6 @@ namespace Hotel
 
             }
             return res;
-        }
-
-        public static RejestrGosci? OdczytRejestruGosciXml(string nazwaPliku)
-        {
-            using StreamReader sr = new(nazwaPliku);
-            XmlSerializer xs = new(typeof(RejestrGosci));
-            return (RejestrGosci?)xs.Deserialize(sr);
         }
 
         public static ListaPokoi? OdczytXml(string nazwaPliku)
