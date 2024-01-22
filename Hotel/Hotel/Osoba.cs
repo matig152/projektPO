@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Serialization;
 
@@ -127,7 +128,7 @@ namespace Hotel
         #endregion
 
         #region Metody Dostepowe
-        public List<Pobyt> ListaPobytow { get; set; }
+        public List<Pobyt> ListaPobytow { get => listaPobytow; }
         #endregion
 
         #region Konstruktory
@@ -139,17 +140,23 @@ namespace Hotel
         #endregion
 
         #region Metody
-        public void ZalozRezerwacje(DateTime poczatek, DateTime koniec, List<Gosc> pozostaliGoscie, Pracownik zakladajacyRezerwacje, ListaPokoi listaPokoi)
+        public void ZalozRezerwacje(DateTime poczatek, DateTime koniec, List<Gosc> pozostaliGoscie, Pracownik zakladajacyRezerwacje, ListaPokoi listaPokoi, bool automatycznie = true, string idPokoju = "")
         {
-            //Wybierz pokoj na podstawie parametrow - DO ZROBIENIA
-            Pokoj pokoj = listaPokoi.WybierzPokoj("11A");
-            //Utworz pobyt na podstawie parametrow
-            Pobyt p = new Pobyt(poczatek, koniec, pokoj, pozostaliGoscie, zakladajacyRezerwacje);
-            //Dodajemy pobyt do listy pobytow goscia
-            listaPobytow.Add(p);
-            //Dodajemy pobyt do listy pobytow w pokoju
-            pokoj.DodajIdPobytu(p.IdPobytu);
+            // Znajdź Pokoj
+            Pokoj? pokoj = listaPokoi.WybierzPokoj("11A");
+            if(automatycznie) { 
+                pokoj = listaPokoi.WybierzPokojAutomatycznie(1 + pozostaliGoscie.Count, poczatek, koniec); 
+                if(pokoj is null) { MessageBox.Show("Brak wolnych pokoi dla podanych parametrów!"); return; }
+            }
+            else { pokoj = listaPokoi.WybierzPokoj(idPokoju); }
+
+            Pobyt pobyt = new Pobyt(poczatek, koniec, pokoj, pozostaliGoscie, zakladajacyRezerwacje);
+            listaPobytow.Add(pobyt);
+            pokoj.IdPobytow.Add(pobyt.IdPobytu);
         }
+        public Pobyt? WyszukajPobytPoId(string idpobytu) => listaPobytow.Where(x => x.IdPobytu == idpobytu).First();
+        
+        
 
         public override string ToString()
         {
@@ -157,7 +164,7 @@ namespace Hotel
             sb.Append("Gość: " + base.ToString());
             if (listaPobytow.Count > 0)
             {
-                sb.AppendLine("Pobyty");
+                sb.AppendLine("Pobyty:");
                 foreach (Pobyt p in listaPobytow) { sb.AppendLine(" - " + p.ToString()); }
 
             }
@@ -222,6 +229,7 @@ namespace Hotel
         #region Metody
         public void DodajGoscia(Gosc g)
         {
+
             listaGosci.Add(g);
         }
         
@@ -237,6 +245,96 @@ namespace Hotel
             XmlSerializer xs = new(typeof(RejestrGosci));
             return (RejestrGosci?)xs.Deserialize(sr);
         }
+
+        public List<Pobyt> ListaWszystkichPobytow()
+        {
+            List<Pobyt> lista = new List<Pobyt>();
+            foreach(Gosc g in listaGosci)
+            {
+                foreach(Pobyt p in g.listaPobytow) { lista.Add(p); }
+            }
+            return lista;
+        }
+        public List<Gosc> FiltrujGosciPoIdPobytu(string idPobytu)
+        {
+            List<Gosc> res = new List<Gosc>();
+            foreach (Gosc g in listaGosci)
+            {
+                if (g.ListaPobytow.Count() != 0)
+                {
+                    foreach (Pobyt p in g.ListaPobytow)
+                    {
+                        if (idPobytu == p.IdPobytu)
+                        {
+                            res.Add(g);
+                            break;
+                        }
+                    }
+                }
+            }
+            return res;
+        }
+
+        public List<Gosc> FiltrujGosciPoImieniu(string imie)
+        {
+            List<Gosc> res = new List<Gosc>();
+            foreach (Gosc g in listaGosci)
+            {
+                if (g.Imie == imie)
+                {
+                    res.Add(g);
+                }
+            }
+            return res;
+        }
+
+        public List<Gosc> FiltrujGosciPoNazwisku(string nazwisko)
+        {
+            List<Gosc> res = new List<Gosc>();
+            foreach (Gosc g in listaGosci)
+            {
+                if (g.Nazwisko == nazwisko)
+                {
+                    res.Add(g);
+                }
+            }
+            return res;
+        }
+
+        public List<Gosc> FiltrujGosciPoDacie(DateTime data)
+        {
+            List<Gosc> res = new List<Gosc>();
+            foreach (Gosc g in listaGosci)
+            {
+                foreach (Pobyt p in g.listaPobytow)
+                {
+                    if (p.Poczatek <= data && data <= p.Koniec)
+                    {
+                        res.Add(g);
+                        break;
+                    }
+                }
+            }
+            return res;
+        }
+
+        public List<Pobyt> FiltrujPobyty(DateTime data)
+        {
+            List<Pobyt> res = new List<Pobyt>();
+            foreach (Gosc g in listaGosci)
+            {
+                foreach (Pobyt p in g.listaPobytow)
+                {
+                    if (p.Poczatek <= data && data <= p.Koniec)
+                    {
+                        res.Add(p);
+                        break;
+                    }
+                }
+            }
+            return res;
+        }
+
 
         public override string ToString()
         {
@@ -265,6 +363,54 @@ namespace Hotel
         #endregion
 
         #region Metody
+        public List<Pracownik> FiltrujPracownikowPoWydziale(EnumWydzial wydzial)
+        {
+            List<Pracownik> res = new List<Pracownik>();
+            foreach (Pracownik p in listaPracownikow)
+            {
+                if (p.Wydzial == wydzial)
+                {
+                    res.Add(p);
+                }
+            }
+            return res;
+        }
+        public List<Pracownik> FiltrujPracownikowPoImieniu(string imie)
+        {
+            List<Pracownik> res = new List<Pracownik>();
+            foreach (Pracownik p in listaPracownikow)
+            {
+                if (p.Imie == imie)
+                {
+                    res.Add(p);
+                }
+            }
+            return res;
+        }
+        public List<Pracownik> FiltrujPracownikowPoNazwisku(string nazwisko)
+        {
+            List<Pracownik> res = new List<Pracownik>();
+            foreach (Pracownik p in listaPracownikow)
+            {
+                if (p.Nazwisko == nazwisko)
+                {
+                    res.Add(p);
+                }
+            }
+            return res;
+        }
+        public List<Pracownik> FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia(int lataDoswiadczenia)
+        {
+            List<Pracownik> res = new List<Pracownik>();
+            foreach (Pracownik p in listaPracownikow)
+            {
+                if (p.LataDoswiadczenia() >= lataDoswiadczenia)
+                {
+                    res.Add(p);
+                }
+            }
+            return res;
+        }
         public void DodajPracownika(Pracownik p)
         {
             listaPracownikow.Add(p);

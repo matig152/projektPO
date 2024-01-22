@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace Hotel
 {
@@ -59,19 +60,38 @@ namespace Hotel
             return cena;
         }
 
+        public bool CzyNachodzi(DateTime poczatek2, DateTime koniec2)
+        {
+            DateTime poczatek1 = poczatek.Date;
+            DateTime koniec1 = koniec.Date;
+            // POKRYWANIE PRZEDZIALOW
+            if (poczatek1 == poczatek2 && koniec1 == koniec2) {return true; }
+            // PIERWSZY ZAWIERA SIĘ W DRUGIM
+            if (poczatek1 > poczatek2 && koniec1 < koniec2) { return true; }
+            // DRUGI ZAWIERA SIĘ W PIERWSZYM
+            if(poczatek1 < poczatek2 && koniec1 > koniec2) { return true; }
+            // PRZECINAJĄ SIĘ, PIERWSZY ZACZYNA SIĘ WCZEŚNIEJ
+            if(poczatek1 < poczatek2 && koniec1 < koniec2 && koniec2 < poczatek1) { return true; }
+            // PRZECINAJĄ SIĘ, DRUGI ZACZYNA SIĘ WCZEŚNIEJ
+            if(poczatek1 > poczatek2 && koniec1 > koniec2 && koniec2 > poczatek1) { return true; }
+            // NIE NACHODZĄ SIĘ
+            return false;
+        }
+
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Pobyt od {poczatek:dd.MM.yyyy} do {koniec:dd.MM.yyyy}");
-            sb.AppendLine($"Długość: {Dlugosc()} dni");
-            sb.AppendLine($"Liczba osób: {LiczbaOsob()}");
+            sb.AppendLine($"\t Pobyt od {poczatek:dd.MM.yyyy} do {koniec:dd.MM.yyyy} w pokoju {pokoj.IdPokoju}");
+            sb.AppendLine($"\t Długość: {Dlugosc()} dni");
+            sb.AppendLine($"\t Liczba osób: {LiczbaOsob()}");
             if (pozostaliGoscie.Count() > 0)
             {
-                sb.AppendLine("Pozostali goście: ");
-                foreach (Gosc g in pozostaliGoscie) { sb.AppendLine(" - " + g.Imie + " " + g.Nazwisko); }
+                sb.AppendLine("\t Pozostali goście: ");
+                foreach (Gosc g in pozostaliGoscie) { sb.AppendLine("\t  - " + g.Imie + " " + g.Nazwisko); }
             }
-            sb.AppendLine($"Cena: {Cena()} zł");
-            sb.AppendLine($"Rezerwację założył {zakladajacyRezerwacje.Imie} {zakladajacyRezerwacje.Nazwisko} ({zakladajacyRezerwacje.Wydzial})");
+            sb.AppendLine($"\t Cena: {Cena()} zł");
+            sb.AppendLine($"\t Rezerwację założył {zakladajacyRezerwacje.Imie} {zakladajacyRezerwacje.Nazwisko} ({zakladajacyRezerwacje.Wydzial})");
             return sb.ToString();
         }
         #endregion

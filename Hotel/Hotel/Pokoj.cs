@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Eventing.Reader;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Navigation;
 using System.Xml.Serialization;
 
 namespace Hotel
@@ -54,6 +57,24 @@ namespace Hotel
 
         #region Metody
         public void DodajIdPobytu(string p) => idPobytow.Add(p);
+
+        public List<Pobyt> ListaPobytowWPokoju()
+        {
+            //WCZYTAJ LISTE WSZYSTKICH POBYTOW
+            RejestrGosci? rg = RejestrGosci.OdczytXml("rejestrGosci.xml");
+            if (rg is null) { MessageBox.Show("Błąd wczytywania rejestru gosci."); return null; }
+            List<Pobyt> listaWszyskichPobytow = rg.ListaWszystkichPobytow();
+            // STWORZ LISTE DO KTOREJ BEDA DOPISYWANE POBYTY
+            List<Pobyt> lista = new List<Pobyt>();
+            foreach (string id in idPobytow) // dla każdego id pobytu...
+            {
+                foreach(Pobyt p in listaWszyskichPobytow)
+                {
+                    if(p.IdPobytu == id) { lista.Add(p); } // ...znajdz pobyt w liście wszystkich pobytow
+                }
+            }
+            return lista;
+        }
         public void ZapisXml(string nazwaPliku)
         {
             using StreamWriter sw = new(nazwaPliku); XmlSerializer xs =
@@ -83,11 +104,35 @@ namespace Hotel
         #endregion
 
         #region Metody
-        public Pokoj WybierzPokoj(string id)
+        public Pokoj WybierzPokoj(string idpokoju) 
         {
-            foreach (Pokoj p in pokoje) { if (p.IdPokoju == id) return p; }
-            throw new BrakPokojuException();
+            Pokoj? pokoj = pokoje.Where(x => x.IdPokoju == idpokoju).First();
+            if (pokoj is not null) { return pokoj; }
+            else { throw new BrakPokojuException(); }
         }
+
+        public Pokoj? WybierzPokojAutomatycznie(int rozmiar, DateTime poczatek, DateTime koniec)
+        {
+            bool pasuje = false;
+            int nrPok = 0;
+            while (!pasuje) // póki daty się nachodzą, szukamy pokoju
+            {
+                if (nrPok >= 60) { return null; }
+                Pokoj pokoj = pokoje[nrPok]; // wybierz pokoj
+                //if(rozmiar != pokoj.Rozmiar) { nrPok++; } // jeżeli rozmiar się nie zgadza to rozpocznij nową iterację while
+                List<Pobyt> listaPobytowPokoju = pokoj.ListaPobytowWPokoju(); // zbierz listę pobytów w pokoju
+                foreach (Pobyt p in listaPobytowPokoju)
+                {
+                    if (p.CzyNachodzi(poczatek, koniec)) { pasuje = false; } // jezeli pobyt nachodzi, rozpocznij nowa iteracje while
+                    else { pasuje = true; break; } // jezeli nie nachodzi, wyjdz z loopa
+                }
+                nrPok++;
+            }
+            return pokoje[nrPok];
+            
+        }
+
+
         public static ListaPokoi? OdczytXml(string nazwaPliku)
         {
             using StreamReader sr = new(nazwaPliku);
@@ -100,8 +145,6 @@ namespace Hotel
             foreach (Pokoj p in pokoje) { sb.AppendLine(p.ToString()); }
             return sb.ToString();
         }
-        //TO DO
-        //JAK SPRAWDZIC CZY POKOJ JEST WOLNY W DANYM OKRESIE?
         public Pokoj ZnajdzWolnyPokoj(int liczbaOsob)
         {
             Pokoj p = pokoje.FirstOrDefault();
