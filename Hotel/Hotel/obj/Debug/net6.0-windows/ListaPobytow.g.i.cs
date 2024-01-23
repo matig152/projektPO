@@ -84,7 +84,7 @@ namespace Hotel {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Hotel;component/listapobytow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Hotel;V1.0.0.0;component/listapobytow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ListaPobytow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
