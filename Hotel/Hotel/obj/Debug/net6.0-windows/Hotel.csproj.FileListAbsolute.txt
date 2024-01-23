@@ -1,7 +1,6 @@
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\App.g.cs
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel_MarkupCompile.cache
-D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel_MarkupCompile.lref
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\bin\Debug\net6.0-windows\Hotel.exe
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\bin\Debug\net6.0-windows\Hotel.deps.json
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\bin\Debug\net6.0-windows\Hotel.runtimeconfig.json
@@ -18,3 +17,15 @@ D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-wind
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel.pdb
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel.genruntimeconfig.cache
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\ref\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\DodajGoscia.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\DodajGoscia.g.cs
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.g.cs
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\ListaPobytow.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladGosci.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.baml
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\ListaPobytow.g.cs
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladGosci.g.cs
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.g.cs
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.g.cs

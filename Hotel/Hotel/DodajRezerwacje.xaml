@@ -1,0 +1,23 @@
+﻿<Window x:Class="Hotel.DodajRezerwacje"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj Rezerwację" Height="450" Width="400">
+    <StackPanel Margin="10">
+        <Label>Gość:</Label>
+        <ComboBox x:Name="cbGosc"/>
+
+        <Label>Data rozpoczęcia:</Label>
+        <DatePicker x:Name="dpPoczatek"/>
+
+        <Label>Data zakończenia:</Label>
+        <DatePicker x:Name="dpKoniec"/>
+
+        <Label>Pokój:</Label>
+        <ComboBox x:Name="cbPokoj"/>
+
+        <Label>Dodatkowi Goście:</Label>
+        <ListBox x:Name="lbDodatkowiGoscie" Height="100"/>
+
+        <Button Content="Utwórz rezerwację" Click="UtworzRezerwacje_Click"/>
+    </StackPanel>
+</Window>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="DodajGoscia.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DodajRezerwacje.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ListaPobytow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PodgladGosci.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PodgladPokoi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PodgladPracownikow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="DodajGoscia.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DodajRezerwacje.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ListaPobytow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PodgladGosci.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PodgladPokoi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PodgladPracownikow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -37,7 +37,7 @@ namespace Hotel
             this.pokoj = pokoj;
             this.pozostaliGoscie = pozostaliGoscie;
             this.zakladajacyRezerwacje = zakladajacyRezerwacje;
-            idPobytu = $"{poczatek.Year}-{liczbaPorzadkowa:0000}";
+            idPobytu = $"{poczatek.Year}-{poczatek.Day:00}{koniec.Day:00}-{pokoj.IdPokoju}";
             liczbaPorzadkowa++;
         }
         #endregion

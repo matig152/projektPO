@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\App.xaml
-11407045341
+71218770956
 
-6-1932735336
+121073545336
 194183970531
-MainWindow.xaml;
+DodajGoscia.xaml;DodajRezerwacje.xaml;ListaPobytow.xaml;MainWindow.xaml;PodgladGosci.xaml;PodgladPokoi.xaml;PodgladPracownikow.xaml;
 
 False
 

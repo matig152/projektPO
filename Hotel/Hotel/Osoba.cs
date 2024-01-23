@@ -83,6 +83,7 @@ namespace Hotel
         #region Metody Dostepowe
         public string Imie { get => imie; set => imie = value; }
         public string Nazwisko { get => nazwisko; set => nazwisko = value; }
+        public DateTime DataUrodzenia { get => dataUrodzenia; set => dataUrodzenia = value; }
         public string Pesel
         {
             get => pesel; set
@@ -124,7 +125,7 @@ namespace Hotel
     public class Gosc : Osoba
     {
         #region Pola
-        public List<Pobyt> listaPobytow;
+        List<Pobyt> listaPobytow;
         #endregion
 
         #region Metody Dostepowe
@@ -132,7 +133,7 @@ namespace Hotel
         #endregion
 
         #region Konstruktory
-        public Gosc() { }
+        public Gosc() { listaPobytow = new List<Pobyt>(); }
         public Gosc(string imie, string nazwisko, string pesel, Adres adres, DateTime dataUrodzenia, List<Pobyt> listaPobytow) : base(imie, nazwisko, pesel, adres, dataUrodzenia)
         {
             this.listaPobytow = listaPobytow;
@@ -154,6 +155,8 @@ namespace Hotel
             listaPobytow.Add(pobyt);
             pokoj.IdPobytow.Add(pobyt.IdPobytu);
         }
+
+
         public Pobyt? WyszukajPobytPoId(string idpobytu) => listaPobytow.Where(x => x.IdPobytu == idpobytu).First();
         
         
@@ -162,7 +165,7 @@ namespace Hotel
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("Gość: " + base.ToString());
-            if (listaPobytow.Count > 0)
+            if (listaPobytow.Count() > 0)
             {
                 sb.AppendLine("Pobyty:");
                 foreach (Pobyt p in listaPobytow) { sb.AppendLine(" - " + p.ToString()); }
@@ -251,7 +254,7 @@ namespace Hotel
             List<Pobyt> lista = new List<Pobyt>();
             foreach(Gosc g in listaGosci)
             {
-                foreach(Pobyt p in g.listaPobytow) { lista.Add(p); }
+                foreach(Pobyt p in g.ListaPobytow) { lista.Add(p); }
             }
             return lista;
         }
@@ -306,7 +309,7 @@ namespace Hotel
             List<Gosc> res = new List<Gosc>();
             foreach (Gosc g in listaGosci)
             {
-                foreach (Pobyt p in g.listaPobytow)
+                foreach (Pobyt p in g.ListaPobytow)
                 {
                     if (p.Poczatek <= data && data <= p.Koniec)
                     {
@@ -323,7 +326,7 @@ namespace Hotel
             List<Pobyt> res = new List<Pobyt>();
             foreach (Gosc g in listaGosci)
             {
-                foreach (Pobyt p in g.listaPobytow)
+                foreach (Pobyt p in g.ListaPobytow)
                 {
                     if (p.Poczatek <= data && data <= p.Koniec)
                     {

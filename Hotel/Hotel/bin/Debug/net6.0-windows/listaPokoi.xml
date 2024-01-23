@@ -7,11 +7,7 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>11A</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow>
-        <string>2023-0001</string>
-        <string>2023-0002</string>
-      </IdPobytow>
+      <IdPobytow />
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>
@@ -19,8 +15,9 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>12A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0102-12A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>
@@ -28,8 +25,12 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>13A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0207-13A</string>
+        <string>2024-0103-13A</string>
+        <string>2024-2324-13A</string>
+        <string>2024-1527-13A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>
@@ -37,7 +38,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>14A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -46,8 +46,9 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>15A</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0308-15A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>
@@ -55,7 +56,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>21A</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -64,7 +64,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>22A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -73,7 +72,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>23A</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -82,7 +80,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>24A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -91,7 +88,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>25A</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -100,7 +96,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>31A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -109,7 +104,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>32A</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -118,7 +112,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>33A</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -127,7 +120,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>34A</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -136,8 +128,9 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>35A</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0920-35A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>B</Budynek>
@@ -145,7 +138,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>11B</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -154,7 +146,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>12B</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -163,8 +154,9 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>13B</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0406-13B</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>B</Budynek>
@@ -172,7 +164,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>14B</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -181,7 +172,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>15B</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -190,7 +180,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>21B</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -199,7 +188,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>22B</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -208,7 +196,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>23B</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -217,7 +204,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>24B</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -226,7 +212,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>25B</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -235,7 +220,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>31B</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -244,7 +228,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>32B</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -253,7 +236,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>33B</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -262,7 +244,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>34B</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -271,7 +252,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>35B</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -280,8 +260,9 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>11C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0506-11C</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>C</Budynek>
@@ -289,8 +270,9 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>12C</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0610-12C</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>C</Budynek>
@@ -298,7 +280,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>13C</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -307,7 +288,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>14C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -316,7 +296,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>15C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -325,7 +304,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>21C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -334,7 +312,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>22C</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -343,7 +320,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>23C</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -352,7 +328,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>24C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -361,7 +336,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>25C</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -370,7 +344,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>31C</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -379,7 +352,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>32C</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -388,7 +360,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>33C</IdPokoju>
       <Rozmiar>3</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -397,7 +368,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>34C</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -406,7 +376,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>35C</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -415,8 +384,9 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>11D</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0809-11D</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>D</Budynek>
@@ -424,8 +394,9 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>12D</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0712-12D</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>D</Budynek>
@@ -433,8 +404,9 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>13D</IdPokoju>
       <Rozmiar>5</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-0910-13D</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>D</Budynek>
@@ -442,8 +414,9 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>14D</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-1015-14D</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>D</Budynek>
@@ -451,7 +424,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>15D</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -460,7 +432,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>21D</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -469,7 +440,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>22D</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -478,7 +448,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>23D</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -487,7 +456,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>24D</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -496,7 +464,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>25D</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -505,7 +472,6 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>31D</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -514,7 +480,6 @@
       <NrPokoju>dwa</NrPokoju>
       <IdPokoju>32D</IdPokoju>
       <Rozmiar>4</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -523,7 +488,6 @@
       <NrPokoju>trzy</NrPokoju>
       <IdPokoju>33D</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -532,7 +496,6 @@
       <NrPokoju>cztery</NrPokoju>
       <IdPokoju>34D</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
     <Pokoj>
@@ -541,7 +504,6 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>35D</IdPokoju>
       <Rozmiar>2</Rozmiar>
-      <Czysty>true</Czysty>
       <IdPobytow />
     </Pokoj>
   </pokoje>

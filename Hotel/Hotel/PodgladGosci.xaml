@@ -1,0 +1,29 @@
+﻿<Window x:Class="Hotel.PodgladGosci"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Podgląd Gości" Height="500" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Label>Nazwisko:</Label>
+            <TextBox x:Name="txtFiltrNazwisko"/>
+            <Button Content="Filtruj" Click="Filtruj_Click"/>
+            <Button Content="Odśwież" Click="Odswiez_Click"/>
+        </StackPanel>
+
+        <ListView Grid.Row="1" x:Name="lvGoscie">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Imię" DisplayMemberBinding="{Binding Imie}"/>
+                    <GridViewColumn Header="Nazwisko" DisplayMemberBinding="{Binding Nazwisko}"/>
+                    <GridViewColumn Header="PESEL" DisplayMemberBinding="{Binding Pesel}"/>
+                    <GridViewColumn Header="Adres" DisplayMemberBinding="{Binding Adres}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
