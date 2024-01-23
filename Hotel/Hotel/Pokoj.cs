@@ -98,6 +98,8 @@ namespace Hotel
             if (idPobytow.Count > 0) { foreach (string p in idPobytow) { sb.AppendLine(" - Pobyt numer: " + p); } }
             return $"Pokój {idPokoju}, {rozmiar}-osobowy \n{sb.ToString()}";
         }
+
+        
         
         public int CompareTo(Pokoj? other)
         {
@@ -137,15 +139,27 @@ namespace Hotel
             while (!pasuje) // póki daty się nachodzą, szukamy pokoju
             {
                 if (nrPok >= 60) { return null; }
-                Pokoj pokoj = pokoje[nrPok]; // wybierz pokoj
-                if(rozmiar != pokoj.Rozmiar) { pasuje = false; } // jeżeli rozmiar się nie zgadza to falsz
-                List<Pobyt> listaPobytowPokoju = pokoj.ListaPobytowWPokoju(); // zbierz listę pobytów w pokoju
-                foreach (Pobyt p in listaPobytowPokoju)
+                Pokoj pokoj = pokoje[nrPok];
+                if (pokoj.Rozmiar == rozmiar) 
                 {
-                    if (p.CzyNachodzi(poczatek, koniec)) { pasuje = false; } // jezeli pobyt nachodzi to falsz
-                    else { pasuje = true; break; } // jezeli nie nachodzi, wyjdz z loopa
+                    List<Pobyt>? listaPobytowPokoju = pokoj.ListaPobytowWPokoju();
+                    if (listaPobytowPokoju.Count() == 0) { pasuje = true; return pokoj; }
+                    else
+                    {
+                        foreach (Pobyt p in listaPobytowPokoju)
+                        {
+                            bool czyNachodzi = p.CzyNachodzi(poczatek, koniec);
+                            if (czyNachodzi) { pasuje = false; break; }
+                            pasuje = true;
+                        }
+                        if (pasuje) { return pokoj; }
+                        else { nrPok++; }
+                    }
                 }
-                nrPok++;
+                else
+                {
+                    nrPok++; continue;
+                }
             }
             return pokoje[nrPok];
         }

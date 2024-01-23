@@ -13,13 +13,13 @@
             <DatePicker x:Name="dpData"/>
 
             <Label>Gość:</Label>
-            <TextBox x:Name="txtGosc"/>
+            <TextBox x:Name="txtGosc" Width="100"/>
 
             <Label>Numer pokoju:</Label>
-            <TextBox x:Name="txtNumerPokoju"/>
+            <TextBox x:Name="txtNumerPokoju" Width="100"/>
 
-            <Button Content="Filtruj" Click="Filtruj_Click"/>
-            <Button Content="Odśwież" Click="Odswiez_Click"/>
+            <Button Content="Filtruj" Click="Filtruj_Click" Margin="8 0"/>
+            <Button Content="Odśwież" Click="Odswiez_Click" Margin="8 0"/>
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvPobyty">
@@ -29,6 +29,7 @@
                     <GridViewColumn Header="Pokój" DisplayMemberBinding="{Binding Pokoj.IdPokoju}"/>
                     <GridViewColumn Header="Data rozpoczęcia" DisplayMemberBinding="{Binding Poczatek, StringFormat='dd MMMM yyyy'}"/>
                     <GridViewColumn Header="Data zakończenia" DisplayMemberBinding="{Binding Koniec, StringFormat='dd MMMM yyyy'}"/>
+                    <GridViewColumn Header="Zakładający rezerwację" DisplayMemberBinding="{Binding ZakladajacyRezerwacje}"/>
                 </GridView>
             </ListView.View>
         </ListView>

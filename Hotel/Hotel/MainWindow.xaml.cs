@@ -136,11 +136,7 @@ namespace Hotel
 
         private void btnDodajRezerwacje_Click(object sender, RoutedEventArgs e)
         {
-            var listaPokoi = wczytajListePokoi();
-            Pracownik domyslnyPracownik = new Pracownik(); 
-            bool automatycznyDoborPokoju = true; 
-
-            var oknoDodajRezerwacje = new DodajRezerwacje(wczytajRejestrGosci(), wczytajListePokoi(), domyslnyPracownik, automatycznyDoborPokoju);
+            var oknoDodajRezerwacje = new DodajRezerwacje(wczytajRejestrGosci(), wczytajListePokoi(), wczytajKadre());
             oknoDodajRezerwacje.ShowDialog();
         }
 

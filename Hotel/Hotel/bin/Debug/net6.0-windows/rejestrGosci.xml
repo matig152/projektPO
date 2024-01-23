@@ -138,28 +138,6 @@
           </ZakladajacyRezerwacje>
           <IdPobytu>2024-0102-12A</IdPobytu>
         </Pobyt>
-        <Pobyt>
-          <Poczatek>2024-03-01T00:00:00</Poczatek>
-          <Koniec>2024-03-03T00:00:00</Koniec>
-          <Pokoj>
-            <Budynek>A</Budynek>
-            <Pietro>pierwsze</Pietro>
-            <NrPokoju>trzy</NrPokoju>
-            <IdPokoju>13A</IdPokoju>
-            <Rozmiar>2</Rozmiar>
-            <IdPobytow>
-              <string>2024-0207-13A</string>
-              <string>2024-0103-13A</string>
-            </IdPobytow>
-          </Pokoj>
-          <PozostaliGoscie />
-          <ZakladajacyRezerwacje>
-            <DataUrodzenia>0001-01-01T00:00:00</DataUrodzenia>
-            <Wydzial>Recepcja</Wydzial>
-            <DataWstapienia>0001-01-01T00:00:00</DataWstapienia>
-          </ZakladajacyRezerwacje>
-          <IdPobytu>2024-0103-13A</IdPobytu>
-        </Pobyt>
       </ListaPobytow>
     </Gosc>
     <Gosc>
@@ -251,51 +229,6 @@
             <DataWstapienia>2015-10-01T00:00:00</DataWstapienia>
           </ZakladajacyRezerwacje>
           <IdPobytu>2024-0308-15A</IdPobytu>
-        </Pobyt>
-        <Pobyt>
-          <Poczatek>2024-03-15T00:00:00</Poczatek>
-          <Koniec>2024-04-27T00:00:00</Koniec>
-          <Pokoj>
-            <Budynek>A</Budynek>
-            <Pietro>pierwsze</Pietro>
-            <NrPokoju>trzy</NrPokoju>
-            <IdPokoju>13A</IdPokoju>
-            <Rozmiar>2</Rozmiar>
-            <IdPobytow>
-              <string>2024-0207-13A</string>
-              <string>2024-0103-13A</string>
-              <string>2024-2324-13A</string>
-              <string>2024-1527-13A</string>
-            </IdPobytow>
-          </Pokoj>
-          <PozostaliGoscie />
-          <ZakladajacyRezerwacje>
-            <DataUrodzenia>0001-01-01T00:00:00</DataUrodzenia>
-            <Wydzial>Recepcja</Wydzial>
-            <DataWstapienia>0001-01-01T00:00:00</DataWstapienia>
-          </ZakladajacyRezerwacje>
-          <IdPobytu>2024-1527-13A</IdPobytu>
-        </Pobyt>
-        <Pobyt>
-          <Poczatek>2024-03-09T00:00:00</Poczatek>
-          <Koniec>2024-04-20T00:00:00</Koniec>
-          <Pokoj>
-            <Budynek>A</Budynek>
-            <Pietro>trzecie</Pietro>
-            <NrPokoju>piec</NrPokoju>
-            <IdPokoju>35A</IdPokoju>
-            <Rozmiar>2</Rozmiar>
-            <IdPobytow>
-              <string>2024-0920-35A</string>
-            </IdPobytow>
-          </Pokoj>
-          <PozostaliGoscie />
-          <ZakladajacyRezerwacje>
-            <DataUrodzenia>0001-01-01T00:00:00</DataUrodzenia>
-            <Wydzial>Recepcja</Wydzial>
-            <DataWstapienia>0001-01-01T00:00:00</DataWstapienia>
-          </ZakladajacyRezerwacje>
-          <IdPobytu>2024-0920-35A</IdPobytu>
         </Pobyt>
       </ListaPobytow>
     </Gosc>
@@ -434,29 +367,6 @@
             <DataWstapienia>2015-10-01T00:00:00</DataWstapienia>
           </ZakladajacyRezerwacje>
           <IdPobytu>2024-0610-12C</IdPobytu>
-        </Pobyt>
-        <Pobyt>
-          <Poczatek>2024-03-23T00:00:00</Poczatek>
-          <Koniec>2024-03-24T00:00:00</Koniec>
-          <Pokoj>
-            <Budynek>A</Budynek>
-            <Pietro>pierwsze</Pietro>
-            <NrPokoju>trzy</NrPokoju>
-            <IdPokoju>13A</IdPokoju>
-            <Rozmiar>2</Rozmiar>
-            <IdPobytow>
-              <string>2024-0207-13A</string>
-              <string>2024-0103-13A</string>
-              <string>2024-2324-13A</string>
-            </IdPobytow>
-          </Pokoj>
-          <PozostaliGoscie />
-          <ZakladajacyRezerwacje>
-            <DataUrodzenia>0001-01-01T00:00:00</DataUrodzenia>
-            <Wydzial>Recepcja</Wydzial>
-            <DataWstapienia>0001-01-01T00:00:00</DataWstapienia>
-          </ZakladajacyRezerwacje>
-          <IdPobytu>2024-2324-13A</IdPobytu>
         </Pobyt>
       </ListaPobytow>
     </Gosc>
@@ -641,6 +551,130 @@
             <DataWstapienia>2021-04-01T00:00:00</DataWstapienia>
           </ZakladajacyRezerwacje>
           <IdPobytu>2024-1015-14D</IdPobytu>
+        </Pobyt>
+        <Pobyt>
+          <Poczatek>2024-03-01T00:00:00</Poczatek>
+          <Koniec>2024-03-05T00:00:00</Koniec>
+          <Pokoj>
+            <Budynek>A</Budynek>
+            <Pietro>drugie</Pietro>
+            <NrPokoju>trzy</NrPokoju>
+            <IdPokoju>23A</IdPokoju>
+            <Rozmiar>3</Rozmiar>
+            <IdPobytow>
+              <string>2024-0105-23A</string>
+            </IdPobytow>
+          </Pokoj>
+          <PozostaliGoscie>
+            <Gosc>
+              <Imie>Jan</Imie>
+              <Nazwisko>Michalak</Nazwisko>
+              <DataUrodzenia>1980-05-10T00:00:00</DataUrodzenia>
+              <Pesel>12345612910</Pesel>
+              <Adres>
+                <Ulica>Chałubińskiego</Ulica>
+                <NrDomu>80</NrDomu>
+                <NrLokalu>0</NrLokalu>
+                <Miejscowosc>Zakopane</Miejscowosc>
+                <KodPocztowy>32-001</KodPocztowy>
+              </Adres>
+              <ListaPobytow>
+                <Pobyt>
+                  <Poczatek>2024-02-02T00:00:00</Poczatek>
+                  <Koniec>2024-02-07T00:00:00</Koniec>
+                  <Pokoj>
+                    <Budynek>A</Budynek>
+                    <Pietro>pierwsze</Pietro>
+                    <NrPokoju>trzy</NrPokoju>
+                    <IdPokoju>13A</IdPokoju>
+                    <Rozmiar>2</Rozmiar>
+                    <IdPobytow>
+                      <string>2024-0207-13A</string>
+                    </IdPobytow>
+                  </Pokoj>
+                  <PozostaliGoscie />
+                  <ZakladajacyRezerwacje>
+                    <Imie>Karol</Imie>
+                    <Nazwisko>Aranowski</Nazwisko>
+                    <DataUrodzenia>1987-04-11T00:00:00</DataUrodzenia>
+                    <Pesel>15545678901</Pesel>
+                    <Adres>
+                      <Ulica>Jana Buszka</Ulica>
+                      <NrDomu>32</NrDomu>
+                      <NrLokalu>0</NrLokalu>
+                      <Miejscowosc>Kraków</Miejscowosc>
+                      <KodPocztowy>32-032</KodPocztowy>
+                    </Adres>
+                    <Wydzial>Recepcja</Wydzial>
+                    <DataWstapienia>2015-10-01T00:00:00</DataWstapienia>
+                  </ZakladajacyRezerwacje>
+                  <IdPobytu>2024-0207-13A</IdPobytu>
+                </Pobyt>
+              </ListaPobytow>
+            </Gosc>
+            <Gosc>
+              <Imie>Adrian</Imie>
+              <Nazwisko>Latosiewicz</Nazwisko>
+              <DataUrodzenia>2003-03-06T00:00:00</DataUrodzenia>
+              <Pesel>10795668910</Pesel>
+              <Adres>
+                <Ulica>Szeroka</Ulica>
+                <NrDomu>12</NrDomu>
+                <NrLokalu>0</NrLokalu>
+                <Miejscowosc>Warszawa</Miejscowosc>
+                <KodPocztowy>01-012</KodPocztowy>
+              </Adres>
+              <ListaPobytow>
+                <Pobyt>
+                  <Poczatek>2024-02-05T00:00:00</Poczatek>
+                  <Koniec>2024-02-06T00:00:00</Koniec>
+                  <Pokoj>
+                    <Budynek>C</Budynek>
+                    <Pietro>pierwsze</Pietro>
+                    <NrPokoju>jeden</NrPokoju>
+                    <IdPokoju>11C</IdPokoju>
+                    <Rozmiar>4</Rozmiar>
+                    <IdPobytow>
+                      <string>2024-0506-11C</string>
+                    </IdPobytow>
+                  </Pokoj>
+                  <PozostaliGoscie />
+                  <ZakladajacyRezerwacje>
+                    <Imie>Karol</Imie>
+                    <Nazwisko>Masternak</Nazwisko>
+                    <DataUrodzenia>1987-04-11T00:00:00</DataUrodzenia>
+                    <Pesel>15958678901</Pesel>
+                    <Adres>
+                      <Ulica>Królewska</Ulica>
+                      <NrDomu>32</NrDomu>
+                      <NrLokalu>0</NrLokalu>
+                      <Miejscowosc>Kraków</Miejscowosc>
+                      <KodPocztowy>32-032</KodPocztowy>
+                    </Adres>
+                    <Wydzial>Recepcja</Wydzial>
+                    <DataWstapienia>2015-10-01T00:00:00</DataWstapienia>
+                  </ZakladajacyRezerwacje>
+                  <IdPobytu>2024-0506-11C</IdPobytu>
+                </Pobyt>
+              </ListaPobytow>
+            </Gosc>
+          </PozostaliGoscie>
+          <ZakladajacyRezerwacje>
+            <Imie>Michał</Imie>
+            <Nazwisko>Śpionek</Nazwisko>
+            <DataUrodzenia>2000-01-01T00:00:00</DataUrodzenia>
+            <Pesel>11245672101</Pesel>
+            <Adres>
+              <Ulica>Krótka</Ulica>
+              <NrDomu>12</NrDomu>
+              <NrLokalu>0</NrLokalu>
+              <Miejscowosc>Kraków</Miejscowosc>
+              <KodPocztowy>32-032</KodPocztowy>
+            </Adres>
+            <Wydzial>Recepcja</Wydzial>
+            <DataWstapienia>2021-04-01T00:00:00</DataWstapienia>
+          </ZakladajacyRezerwacje>
+          <IdPobytu>2024-0105-23A</IdPobytu>
         </Pobyt>
       </ListaPobytow>
     </Gosc>

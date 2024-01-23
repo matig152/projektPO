@@ -25,6 +25,7 @@ namespace Hotel
         {
             InitializeComponent();
             kadra = Kadra.OdczytXml("kadra.xml") ?? new Kadra();
+            cbWydzial.ItemsSource = Enum.GetValues(typeof(EnumWydzial)).Cast<EnumWydzial>();
             WypelnijListePracownikow();
         }
 
@@ -36,7 +37,7 @@ namespace Hotel
         private void Filtruj_Click(object sender, RoutedEventArgs e)
         {
             EnumWydzial wybranyWydzial;
-            if (cbWydzial.SelectedIndex > 0)
+            if (cbWydzial.SelectedIndex > -1)
             {
                 wybranyWydzial = (EnumWydzial)Enum.Parse(typeof(EnumWydzial), cbWydzial.SelectedItem.ToString());
             }

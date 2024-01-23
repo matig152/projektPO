@@ -10,16 +10,11 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Label>Wydział:</Label>
-            <ComboBox x:Name="cbWydzial">
-                <ComboBoxItem Content="Wszystkie" />
-                <ComboBoxItem Content="Recepcja" />
-                <ComboBoxItem Content="Housekeeping" />
-                <ComboBoxItem Content="Kuchnia" />
-                <ComboBoxItem Content="Administracja" />
+            <ComboBox x:Name="cbWydzial" Width="120">
             </ComboBox>
 
-            <Button Content="Filtruj" Click="Filtruj_Click"/>
-            <Button Content="Odśwież" Click="Odswiez_Click"/>
+            <Button Content="Filtruj" Click="Filtruj_Click" Margin="8 0"/>
+            <Button Content="Odśwież" Click="Odswiez_Click" Margin="8 0"/>
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvPracownicy">

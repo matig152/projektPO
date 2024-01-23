@@ -67,9 +67,9 @@ namespace Hotel
             // POKRYWANIE PRZEDZIALOW
             if (poczatek1 == poczatek2 && koniec1 == koniec2) {return true; }
             // PIERWSZY ZAWIERA SIĘ W DRUGIM
-            if (poczatek1 > poczatek2 && koniec1 < koniec2) { return true; }
+            if (poczatek1 >= poczatek2 && koniec1 <= koniec2) { return true; }
             // DRUGI ZAWIERA SIĘ W PIERWSZYM
-            if(poczatek1 < poczatek2 && koniec1 > koniec2) { return true; }
+            if(poczatek1 <= poczatek2 && koniec1 >= koniec2) { return true; }
             // PRZECINAJĄ SIĘ, PIERWSZY ZACZYNA SIĘ WCZEŚNIEJ
             if(poczatek1 < poczatek2 && koniec1 < koniec2 && koniec2 < poczatek1) { return true; }
             // PRZECINAJĄ SIĘ, DRUGI ZACZYNA SIĘ WCZEŚNIEJ

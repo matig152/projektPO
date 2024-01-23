@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Hotel.DodajRezerwacje"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dodaj Rezerwację" Height="450" Width="400">
+        Title="Dodaj Rezerwację" Height="500" Width="400">
     <StackPanel Margin="10">
         <Label>Gość:</Label>
         <ComboBox x:Name="cbGosc"/>
@@ -12,11 +12,14 @@
         <Label>Data zakończenia:</Label>
         <DatePicker x:Name="dpKoniec"/>
 
-        <Label>Pokój:</Label>
+        <Label>Pokój (jeżeli puste zostanie dobrany automatycznie):</Label>
         <ComboBox x:Name="cbPokoj"/>
 
+        <Label>Zakładający rezerwację:</Label>
+        <ComboBox x:Name="cbZakladajacy"/>
+
         <Label>Dodatkowi Goście:</Label>
-        <ListBox x:Name="lbDodatkowiGoscie" Height="100"/>
+        <ListBox x:Name="lbDodatkowiGoscie" Height="100" SelectionMode="Multiple"/>
 
         <Button Content="Utwórz rezerwację" Click="UtworzRezerwacje_Click"/>
     </StackPanel>

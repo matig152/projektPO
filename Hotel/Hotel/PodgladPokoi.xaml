@@ -27,7 +27,6 @@
                     <GridViewColumn Header="Piętro" DisplayMemberBinding="{Binding Pietro}"/>
                     <GridViewColumn Header="Numer Pokoju" DisplayMemberBinding="{Binding NrPokoju}"/>
                     <GridViewColumn Header="Rozmiar" DisplayMemberBinding="{Binding Rozmiar}"/>
-                    <GridViewColumn Header="Pobyty" DisplayMemberBinding="{Binding IdPobytow}"/>
                 </GridView>
 
             </ListView.View>

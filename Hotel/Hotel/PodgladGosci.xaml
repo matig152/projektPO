@@ -10,9 +10,9 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
             <Label>Nazwisko:</Label>
-            <TextBox x:Name="txtFiltrNazwisko"/>
-            <Button Content="Filtruj" Click="Filtruj_Click"/>
-            <Button Content="Odśwież" Click="Odswiez_Click"/>
+            <TextBox x:Name="txtFiltrNazwisko" Width="100"/>
+            <Button Content="Filtruj" Click="Filtruj_Click" Margin="8 0"/>
+            <Button Content="Odśwież" Click="Odswiez_Click" Margin="8 0"/>
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvGoscie">

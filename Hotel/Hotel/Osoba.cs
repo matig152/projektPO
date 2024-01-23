@@ -145,8 +145,10 @@ namespace Hotel
         {
             // Znajdź Pokoj
             Pokoj? pokoj = listaPokoi.WybierzPokoj("11A");
-            if(automatycznie) { 
-                pokoj = listaPokoi.WybierzPokojAutomatycznie(1 + pozostaliGoscie.Count, poczatek, koniec); 
+            if(automatycznie) {
+                int rozmiar = pozostaliGoscie.Count();
+                rozmiar += 1;
+                pokoj = listaPokoi.WybierzPokojAutomatycznie(rozmiar, poczatek, koniec); 
                 if(pokoj is null) { MessageBox.Show("Brak wolnych pokoi dla podanych parametrów!"); return; }
             }
             else { pokoj = listaPokoi.WybierzPokoj(idPokoju); }
@@ -204,9 +206,9 @@ namespace Hotel
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append($"Pracownik: {base.ToString()}");
-            sb.AppendLine($"Wydział: {wydzial}");
-            sb.AppendLine($"Doświadczenie: {LataDoswiadczenia()} lat");
+            sb.Append($"{Imie} {Nazwisko} ({Wydzial})");
+            //sb.AppendLine($"Wydział: {wydzial}");
+            //sb.AppendLine($"Doświadczenie: {LataDoswiadczenia()} lat");
             return sb.ToString();
         }
         #endregion
