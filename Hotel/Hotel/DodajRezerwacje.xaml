@@ -1,26 +1,83 @@
 ﻿<Window x:Class="Hotel.DodajRezerwacje"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dodaj Rezerwację" Height="500" Width="400">
+        Title="Dodaj Rezerwację" Height="500" Width="450" Background="#c77730">
+    <Window.Resources>
+        <Style x:Key = "ButtonStyle" TargetType = "Button">
+            <Setter Property = "Height" Value = "40"/>
+            <Setter Property = "Width" Value = "200"/>
+            <Setter Property = "Foreground" Value = "#F8FAE5"/>
+            <Setter Property = "Background" Value = "#ab4019"/>
+            <Setter Property = "FontSize" Value = "14"/>
+            <Setter Property = "Margin" Value = "10"/>
+            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="#ab4019" BorderThickness="1" CornerRadius="6">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="Button.MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="#d86243" Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)" FillBehavior="HoldEnd" Duration="0:0:0.2"/>
+                            <DoubleAnimation Storyboard.TargetProperty="(Button.Width)" From="200" To="220" FillBehavior="HoldEnd" Duration="0:0:.2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="Button.MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="#ab4019"  Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"  FillBehavior="Stop"  Duration="0:0:0.2"/>
+                            <DoubleAnimation Storyboard.TargetProperty="(Button.Width)" From="220" To="200" FillBehavior="Stop"  Duration="0:0:.2" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key = "LabelStyle" TargetType = "Label">
+            <Setter Property="Foreground" Value="#fefefe"/>
+            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="Margin" Value="0 6 0 0"/>
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+
+        <Style x:Key = "ComboBoxStyle" TargetType = "ComboBox">
+            <Setter Property="Foreground" Value="#ab4019"/>
+            <Setter Property="FontFamily" Value="courier new"/>
+        </Style>
+
+        <Style x:Key = "DatePickerStyle" TargetType = "DatePicker">
+            <Setter Property="Foreground" Value="#ab4019"/>
+            <Setter Property="FontFamily" Value="courier new"/>
+        </Style>
+    </Window.Resources>
+
     <StackPanel Margin="10">
-        <Label>Gość:</Label>
-        <ComboBox x:Name="cbGosc"/>
+        <Label Style="{StaticResource LabelStyle}">Gość:</Label>
+        <ComboBox x:Name="cbGosc" Style="{StaticResource ComboBoxStyle}"/>
 
-        <Label>Data rozpoczęcia:</Label>
-        <DatePicker x:Name="dpPoczatek"/>
+        <Label Style="{StaticResource LabelStyle}">Data rozpoczęcia:</Label>
+        <DatePicker x:Name="dpPoczatek" Style="{StaticResource DatePickerStyle}"/>
 
-        <Label>Data zakończenia:</Label>
-        <DatePicker x:Name="dpKoniec"/>
+        <Label Style="{StaticResource LabelStyle}">Data zakończenia:</Label>
+        <DatePicker x:Name="dpKoniec" Style="{StaticResource DatePickerStyle}"/>
 
-        <Label>Pokój (jeżeli puste zostanie dobrany automatycznie):</Label>
-        <ComboBox x:Name="cbPokoj"/>
+        <Label Style="{StaticResource LabelStyle}">Pokój (jeżeli puste zostanie dobrany automatycznie):</Label>
+        <ComboBox x:Name="cbPokoj" Style="{StaticResource ComboBoxStyle}"/>
 
-        <Label>Zakładający rezerwację:</Label>
-        <ComboBox x:Name="cbZakladajacy"/>
+        <Label Style="{StaticResource LabelStyle}">Zakładający rezerwację:</Label>
+        <ComboBox x:Name="cbZakladajacy" Style="{StaticResource ComboBoxStyle}"/>
 
-        <Label>Dodatkowi Goście:</Label>
-        <ListBox x:Name="lbDodatkowiGoscie" Height="100" SelectionMode="Multiple"/>
+        <Label Style="{StaticResource LabelStyle}">Dodatkowi Goście:</Label>
+        <ListBox x:Name="lbDodatkowiGoscie" Height="100" SelectionMode="Multiple" FontFamily="Courier New" Foreground="#ab4019"/>
 
-        <Button Content="Utwórz rezerwację" Click="UtworzRezerwacje_Click"/>
+        <Button Content="Utwórz rezerwację" Click="UtworzRezerwacje_Click" Style="{StaticResource ButtonStyle}"/>
     </StackPanel>
 </Window>
