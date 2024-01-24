@@ -10,7 +10,7 @@
             <Setter Property = "Background" Value = "#ab4019"/>
             <Setter Property = "FontSize" Value = "14"/>
             <Setter Property = "Margin" Value = "10"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -43,7 +43,7 @@
 
         <Style x:Key = "LabelStyle" TargetType = "Label">
             <Setter Property="Foreground" Value="#fefefe"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
             <Setter Property="Margin" Value="0 6 0 0"/>
             <Setter Property="FontSize" Value="13"/>
         </Style>
@@ -51,12 +51,12 @@
         <Style x:Key = "TextBoxStyle" TargetType = "TextBox">
             <Setter Property="Foreground" Value="#ab4019"/>
             <Setter Property="Height" Value="18"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
         </Style>
 
         <Style x:Key = "DatePickerStyle" TargetType = "DatePicker">
             <Setter Property="Foreground" Value="#ab4019"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
         </Style>
     </Window.Resources>
 

@@ -37,19 +37,35 @@ namespace Hotel
 
         private void WypelnijListeGosci()
         {
-            cbGosc.ItemsSource = rejestrGosci.ListaGosci;
-            cbGosc.DisplayMemberPath = "Nazwisko"; 
-            cbGosc.SelectedValuePath = "Pesel"; 
+            List<Gosc> listaGosci = rejestrGosci.ListaGosci;
+            List<string> listaNazwisk = new List<string>();
+            foreach (Gosc g in listaGosci) { listaNazwisk.Add($"{g.Imie} {g.Nazwisko} ({g.Pesel})"); }
+            cbGosc.ItemsSource = listaNazwisk;
         }
 
         private void UtworzRezerwacje_Click(object sender, RoutedEventArgs e)
         {
             try
             {
+                //Zbierz goscia 
+                var wybranyGoscStr = cbGosc.SelectedItem as string;
+                Gosc? wybranyGosc = null;
+                foreach (Gosc g in rejestrGosci.ListaGosci) { if (wybranyGoscStr == $"{g.Imie} {g.Nazwisko} ({g.Pesel})") { wybranyGosc = g; }; }
+                if(wybranyGosc == null) { MessageBox.Show("Błąd wyboru gościa rezerwującego"); }
+                //Zbierz zakladajacego
+                var zakladajacyString = cbZakladajacy.SelectedItem as string;
+                Pracownik? zakladajacy = null;
+                foreach(Pracownik p in kdr.ListaPracownikow) { if (zakladajacyString == $"{p.Imie} {p.Nazwisko} ({p.Pesel})") { zakladajacy = p; } ; }
+                if(zakladajacy == null) { MessageBox.Show("Błąd wybierania pracownika"); }
+                //Zbierz dodatkowych gosci
+                var dodatkowiGoscieStr = lbDodatkowiGoscie.SelectedItems.Cast<string>().ToList();
+                List<Gosc> dodatkowiGoscie = new List<Gosc>();
+                foreach(string goscString in dodatkowiGoscieStr)
+                {
+                    foreach(Gosc g in rejestrGosci.ListaGosci) { if (goscString == $"{g.Imie} {g.Nazwisko} ({g.Pesel})") { dodatkowiGoscie.Add(g); } ; }
+                }
 
-                var wybranyGosc = cbGosc.SelectedItem as Gosc;
-                var zakladajacy = cbZakladajacy.SelectedItem as Pracownik;
-                var dodatkowiGoscie = lbDodatkowiGoscie.SelectedItems.Cast<Gosc>().ToList();
+
                 DateTime poczatek = dpPoczatek.SelectedDate.Value;
                 DateTime koniec = dpKoniec.SelectedDate.Value;
 
@@ -78,9 +94,14 @@ namespace Hotel
                     
                     
                 }
-                MessageBox.Show("Utworzono rezerwację: \n" + wybranyGosc.ListaPobytow.Last().ToString());
+                MessageBox.Show($"Utworzono rezerwację dla gościa {wybranyGosc.Imie} {wybranyGosc.Nazwisko}: \n"  + wybranyGosc.ListaPobytow.Last().ToString());
                 rejestrGosci.ZapisXml("rejestrGosci.xml");
                 listaPokoi.ZapisXml("listaPokoi.xml");
+                //W CELU ODŚWIEŻENIA STATYSTYK
+                Application.Current.MainWindow.Close();
+                MainWindow mw = new MainWindow();
+                Application.Current.MainWindow = mw;
+                mw.Show();
                 Close();
             }
             catch (Exception ex)
@@ -97,14 +118,18 @@ namespace Hotel
 
         private void WypelnijListeDodatkowychGosci()
         {
-            lbDodatkowiGoscie.ItemsSource = rejestrGosci.ListaGosci;
-            lbDodatkowiGoscie.DisplayMemberPath = "Nazwisko"; 
+            List<Gosc> listaGosci = rejestrGosci.ListaGosci;
+            List<string> listaNazwisk = new List<string>();
+            foreach (Gosc g in listaGosci) { listaNazwisk.Add($"{g.Imie} {g.Nazwisko} ({g.Pesel})"); }
+            lbDodatkowiGoscie.ItemsSource = listaNazwisk;
         }
 
         private void WypelnijListePracownikow()
         {
-            cbZakladajacy.ItemsSource = kdr.ListaPracownikow.Where(x => x.Wydzial == EnumWydzial.Recepcja || x.Wydzial == EnumWydzial.Administracja);
-            cbZakladajacy.DisplayMemberPath = "Nazwisko";
+            List<Pracownik> listaPracownikow = kdr.ListaPracownikow;
+            List<string> listaNazwisk = new List<string>();
+            foreach (Pracownik p in listaPracownikow) { listaNazwisk.Add($"{p.Imie} {p.Nazwisko} ({p.Pesel})"); }
+            cbZakladajacy.ItemsSource = listaNazwisk;
         }
 
     }

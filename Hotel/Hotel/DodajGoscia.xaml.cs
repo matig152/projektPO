@@ -46,6 +46,11 @@ namespace Hotel
                 rejestrGosci.DodajGoscia(gosc);
                 rejestrGosci.ZapisXml("rejestrGosci.xml");
                 MessageBox.Show("Gość dodany pomyślnie");
+                //W CELU ODŚWIEŻENIA STATYSTYK
+                Application.Current.MainWindow.Close();
+                MainWindow mw = new MainWindow();
+                Application.Current.MainWindow = mw;
+                mw.Show();
                 Close();
             }
             catch (Exception ex)

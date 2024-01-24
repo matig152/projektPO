@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,12 @@ namespace Hotel
             InitializeComponent();
             listaPokoi = ListaPokoi.OdczytXml("listaPokoi.xml") ?? new ListaPokoi();
             WypelnijListePokoi();
+            cbRozmiar.ItemsSource = new ObservableCollection<int>() { 1, 2, 3, 4, 5 };
+            cbBudynek.ItemsSource = new ObservableCollection<EnumBudynek>() {EnumBudynek.A, EnumBudynek.B, EnumBudynek.C, EnumBudynek.D };
+            cbPietro.ItemsSource = new ObservableCollection<EnumPietro>() { EnumPietro.pierwsze, EnumPietro.drugie, EnumPietro.trzecie };
+
+
+
         }
 
         private void WypelnijListePokoi()
@@ -36,11 +43,26 @@ namespace Hotel
 
         private void Filtruj_Click(object sender, RoutedEventArgs e)
         {
-            DateTime poczatek = dpPoczatek.SelectedDate.GetValueOrDefault(DateTime.MinValue);
-            DateTime koniec = dpKoniec.SelectedDate.GetValueOrDefault(DateTime.MaxValue);
+            int rozmiar = cbRozmiar.SelectedIndex + 1;
+            int idxBudynek = cbBudynek.SelectedIndex;
+            int idxPietro = cbPietro.SelectedIndex;
+            List<EnumBudynek> listaBud = new List<EnumBudynek>() { EnumBudynek.A, EnumBudynek.B, EnumBudynek.C, EnumBudynek.D };
+            List<EnumPietro> listaPietr = new List<EnumPietro>() { EnumPietro.pierwsze, EnumPietro.drugie, EnumPietro.trzecie };
 
-            var zajetePokoje = ListaPokoi.PokojeZajeteWPodanymCzasie(poczatek, koniec, rejestrGosci);
-            lvPokoje.ItemsSource = zajetePokoje;
+            //wszystkie parametry podane
+            if (rozmiar > 0 && idxBudynek > -1 && idxPietro > -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Rozmiar == rozmiar && x.Budynek == listaBud[idxBudynek] && x.Pietro == listaPietr[idxPietro]);return; }
+            //sam rozmiar
+            if (rozmiar > 0 && idxBudynek == -1 && idxPietro == -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Rozmiar == rozmiar); return; }
+            //sam budynek
+            if (rozmiar == 0 && idxBudynek > -1 && idxPietro == -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Budynek == listaBud[idxBudynek]); return; }
+            //samo pietro
+            if (rozmiar == 0 && idxBudynek == -1 && idxPietro > -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x =>  x.Pietro == listaPietr[idxPietro]); return; }
+            //rozmiar i budynek
+            if (rozmiar > 0 && idxBudynek > -1 && idxPietro == -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Rozmiar == rozmiar && x.Budynek == listaBud[idxBudynek]); return; }
+            //rozmiar i pietro
+            if (rozmiar > 0 && idxBudynek == -1 && idxPietro > -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Rozmiar == rozmiar && x.Pietro == listaPietr[idxPietro]); return; }
+            //pietro i budynek
+            if (rozmiar == 0 && idxBudynek > -1 && idxPietro > -1) { lvPokoje.ItemsSource = listaPokoi.pokoje.Where(x => x.Budynek == listaBud[idxBudynek] && x.Pietro == listaPietr[idxPietro]); return; }
         }
 
         private void Odswiez_Click(object sender, RoutedEventArgs e)

@@ -43,7 +43,7 @@ namespace Hotel
         #endregion
 
         #region Metody
-        public int Dlugosc() => koniec.Day - poczatek.Day;
+        public int Dlugosc() => (koniec.Date - poczatek.Date).Days;
         public int LiczbaOsob() => pozostaliGoscie.Count + 1;
         public decimal Cena()
         {

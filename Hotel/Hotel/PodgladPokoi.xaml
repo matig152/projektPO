@@ -10,7 +10,7 @@
             <Setter Property = "Background" Value = "#ab4019"/>
             <Setter Property = "FontSize" Value = "14"/>
             <Setter Property = "Margin" Value = "10 2"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -41,7 +41,7 @@
 
         <Style x:Key = "LabelStyle" TargetType = "Label">
             <Setter Property="Foreground" Value="#fefefe"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
             <Setter Property="Margin" Value="0 6 0 0"/>
             <Setter Property="FontSize" Value="15"/>
         </Style>
@@ -49,12 +49,12 @@
         <Style x:Key = "TextBoxStyle" TargetType = "TextBox">
             <Setter Property="Foreground" Value="#ab4019"/>
             <Setter Property="Height" Value="18"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
         </Style>
 
-        <Style x:Key = "DatePickerStyle" TargetType = "DatePicker">
+        <Style x:Key = "ComboBoxStyle" TargetType = "ComboBox">
             <Setter Property="Foreground" Value="#ab4019"/>
-            <Setter Property="FontFamily" Value="courier new"/>
+            <Setter Property="FontFamily" Value="Trebuchet MS"/>
         </Style>
     </Window.Resources>
     <Grid Margin="10">
@@ -64,14 +64,18 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Label Style="{StaticResource LabelStyle}">Data początkowa:</Label>
-            <DatePicker x:Name="dpPoczatek"/>
+            <Label Style="{StaticResource LabelStyle}">Rozmiar:</Label>
+            <ComboBox  Name="cbRozmiar" Style="{StaticResource ComboBoxStyle}" Width="50" Height="24"></ComboBox>
 
-            <Label Style="{StaticResource LabelStyle}">Data końcowa:</Label>
-            <DatePicker x:Name="dpKoniec"/>
+            <Label Style="{StaticResource LabelStyle}">Budynek:</Label>
+            <ComboBox Name="cbBudynek" Style="{StaticResource ComboBoxStyle}" Width="50" Height="24"></ComboBox>
+
+            <Label Style="{StaticResource LabelStyle}">Piętro:</Label>
+            <ComboBox Name="cbPietro" Style="{StaticResource ComboBoxStyle}" Width="80" Height="24"></ComboBox>
+
 
             <Button Content="Filtruj" Click="Filtruj_Click" Style="{StaticResource ButtonStyle}"/>
-            <Button Content="Odśwież" Click="Odswiez_Click" Style="{StaticResource ButtonStyle}"/>
+            <Button Content="Odśwież &#8634;" Click="Odswiez_Click" Style="{StaticResource ButtonStyle}"/>
         </StackPanel>
 
         <ListView Grid.Row="1" x:Name="lvPokoje">

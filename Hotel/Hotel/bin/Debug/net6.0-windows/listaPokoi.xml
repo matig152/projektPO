@@ -17,6 +17,9 @@
       <Rozmiar>2</Rozmiar>
       <IdPobytow>
         <string>2024-0102-12A</string>
+        <string>2024-0105-12A</string>
+        <string>2024-3101-12A</string>
+        <string>2024-1001-12A</string>
       </IdPobytow>
     </Pokoj>
     <Pokoj>
@@ -53,7 +56,11 @@
       <NrPokoju>jeden</NrPokoju>
       <IdPokoju>21A</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2024-1126-21A</string>
+        <string>2024-0611-21A</string>
+        <string>2024-2527-21A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>
@@ -71,6 +78,7 @@
       <Rozmiar>3</Rozmiar>
       <IdPobytow>
         <string>2024-0105-23A</string>
+        <string>2024-2930-23A</string>
       </IdPobytow>
     </Pokoj>
     <Pokoj>
@@ -87,7 +95,9 @@
       <NrPokoju>piec</NrPokoju>
       <IdPokoju>25A</IdPokoju>
       <Rozmiar>1</Rozmiar>
-      <IdPobytow />
+      <IdPobytow>
+        <string>2023-3027-25A</string>
+      </IdPobytow>
     </Pokoj>
     <Pokoj>
       <Budynek>A</Budynek>

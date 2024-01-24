@@ -30,8 +30,6 @@ namespace Hotel
 
         private void WypelnijListePobytow()
         {
-
-
             lvPobyty.ItemsSource = rejestrGosci.ListaWszystkichPobytow();
         }
 
