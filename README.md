@@ -5,5 +5,6 @@
  - Dokumentacja techniczna, diagram klas UML - Maciej Jedynak
 ### Diagram UML
 ![Diagram](./DiagramKlasHotel.png)
-
+### Diagram UML - wersja uproszczona
+![Diagram](./UmlDiagramSimplified.png)
 
