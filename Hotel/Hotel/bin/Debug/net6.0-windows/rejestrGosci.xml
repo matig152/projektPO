@@ -1572,5 +1572,19 @@
       </Adres>
       <ListaPobytow />
     </Gosc>
+    <Gosc>
+      <Imie>Karol</Imie>
+      <Nazwisko>Wielki</Nazwisko>
+      <DataUrodzenia>1990-12-29T00:00:00</DataUrodzenia>
+      <Pesel>09090909099</Pesel>
+      <Adres>
+        <Ulica>Królewska</Ulica>
+        <NrDomu>12</NrDomu>
+        <NrLokalu>0</NrLokalu>
+        <Miejscowosc>Rzeszów</Miejscowosc>
+        <KodPocztowy>88-003</KodPocztowy>
+      </Adres>
+      <ListaPobytow />
+    </Gosc>
   </ListaGosci>
 </RejestrGosci>
