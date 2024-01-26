@@ -1,0 +1,127 @@
+\hypertarget{class_hotel_1_1_pobyt}{}\doxysection{Hotel.\+Pobyt Class Reference}
+\label{class_hotel_1_1_pobyt}\index{Hotel.Pobyt@{Hotel.Pobyt}}
+
+
+Klasa Pobyt zawiera informacje na temat pobytu grupy gości oraz pozwala stwierdzić, czy rezerwacja takiegoż jest w ogóle możliwa.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a72d7258ad50b6fa8891d5bd17497761b}\label{class_hotel_1_1_pobyt_a72d7258ad50b6fa8891d5bd17497761b}} 
+{\bfseries Pobyt} (Date\+Time poczatek, Date\+Time koniec, \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} pokoj, List$<$ \mbox{\hyperlink{class_hotel_1_1_gosc}{Gosc}} $>$ pozostali\+Goscie, \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} zakladajacy\+Rezerwacje)
+\item 
+int \mbox{\hyperlink{class_hotel_1_1_pobyt_a8d2d9feb8d539244afb1029a6e4a03d4}{Dlugosc}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma za zadanie podanie informacji na temat długości pobytu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_hotel_1_1_pobyt_ae27f20c91c68d3f9f057035afcc45d86}{Liczba\+Osob}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma za zadanie podanie ilości osób z grupy przypisanej do pobytu. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_hotel_1_1_pobyt_a13826a7918e8477b73d51aaa4d4ca038}{Cena}} ()
+\begin{DoxyCompactList}\small\item\em Metoda informuje o cenie łącznej za pobyt, zależnej od ilości członków, wieku oraz długości pobytu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hotel_1_1_pobyt_a50a3b25bf70aa76813e93312b2567be2}{Czy\+Nachodzi}} (Date\+Time poczatek2, Date\+Time koniec2)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zwrócenie informacji na temat tego, czy pobyt nachodzi na pewien inny. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_hotel_1_1_pobyt_a780b0f29ff57911b320230cc811fd77c}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda wypisuje informacje na temat pobytu\+: jej początek, koniec, długość, gości, ich liczbę, cenę etc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_ab4b3b0da8ebc063ad7dd41164f67b902}\label{class_hotel_1_1_pobyt_ab4b3b0da8ebc063ad7dd41164f67b902}} 
+Date\+Time {\bfseries Poczatek}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a118f59540f0edae131c6673432d1bc0a}\label{class_hotel_1_1_pobyt_a118f59540f0edae131c6673432d1bc0a}} 
+Date\+Time {\bfseries Koniec}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_aecfa1617d69fbb32b4568f8bca222fce}\label{class_hotel_1_1_pobyt_aecfa1617d69fbb32b4568f8bca222fce}} 
+\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}}? {\bfseries Pokoj}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a153c8eb476494b13a1cbe0a7423c60d1}\label{class_hotel_1_1_pobyt_a153c8eb476494b13a1cbe0a7423c60d1}} 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_gosc}{Gosc}} $>$ {\bfseries Pozostali\+Goscie}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a0d5421ad74339d0dccd69dc32a7776ec}\label{class_hotel_1_1_pobyt_a0d5421ad74339d0dccd69dc32a7776ec}} 
+\mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} {\bfseries Zakladajacy\+Rezerwacje}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a31b8913a70e16ba0ad5ddc36e40d64c4}\label{class_hotel_1_1_pobyt_a31b8913a70e16ba0ad5ddc36e40d64c4}} 
+string {\bfseries Id\+Pobytu}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa Pobyt zawiera informacje na temat pobytu grupy gości oraz pozwala stwierdzić, czy rezerwacja takiegoż jest w ogóle możliwa. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a13826a7918e8477b73d51aaa4d4ca038}\label{class_hotel_1_1_pobyt_a13826a7918e8477b73d51aaa4d4ca038}} 
+\index{Hotel.Pobyt@{Hotel.Pobyt}!Cena@{Cena}}
+\index{Cena@{Cena}!Hotel.Pobyt@{Hotel.Pobyt}}
+\doxysubsubsection{\texorpdfstring{Cena()}{Cena()}}
+{\footnotesize\ttfamily decimal Hotel.\+Pobyt.\+Cena (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda informuje o cenie łącznej za pobyt, zależnej od ilości członków, wieku oraz długości pobytu. 
+
+\begin{DoxyReturn}{Returns}
+Cena. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a50a3b25bf70aa76813e93312b2567be2}\label{class_hotel_1_1_pobyt_a50a3b25bf70aa76813e93312b2567be2}} 
+\index{Hotel.Pobyt@{Hotel.Pobyt}!CzyNachodzi@{CzyNachodzi}}
+\index{CzyNachodzi@{CzyNachodzi}!Hotel.Pobyt@{Hotel.Pobyt}}
+\doxysubsubsection{\texorpdfstring{CzyNachodzi()}{CzyNachodzi()}}
+{\footnotesize\ttfamily bool Hotel.\+Pobyt.\+Czy\+Nachodzi (\begin{DoxyParamCaption}\item[{Date\+Time}]{poczatek2,  }\item[{Date\+Time}]{koniec2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zwrócenie informacji na temat tego, czy pobyt nachodzi na pewien inny. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poczatek2} & początek pobytu. \\
+\hline
+{\em koniec2} & koniec pobytu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość logiczna. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a8d2d9feb8d539244afb1029a6e4a03d4}\label{class_hotel_1_1_pobyt_a8d2d9feb8d539244afb1029a6e4a03d4}} 
+\index{Hotel.Pobyt@{Hotel.Pobyt}!Dlugosc@{Dlugosc}}
+\index{Dlugosc@{Dlugosc}!Hotel.Pobyt@{Hotel.Pobyt}}
+\doxysubsubsection{\texorpdfstring{Dlugosc()}{Dlugosc()}}
+{\footnotesize\ttfamily int Hotel.\+Pobyt.\+Dlugosc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda ma za zadanie podanie informacji na temat długości pobytu. 
+
+\begin{DoxyReturn}{Returns}
+Długosć pobytu w dniach. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_ae27f20c91c68d3f9f057035afcc45d86}\label{class_hotel_1_1_pobyt_ae27f20c91c68d3f9f057035afcc45d86}} 
+\index{Hotel.Pobyt@{Hotel.Pobyt}!LiczbaOsob@{LiczbaOsob}}
+\index{LiczbaOsob@{LiczbaOsob}!Hotel.Pobyt@{Hotel.Pobyt}}
+\doxysubsubsection{\texorpdfstring{LiczbaOsob()}{LiczbaOsob()}}
+{\footnotesize\ttfamily int Hotel.\+Pobyt.\+Liczba\+Osob (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Metoda ma za zadanie podanie ilości osób z grupy przypisanej do pobytu. 
+
+\begin{DoxyReturn}{Returns}
+Ilość osób. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pobyt_a780b0f29ff57911b320230cc811fd77c}\label{class_hotel_1_1_pobyt_a780b0f29ff57911b320230cc811fd77c}} 
+\index{Hotel.Pobyt@{Hotel.Pobyt}!ToString@{ToString}}
+\index{ToString@{ToString}!Hotel.Pobyt@{Hotel.Pobyt}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Hotel.\+Pobyt.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda wypisuje informacje na temat pobytu\+: jej początek, koniec, długość, gości, ich liczbę, cenę etc. 
+
+\begin{DoxyReturn}{Returns}
+Tekst. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pobyt.\+cs\end{DoxyCompactItemize}

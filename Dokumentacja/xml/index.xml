@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="class_hotel_1_1_adres" kind="class"><name>Hotel::Adres</name>
+    <member refid="class_hotel_1_1_adres_1a43542a4db907e91abb6b65d45fb8dea1" kind="variable"><name>ulica</name></member>
+    <member refid="class_hotel_1_1_adres_1aa9efbd9e2cc81138e0be303e8bcb130d" kind="variable"><name>nrDomu</name></member>
+    <member refid="class_hotel_1_1_adres_1a39eef7267d6b6af4c8e60dda11fa4dbf" kind="variable"><name>nrLokalu</name></member>
+    <member refid="class_hotel_1_1_adres_1a774eabbc2c496d1593c0f2b0ae0aa134" kind="variable"><name>miejscowosc</name></member>
+    <member refid="class_hotel_1_1_adres_1ac697e1cd4f0ca715d12c17bfd4cd46b8" kind="variable"><name>kodPocztowy</name></member>
+    <member refid="class_hotel_1_1_adres_1a34ffb029812e2b6c1e7b89bfb06da224" kind="property"><name>Ulica</name></member>
+    <member refid="class_hotel_1_1_adres_1ab1a09ce0d353a4c77385f7d9f1144bdb" kind="property"><name>NrDomu</name></member>
+    <member refid="class_hotel_1_1_adres_1ae35bd33037e43d8cd1a61ec4277cfde2" kind="property"><name>NrLokalu</name></member>
+    <member refid="class_hotel_1_1_adres_1a595b84587832819feb14a5d219a9abbf" kind="property"><name>Miejscowosc</name></member>
+    <member refid="class_hotel_1_1_adres_1a8b26bab8136bb13ed33e3b449c2503f3" kind="property"><name>KodPocztowy</name></member>
+    <member refid="class_hotel_1_1_adres_1ab4178e946a04d3732804d0ee37c855a7" kind="function"><name>Adres</name></member>
+    <member refid="class_hotel_1_1_adres_1af60b3d5f6bf12db60fc9d1b462029f64" kind="function"><name>Adres</name></member>
+    <member refid="class_hotel_1_1_adres_1a1d50712a5958b77c56e3b7a89aca0e87" kind="function"><name>Adres</name></member>
+    <member refid="class_hotel_1_1_adres_1ae787be34021282505b06a221565a238c" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_app" kind="class"><name>Hotel::App</name>
+  </compound>
+  <compound refid="class_hotel_1_1_brak_pokoju_exception" kind="class"><name>Hotel::BrakPokojuException</name>
+    <member refid="class_hotel_1_1_brak_pokoju_exception_1ad33e945a351566c596de0004931e193e" kind="function"><name>BrakPokojuException</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_dodaj_goscia" kind="class"><name>Hotel::DodajGoscia</name>
+    <member refid="class_hotel_1_1_dodaj_goscia_1ab6c19224902862471f72ea03310d4aff" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_dodaj_goscia_1adbb1554f067435e80af4ad303516cf03" kind="function"><name>DodajGoscia</name></member>
+    <member refid="class_hotel_1_1_dodaj_goscia_1af2857f9752b6c3a168d44bb102a7b646" kind="function"><name>Dodaj_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_dodaj_rezerwacje" kind="class"><name>Hotel::DodajRezerwacje</name>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1a0e335dee3f189041c97f79bd98d3818b" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1acfc2eaecb5b56d41bca9bf9264d66686" kind="variable"><name>listaPokoi</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1a7d039d59079517d61a65228b766e46d2" kind="variable"><name>kdr</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1abbcfbdc76346812ed21082f3711d136c" kind="function"><name>DodajRezerwacje</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1aa61329fed17578b928bc62705ac4c99a" kind="function"><name>WypelnijListeGosci</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1a00d0bddd50e3cc17efad31c0a33deb85" kind="function"><name>UtworzRezerwacje_Click</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1a8f4f3e7a2ad4e10b4687391b9d5773f5" kind="function"><name>WypelnijListePokoi</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1ac779f9cbdd5ae2e823a840959df6ad50" kind="function"><name>WypelnijListeDodatkowychGosci</name></member>
+    <member refid="class_hotel_1_1_dodaj_rezerwacje_1a95ca0ebf997622237231a515422e7a5b" kind="function"><name>WypelnijListePracownikow</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_gosc" kind="class"><name>Hotel::Gosc</name>
+    <member refid="class_hotel_1_1_gosc_1a3a8e3c7220527645fa3f6581db011bd5" kind="variable"><name>listaPobytow</name></member>
+    <member refid="class_hotel_1_1_gosc_1a110474f8081668fc2c55741c61d9b998" kind="property"><name>ListaPobytow</name></member>
+    <member refid="class_hotel_1_1_gosc_1a16b18d82fd7b579ca465f3695b7c33ab" kind="function"><name>Gosc</name></member>
+    <member refid="class_hotel_1_1_gosc_1a4286de60e148951e921c1e5d35e13c80" kind="function"><name>Gosc</name></member>
+    <member refid="class_hotel_1_1_gosc_1a8468d62d7a66f433b3fb132e11813530" kind="function"><name>ZalozRezerwacje</name></member>
+    <member refid="class_hotel_1_1_gosc_1a2e58479b23e428e0fc321ef9212c7c7c" kind="function"><name>WyszukajPobytPoId</name></member>
+    <member refid="class_hotel_1_1_gosc_1a09ef909e1ee481a2ef66c96ddb6abe9d" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_kadra" kind="class"><name>Hotel::Kadra</name>
+    <member refid="class_hotel_1_1_kadra_1aa1d2c79585fdfd7500df3368e4926c75" kind="variable"><name>listaPracownikow</name></member>
+    <member refid="class_hotel_1_1_kadra_1ad49511df8c3e341d0e295d59c198774c" kind="property"><name>ListaPracownikow</name></member>
+    <member refid="class_hotel_1_1_kadra_1ae388b36dfcede78b003c9cd641897e60" kind="function"><name>Kadra</name></member>
+    <member refid="class_hotel_1_1_kadra_1afec7ae3f156842a7c60a50d737dd0767" kind="function"><name>FiltrujPracownikowPoWydziale</name></member>
+    <member refid="class_hotel_1_1_kadra_1aac6682ae13a1dbcc9a855566582d5034" kind="function"><name>FiltrujPracownikowPoImieniu</name></member>
+    <member refid="class_hotel_1_1_kadra_1aac6ed475277783ecbd99209135448972" kind="function"><name>FiltrujPracownikowPoNazwisku</name></member>
+    <member refid="class_hotel_1_1_kadra_1a728043a0b31ccf5856752d6b4e25cd3b" kind="function"><name>FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia</name></member>
+    <member refid="class_hotel_1_1_kadra_1af71d6db29480eaf83c85d1770e08641a" kind="function"><name>DodajPracownika</name></member>
+    <member refid="class_hotel_1_1_kadra_1a89c6fd7d4aba049701bae8314fa2c7f6" kind="function"><name>ZapisXml</name></member>
+    <member refid="class_hotel_1_1_kadra_1a68ecd1dedcd209136b0b4fb1d2f8d2b1" kind="function"><name>ToString</name></member>
+    <member refid="class_hotel_1_1_kadra_1a318584acfff8ba5438d94e9bb0dfd8c4" kind="function"><name>OdczytXml</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_lista_pobytow" kind="class"><name>Hotel::ListaPobytow</name>
+    <member refid="class_hotel_1_1_lista_pobytow_1a046802dccb9894ad2f10728b92a57ef2" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_lista_pobytow_1a1e6839394df430dbe794deb71eabdebd" kind="function"><name>ListaPobytow</name></member>
+    <member refid="class_hotel_1_1_lista_pobytow_1aa03b8f2841015dc6ac0323e4968a8b40" kind="function"><name>WypelnijListePobytow</name></member>
+    <member refid="class_hotel_1_1_lista_pobytow_1aa3a8df20e714bc816a03799112b760cd" kind="function"><name>Filtruj_Click</name></member>
+    <member refid="class_hotel_1_1_lista_pobytow_1a4e3b32decbd2ee8cdbc30f99f944eea9" kind="function"><name>Odswiez_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_lista_pokoi" kind="class"><name>Hotel::ListaPokoi</name>
+    <member refid="class_hotel_1_1_lista_pokoi_1a724cf658b2407bdfb641893a54d1dcf4" kind="variable"><name>pokoje</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1ad89b906f23fea7606421b9ed30b40dd6" kind="function"><name>ListaPokoi</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1a84fbab98c2c0126072479bb73b238426" kind="function"><name>ListaPokoi</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1ac95cb4df5ee53e1c25a675599722309b" kind="function"><name>WybierzPokoj</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1a6b7651dabbc3b01e93e2cf4513044cb5" kind="function"><name>WybierzPokojAutomatycznie</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1a14dbccf3f76cd72de773989d95bc088a" kind="function"><name>ZapisXml</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1a820b1925f4128d352acced005ed57318" kind="function"><name>ToString</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1a42281f95cb24d4f86282b400ef1f78bb" kind="function"><name>ZnajdzWolnyPokoj</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1aa1700b4d1d145004f55030ac01ca5d09" kind="function"><name>FiltrujPokojePoGosciach</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1ad281e8720277083161f018a83c4b9b19" kind="function"><name>FiltrujPokojePoDacie</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1af2e015f6b7c50b4595cb57ef73a1014d" kind="function"><name>PokojeZajeteWPodanymCzasie</name></member>
+    <member refid="class_hotel_1_1_lista_pokoi_1ac29b4bc13d1ed0eaec5357868f8f7b2d" kind="function"><name>OdczytXml</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_main_window" kind="class"><name>Hotel::MainWindow</name>
+    <member refid="class_hotel_1_1_main_window_1abc2205a0b10f51b1fc371e26accd3d12" kind="variable"><name>listaPokoi</name></member>
+    <member refid="class_hotel_1_1_main_window_1a23b45b60d6e89eebc44c41c2997deb35" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_main_window_1a1645e55fad5c1135dbe0667e57e57421" kind="variable"><name>kadra</name></member>
+    <member refid="class_hotel_1_1_main_window_1a7c25370b751087fd8f4634fe25f3588b" kind="function"><name>wczytajListePokoi</name></member>
+    <member refid="class_hotel_1_1_main_window_1abbce93de7fb39601f89362df1eecf1fd" kind="function"><name>wczytajRejestrGosci</name></member>
+    <member refid="class_hotel_1_1_main_window_1a8a95b0924d9d2bad7ba55272e3b6f3a4" kind="function"><name>wczytajKadre</name></member>
+    <member refid="class_hotel_1_1_main_window_1a4cb56aaa031bf7533ef60cd3796f3958" kind="function"><name>MainWindow</name></member>
+    <member refid="class_hotel_1_1_main_window_1aa6777b05e42bb8766142410292b9af58" kind="function"><name>btnDodajGoscia_Click</name></member>
+    <member refid="class_hotel_1_1_main_window_1a2c786f9e0618693514b991798f0f9f19" kind="function"><name>btnDodajRezerwacje_Click</name></member>
+    <member refid="class_hotel_1_1_main_window_1a779a6dae5b38c50292715461dd423fa0" kind="function"><name>btnPodgladPokoi_Click</name></member>
+    <member refid="class_hotel_1_1_main_window_1af41eef757b6e5eb8bef53bc93e69bd59" kind="function"><name>btnPodgladGosci_Click</name></member>
+    <member refid="class_hotel_1_1_main_window_1a1244da68233d73e0ea27dc07f0d06eac" kind="function"><name>btnPodgladPracownikow_Click</name></member>
+    <member refid="class_hotel_1_1_main_window_1a78e8a7696328aa1dbc7166a101ff3bfa" kind="function"><name>btnListaPobytow_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_nieprawidlowy_numer_exception" kind="class"><name>Hotel::NieprawidlowyNumerException</name>
+    <member refid="class_hotel_1_1_nieprawidlowy_numer_exception_1a9fea6bc0d95bea6b0966e36ecd0905db" kind="function"><name>NieprawidlowyNumerException</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_osoba" kind="class"><name>Hotel::Osoba</name>
+    <member refid="class_hotel_1_1_osoba_1a80443122c2526e9971bfc59c7febe16b" kind="variable"><name>imie</name></member>
+    <member refid="class_hotel_1_1_osoba_1a384c8fe20a1a44592e7b5ac9f85227fa" kind="variable"><name>nazwisko</name></member>
+    <member refid="class_hotel_1_1_osoba_1a87c0783b831043b53abcb893d4505780" kind="variable"><name>pesel</name></member>
+    <member refid="class_hotel_1_1_osoba_1affc2537ea78e2f6a0626467586cedea4" kind="variable"><name>adres</name></member>
+    <member refid="class_hotel_1_1_osoba_1a5bdf59c3c01f413cb217b536d7c3271c" kind="variable"><name>dataUrodzenia</name></member>
+    <member refid="class_hotel_1_1_osoba_1a732f21c5b9218b4f2553abd2cf4a38b6" kind="property"><name>Imie</name></member>
+    <member refid="class_hotel_1_1_osoba_1a418677a4481520508723bd61610f33df" kind="property"><name>Nazwisko</name></member>
+    <member refid="class_hotel_1_1_osoba_1a32ac96a37a2193af81a73814614dc980" kind="property"><name>DataUrodzenia</name></member>
+    <member refid="class_hotel_1_1_osoba_1ac90364430dc2b28afe405e7a6aeb4774" kind="property"><name>Pesel</name></member>
+    <member refid="class_hotel_1_1_osoba_1a4da53b1db4be36d970c0e45c0a09c5a9" kind="property"><name>Adres</name></member>
+    <member refid="class_hotel_1_1_osoba_1a96139007868926ea03ae130d26930f86" kind="function"><name>Osoba</name></member>
+    <member refid="class_hotel_1_1_osoba_1affca514f4c1969f21a62a84dfbd1e85f" kind="function"><name>Osoba</name></member>
+    <member refid="class_hotel_1_1_osoba_1aa1031b31ba6d831ab8d872c179007d51" kind="function"><name>Wiek</name></member>
+    <member refid="class_hotel_1_1_osoba_1a977d861d8da0aa6eed04148c315bde99" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_pobyt" kind="class"><name>Hotel::Pobyt</name>
+    <member refid="class_hotel_1_1_pobyt_1ac5805e4afa2b06c0dc6e76d355f28bcb" kind="variable"><name>poczatek</name></member>
+    <member refid="class_hotel_1_1_pobyt_1ac43cfd480a24b65ff76cfaeccf5a0904" kind="variable"><name>koniec</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a64508bfc368e51437a94e63bb6e8adb0" kind="variable"><name>pokoj</name></member>
+    <member refid="class_hotel_1_1_pobyt_1af4b106d7bf251f7f8665b18718da23ea" kind="variable"><name>pozostaliGoscie</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a4b09427babc75fa0a35ee07d18de4103" kind="variable"><name>zakladajacyRezerwacje</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a132d389775d595c7068dec668f46efb0" kind="variable"><name>idPobytu</name></member>
+    <member refid="class_hotel_1_1_pobyt_1ab01c80f34a7f1efa33f0e627fb56ecca" kind="variable"><name>liczbaPorzadkowa</name></member>
+    <member refid="class_hotel_1_1_pobyt_1ab4b3b0da8ebc063ad7dd41164f67b902" kind="property"><name>Poczatek</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a118f59540f0edae131c6673432d1bc0a" kind="property"><name>Koniec</name></member>
+    <member refid="class_hotel_1_1_pobyt_1aecfa1617d69fbb32b4568f8bca222fce" kind="property"><name>Pokoj</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a153c8eb476494b13a1cbe0a7423c60d1" kind="property"><name>PozostaliGoscie</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a0d5421ad74339d0dccd69dc32a7776ec" kind="property"><name>ZakladajacyRezerwacje</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a31b8913a70e16ba0ad5ddc36e40d64c4" kind="property"><name>IdPobytu</name></member>
+    <member refid="class_hotel_1_1_pobyt_1afa642905d6db077e9a19598cf479be8a" kind="function"><name>Pobyt</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a038323a723c494c662e92e842985f14b" kind="function"><name>Pobyt</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a72d7258ad50b6fa8891d5bd17497761b" kind="function"><name>Pobyt</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a8d2d9feb8d539244afb1029a6e4a03d4" kind="function"><name>Dlugosc</name></member>
+    <member refid="class_hotel_1_1_pobyt_1ae27f20c91c68d3f9f057035afcc45d86" kind="function"><name>LiczbaOsob</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a13826a7918e8477b73d51aaa4d4ca038" kind="function"><name>Cena</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a50a3b25bf70aa76813e93312b2567be2" kind="function"><name>CzyNachodzi</name></member>
+    <member refid="class_hotel_1_1_pobyt_1a780b0f29ff57911b320230cc811fd77c" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_podglad_gosci" kind="class"><name>Hotel::PodgladGosci</name>
+    <member refid="class_hotel_1_1_podglad_gosci_1acdf501e71b4e08eaa193f78226e5350d" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_podglad_gosci_1a6fa6543ad96f19bcba0e6188c006edd1" kind="function"><name>PodgladGosci</name></member>
+    <member refid="class_hotel_1_1_podglad_gosci_1abeb689510efa8727d1e770d87b60e3e4" kind="function"><name>WypelnijListeGosci</name></member>
+    <member refid="class_hotel_1_1_podglad_gosci_1acc5eb7de7bcdc9f4387ba841eb87d481" kind="function"><name>Filtruj_Click</name></member>
+    <member refid="class_hotel_1_1_podglad_gosci_1a032afbc9a39ede9606f8844985bacebc" kind="function"><name>Odswiez_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_podglad_pokoi" kind="class"><name>Hotel::PodgladPokoi</name>
+    <member refid="class_hotel_1_1_podglad_pokoi_1a017ac89c99495189da1d5dadeb20fadc" kind="variable"><name>listaPokoi</name></member>
+    <member refid="class_hotel_1_1_podglad_pokoi_1ae96a647e9b1715e671d46bd654bb8ccc" kind="variable"><name>rejestrGosci</name></member>
+    <member refid="class_hotel_1_1_podglad_pokoi_1a6975ef0abf30bb726c7428413a1d0bef" kind="function"><name>PodgladPokoi</name></member>
+    <member refid="class_hotel_1_1_podglad_pokoi_1aebe81108ddb4032b3fc0611248b8f3ba" kind="function"><name>WypelnijListePokoi</name></member>
+    <member refid="class_hotel_1_1_podglad_pokoi_1a901927091f7e0d3adcb3c0431bda4cd8" kind="function"><name>Filtruj_Click</name></member>
+    <member refid="class_hotel_1_1_podglad_pokoi_1abbd234c6877e723ce4fea33272b1cef3" kind="function"><name>Odswiez_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_podglad_pracownikow" kind="class"><name>Hotel::PodgladPracownikow</name>
+    <member refid="class_hotel_1_1_podglad_pracownikow_1a89cfe3616dcafa84c75aaff4efebccd5" kind="variable"><name>kadra</name></member>
+    <member refid="class_hotel_1_1_podglad_pracownikow_1adb12c1e6e4c3a496f416db1a2ca4020e" kind="function"><name>PodgladPracownikow</name></member>
+    <member refid="class_hotel_1_1_podglad_pracownikow_1a9755419cb3ac2cebbe4bf1559cc75b53" kind="function"><name>WypelnijListePracownikow</name></member>
+    <member refid="class_hotel_1_1_podglad_pracownikow_1a0c3fec612bcbbe6450054f1174625635" kind="function"><name>Filtruj_Click</name></member>
+    <member refid="class_hotel_1_1_podglad_pracownikow_1aa6a4f0c4ac3a637518127e9ba2f754ff" kind="function"><name>Odswiez_Click</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_pokoj" kind="class"><name>Hotel::Pokoj</name>
+    <member refid="class_hotel_1_1_pokoj_1a5b307479819f2c7c093130f8c00d82eb" kind="variable"><name>budynek</name></member>
+    <member refid="class_hotel_1_1_pokoj_1ae15e32c37281fa3b6505bb77a474e7e1" kind="variable"><name>pietro</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a4cfa75795685eaa5380cce04c9dd534b" kind="variable"><name>nrPokoju</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a74da214c93151c9b6e9be53b67169a58" kind="variable"><name>idPokoju</name></member>
+    <member refid="class_hotel_1_1_pokoj_1aa5d8334088355cbe2c1d6134e51ce2ec" kind="variable"><name>rozmiar</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a8510194cf75c5dbf5ff718006c0fffbc" kind="variable"><name>idPobytow</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a22d29a8d22a4ca3cb83dae15bbbf1ccc" kind="variable"><name>liczbaPokoi</name></member>
+    <member refid="class_hotel_1_1_pokoj_1ac3aa1109f1b7b98e4388d0cf9ea3bf4d" kind="property"><name>Budynek</name></member>
+    <member refid="class_hotel_1_1_pokoj_1afffbc648568fd5f7933f1f451d97c6e2" kind="property"><name>Pietro</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a16110c7c6c4437e4e4f04e236058c66b" kind="property"><name>NrPokoju</name></member>
+    <member refid="class_hotel_1_1_pokoj_1ab8b3930ac26e43bb29f84fdfd38b7983" kind="property"><name>IdPokoju</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a0f1f2916e9f9168ba47be819cdf7ce24" kind="property"><name>Rozmiar</name></member>
+    <member refid="class_hotel_1_1_pokoj_1acfabea1a8d1dbc5339d27700296b0e56" kind="property"><name>IdPobytow</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a04e5ddec13c80a4f9019b913bcbb2320" kind="function"><name>Pokoj</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a0c0dab7ec037e06b5c621dca5e54a92c" kind="function"><name>Pokoj</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a934a1d701557d8f71fc13a19ae7ee226" kind="function"><name>Pokoj</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a3f4ba34935b514b388aef85b34dd12bc" kind="function"><name>DodajIdPobytu</name></member>
+    <member refid="class_hotel_1_1_pokoj_1ad20c649385c07fbcd9fed7c4ec603b68" kind="function"><name>ListaPobytowWPokoju</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a466631bd9c6f2fc6b7c491a5a6250de5" kind="function"><name>ZapisXml</name></member>
+    <member refid="class_hotel_1_1_pokoj_1a351711f5755ec27879da193ef47dd766" kind="function"><name>ToString</name></member>
+    <member refid="class_hotel_1_1_pokoj_1ab85fbccb02fc7afd5278d413fa0513a6" kind="function"><name>CompareTo</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_pracownik" kind="class"><name>Hotel::Pracownik</name>
+    <member refid="class_hotel_1_1_pracownik_1a87abefea25f74bc168dbf34ad9202672" kind="variable"><name>wydzial</name></member>
+    <member refid="class_hotel_1_1_pracownik_1a09a82d41fc6510c4c391b443438bc127" kind="variable"><name>dataWstapienia</name></member>
+    <member refid="class_hotel_1_1_pracownik_1a5c0d328f4a6da024931d7b13b46467a8" kind="property"><name>Wydzial</name></member>
+    <member refid="class_hotel_1_1_pracownik_1ad8fffcb035e3111b11222cb4c1a8be52" kind="property"><name>DataWstapienia</name></member>
+    <member refid="class_hotel_1_1_pracownik_1a35f8c6d6066e82c8db073cf88dd4cb21" kind="function"><name>Pracownik</name></member>
+    <member refid="class_hotel_1_1_pracownik_1a28f03fb17da04fd828c8195ec8e91cd3" kind="function"><name>Pracownik</name></member>
+    <member refid="class_hotel_1_1_pracownik_1a051a32fb792e48f9eb531e7eb0fbcf8a" kind="function"><name>LataDoswiadczenia</name></member>
+    <member refid="class_hotel_1_1_pracownik_1afa27629075eb849aab0994bac7317b0f" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_rejestr_gosci" kind="class"><name>Hotel::RejestrGosci</name>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a0d20008c2f7b57567eeae72107651776" kind="variable"><name>listaGosci</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1ac3e34b5ba2492665807c238047e3a208" kind="property"><name>ListaGosci</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a55375bf6c73a7e0187e0de72aa1950ed" kind="function"><name>RejestrGosci</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a4e38135da2a443864992cb326d12db2f" kind="function"><name>DodajGoscia</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a889b345f150c46bf2a631cf3506f9c02" kind="function"><name>ZapisXml</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a83d65d875389d251b7c844b4c46e57b0" kind="function"><name>ListaWszystkichPobytow</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1af377dc384575d29b04f240ad340a22ef" kind="function"><name>FiltrujGosciPoIdPobytu</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a8892beb228aaf7d283bacb0adf650d2e" kind="function"><name>FiltrujGosciPoImieniu</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a719e01e8c4cbe22691dac1779ad1b3a5" kind="function"><name>FiltrujGosciPoNazwisku</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a2c5f9b408a5819df68e3353f4439b624" kind="function"><name>FiltrujGosciPoDacie</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1ab6f06cbe0c55f129b0c1864209473ae0" kind="function"><name>FiltrujPobyty</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1a38f4fd36b65428c43021c45707659a21" kind="function"><name>ToString</name></member>
+    <member refid="class_hotel_1_1_rejestr_gosci_1ac9f851bbf1d2882ec12217fbf1361288" kind="function"><name>OdczytXml</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_tworzenie_nowego_pokoju_exception" kind="class"><name>Hotel::TworzenieNowegoPokojuException</name>
+    <member refid="class_hotel_1_1_tworzenie_nowego_pokoju_exception_1a95671d1a3a8a55556fd7fa2be724c841" kind="function"><name>TworzenieNowegoPokojuException</name></member>
+  </compound>
+  <compound refid="class_hotel_1_1_zly_pesel_exception" kind="class"><name>Hotel::ZlyPeselException</name>
+    <member refid="class_hotel_1_1_zly_pesel_exception_1a5b8f20ffa2f3896bba2148fabfcf7856" kind="function"><name>ZlyPeselException</name></member>
+  </compound>
+  <compound refid="namespace_hotel" kind="namespace"><name>Hotel</name>
+    <member refid="namespace_hotel_1a8e309238ae66ade696be7c14ccba682e" kind="enum"><name>EnumWydzial</name></member>
+    <member refid="namespace_hotel_1a8e309238ae66ade696be7c14ccba682ea37cf3c498f6148341b69c8877d7da5d7" kind="enumvalue"><name>Recepcja</name></member>
+    <member refid="namespace_hotel_1a8e309238ae66ade696be7c14ccba682ea44fd6389cefab81d281b501ecdbcc7f0" kind="enumvalue"><name>Housekeeping</name></member>
+    <member refid="namespace_hotel_1a8e309238ae66ade696be7c14ccba682ea1866a87ea31cb7b7c1d96afa864886ac" kind="enumvalue"><name>Kuchnia</name></member>
+    <member refid="namespace_hotel_1a8e309238ae66ade696be7c14ccba682eae4d69e9d0f0b835827d9b31b6f953213" kind="enumvalue"><name>Administracja</name></member>
+    <member refid="namespace_hotel_1a0e6632ebfa1708fd0c6eb1f251bbbe4a" kind="enum"><name>EnumBudynek</name></member>
+    <member refid="namespace_hotel_1a0e6632ebfa1708fd0c6eb1f251bbbe4aa7fc56270e7a70fa81a5935b72eacbe29" kind="enumvalue"><name>A</name></member>
+    <member refid="namespace_hotel_1a0e6632ebfa1708fd0c6eb1f251bbbe4aa9d5ed678fe57bcca610140957afab571" kind="enumvalue"><name>B</name></member>
+    <member refid="namespace_hotel_1a0e6632ebfa1708fd0c6eb1f251bbbe4aa0d61f8370cad1d412f80b84d143e1257" kind="enumvalue"><name>C</name></member>
+    <member refid="namespace_hotel_1a0e6632ebfa1708fd0c6eb1f251bbbe4aaf623e75af30e62bbd73d6df5b50bb7b5" kind="enumvalue"><name>D</name></member>
+    <member refid="namespace_hotel_1ac73ea7077382f5960a4ac6da266c1ab2" kind="enum"><name>EnumPietro</name></member>
+    <member refid="namespace_hotel_1ac73ea7077382f5960a4ac6da266c1ab2a464ef04fd1caf953ca03e257fc21218b" kind="enumvalue"><name>pierwsze</name></member>
+    <member refid="namespace_hotel_1ac73ea7077382f5960a4ac6da266c1ab2ae651c787118c31ed66eeb2337d14dd2f" kind="enumvalue"><name>drugie</name></member>
+    <member refid="namespace_hotel_1ac73ea7077382f5960a4ac6da266c1ab2a6973a2915888ca673f0b903fc40a64a2" kind="enumvalue"><name>trzecie</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104da" kind="enum"><name>EnumNrPokoju</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104daa185f3471e82b6d1b8f98a9e55bc4c252" kind="enumvalue"><name>jeden</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104daaf495be79bad3d692686f63d43283c1f8" kind="enumvalue"><name>dwa</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104daade4da443d5ba19af074a00ea8ae5d780" kind="enumvalue"><name>trzy</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104daa35b826c5f97e42fee928d5c1e68bb423" kind="enumvalue"><name>cztery</name></member>
+    <member refid="namespace_hotel_1ada0499feeebfbdd153f8eafeb71104daa4a3530d4735c438fc5b562224152a782" kind="enumvalue"><name>piec</name></member>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_visual_basic" kind="namespace"><name>Microsoft::VisualBasic</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_configuration" kind="namespace"><name>System::Configuration</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics_1_1_eventing_1_1_reader" kind="namespace"><name>System::Diagnostics::Eventing::Reader</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text_1_1_regular_expressions" kind="namespace"><name>System::Text::RegularExpressions</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_data" kind="namespace"><name>System::Windows::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_documents" kind="namespace"><name>System::Windows::Documents</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_imaging" kind="namespace"><name>System::Windows::Media::Imaging</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_navigation" kind="namespace"><name>System::Windows::Navigation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_serialization" kind="namespace"><name>System::Xml::Serialization</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_dodaj_goscia_8xaml_8cs" kind="file"><name>DodajGoscia.xaml.cs</name>
+  </compound>
+  <compound refid="_dodaj_rezerwacje_8xaml_8cs" kind="file"><name>DodajRezerwacje.xaml.cs</name>
+  </compound>
+  <compound refid="_lista_pobytow_8xaml_8cs" kind="file"><name>ListaPobytow.xaml.cs</name>
+  </compound>
+  <compound refid="_main_window_8xaml_8cs" kind="file"><name>MainWindow.xaml.cs</name>
+  </compound>
+  <compound refid="_osoba_8cs" kind="file"><name>Osoba.cs</name>
+  </compound>
+  <compound refid="_pobyt_8cs" kind="file"><name>Pobyt.cs</name>
+  </compound>
+  <compound refid="_podglad_gosci_8xaml_8cs" kind="file"><name>PodgladGosci.xaml.cs</name>
+  </compound>
+  <compound refid="_podglad_pokoi_8xaml_8cs" kind="file"><name>PodgladPokoi.xaml.cs</name>
+  </compound>
+  <compound refid="_podglad_pracownikow_8xaml_8cs" kind="file"><name>PodgladPracownikow.xaml.cs</name>
+  </compound>
+  <compound refid="_pokoj_8cs" kind="file"><name>Pokoj.cs</name>
+    <member refid="_pokoj_8cs_1ae0bde35e121595aadebc7ba6db230980" kind="property"><name>Pokój</name></member>
+    <member refid="_pokoj_8cs_1a2b73a96b8486dd1cd60b8f3b941f3cfa" kind="property"><name>n</name></member>
+    <member refid="_pokoj_8cs_1a1f172a9c93346692019d6b6fea72f47b" kind="function"><name>[instance initializer]</name></member>
+  </compound>
+</doxygenindex>

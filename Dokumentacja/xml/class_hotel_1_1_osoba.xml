@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_osoba" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::Osoba</compoundname>
+    <derivedcompoundref refid="class_hotel_1_1_gosc" prot="public" virt="non-virtual">Hotel.Gosc</derivedcompoundref>
+    <derivedcompoundref refid="class_hotel_1_1_pracownik" prot="public" virt="non-virtual">Hotel.Pracownik</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_osoba_1a80443122c2526e9971bfc59c7febe16b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.imie</definition>
+        <argsstring></argsstring>
+        <name>imie</name>
+        <qualifiedname>Hotel.Osoba.imie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="108" column="16" bodyfile="Osoba.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_osoba_1a384c8fe20a1a44592e7b5ac9f85227fa" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.nazwisko</definition>
+        <argsstring></argsstring>
+        <name>nazwisko</name>
+        <qualifiedname>Hotel.Osoba.nazwisko</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="109" column="16" bodyfile="Osoba.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_osoba_1a87c0783b831043b53abcb893d4505780" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.pesel</definition>
+        <argsstring></argsstring>
+        <name>pesel</name>
+        <qualifiedname>Hotel.Osoba.pesel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="110" column="16" bodyfile="Osoba.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_osoba_1affc2537ea78e2f6a0626467586cedea4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hotel_1_1_adres" kindref="compound">Adres</ref></type>
+        <definition>Adres Hotel.Osoba.adres</definition>
+        <argsstring></argsstring>
+        <name>adres</name>
+        <qualifiedname>Hotel.Osoba.adres</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="111" column="15" bodyfile="Osoba.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_osoba_1a5bdf59c3c01f413cb217b536d7c3271c" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Hotel.Osoba.dataUrodzenia</definition>
+        <argsstring></argsstring>
+        <name>dataUrodzenia</name>
+        <qualifiedname>Hotel.Osoba.dataUrodzenia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="112" column="18" bodyfile="Osoba.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hotel_1_1_osoba_1a732f21c5b9218b4f2553abd2cf4a38b6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.Imie</definition>
+        <argsstring></argsstring>
+        <name>Imie</name>
+        <qualifiedname>Hotel.Osoba.Imie</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="116" column="23" bodyfile="Osoba.cs" bodystart="116" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_osoba_1a418677a4481520508723bd61610f33df" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.Nazwisko</definition>
+        <argsstring></argsstring>
+        <name>Nazwisko</name>
+        <qualifiedname>Hotel.Osoba.Nazwisko</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="117" column="23" bodyfile="Osoba.cs" bodystart="117" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_osoba_1a32ac96a37a2193af81a73814614dc980" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DateTime</type>
+        <definition>DateTime Hotel.Osoba.DataUrodzenia</definition>
+        <argsstring></argsstring>
+        <name>DataUrodzenia</name>
+        <qualifiedname>Hotel.Osoba.DataUrodzenia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="118" column="25" bodyfile="Osoba.cs" bodystart="118" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_osoba_1ac90364430dc2b28afe405e7a6aeb4774" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hotel.Osoba.Pesel</definition>
+        <argsstring></argsstring>
+        <name>Pesel</name>
+        <qualifiedname>Hotel.Osoba.Pesel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="119" column="23" bodyfile="Osoba.cs" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_osoba_1a4da53b1db4be36d970c0e45c0a09c5a9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_hotel_1_1_adres" kindref="compound">Adres</ref></type>
+        <definition>Adres Hotel.Osoba.Adres</definition>
+        <argsstring></argsstring>
+        <name>Adres</name>
+        <qualifiedname>Hotel.Osoba.Adres</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="127" column="22" bodyfile="Osoba.cs" bodystart="127" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_osoba_1a96139007868926ea03ae130d26930f86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.Osoba.Osoba</definition>
+        <argsstring>()</argsstring>
+        <name>Osoba</name>
+        <qualifiedname>Hotel.Osoba.Osoba</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="131" column="16" bodyfile="Osoba.cs" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_osoba_1affca514f4c1969f21a62a84dfbd1e85f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.Osoba.Osoba</definition>
+        <argsstring>(string imie, string nazwisko, string pesel, Adres adres, DateTime dataUrodzenia)</argsstring>
+        <name>Osoba</name>
+        <qualifiedname>Hotel.Osoba.Osoba</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>imie</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>nazwisko</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>pesel</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hotel_1_1_adres" kindref="compound">Adres</ref></type>
+          <declname>adres</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>dataUrodzenia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="132" column="16" bodyfile="Osoba.cs" bodystart="132" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_osoba_1aa1031b31ba6d831ab8d872c179007d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Hotel.Osoba.Wiek</definition>
+        <argsstring>()</argsstring>
+        <name>Wiek</name>
+        <qualifiedname>Hotel.Osoba.Wiek</qualifiedname>
+        <briefdescription>
+<para>Metoda ma za zadanie odpowiedzenie na pytanie o wiek osoby. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Wiek osoby w latach. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="148" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_osoba_1a977d861d8da0aa6eed04148c315bde99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Hotel.Osoba.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Hotel.Osoba.ToString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Osoba.cs" line="149" column="32" bodyfile="Osoba.cs" bodystart="149" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Osoba reprezentuje informacje na temat osoby w zakresie i kontekście w jakim wymaga tego obsługa hotelu. Jest klasą abstrakcyjną. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hotel.Osoba</label>
+        <link refid="class_hotel_1_1_osoba"/>
+      </node>
+      <node id="2">
+        <label>Hotel.Gosc</label>
+        <link refid="class_hotel_1_1_gosc"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Hotel.Pracownik</label>
+        <link refid="class_hotel_1_1_pracownik"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Osoba.cs" line="105" column="21" bodyfile="Osoba.cs" bodystart="106" bodyend="160"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_osoba_1affc2537ea78e2f6a0626467586cedea4" prot="private" virt="non-virtual"><scope>Hotel::Osoba</scope><name>adres</name></member>
+      <member refid="class_hotel_1_1_osoba_1a4da53b1db4be36d970c0e45c0a09c5a9" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Adres</name></member>
+      <member refid="class_hotel_1_1_osoba_1a5bdf59c3c01f413cb217b536d7c3271c" prot="private" virt="non-virtual"><scope>Hotel::Osoba</scope><name>dataUrodzenia</name></member>
+      <member refid="class_hotel_1_1_osoba_1a32ac96a37a2193af81a73814614dc980" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>DataUrodzenia</name></member>
+      <member refid="class_hotel_1_1_osoba_1a80443122c2526e9971bfc59c7febe16b" prot="private" virt="non-virtual"><scope>Hotel::Osoba</scope><name>imie</name></member>
+      <member refid="class_hotel_1_1_osoba_1a732f21c5b9218b4f2553abd2cf4a38b6" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Imie</name></member>
+      <member refid="class_hotel_1_1_osoba_1a384c8fe20a1a44592e7b5ac9f85227fa" prot="private" virt="non-virtual"><scope>Hotel::Osoba</scope><name>nazwisko</name></member>
+      <member refid="class_hotel_1_1_osoba_1a418677a4481520508723bd61610f33df" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Nazwisko</name></member>
+      <member refid="class_hotel_1_1_osoba_1a96139007868926ea03ae130d26930f86" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Osoba</name></member>
+      <member refid="class_hotel_1_1_osoba_1affca514f4c1969f21a62a84dfbd1e85f" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Osoba</name></member>
+      <member refid="class_hotel_1_1_osoba_1a87c0783b831043b53abcb893d4505780" prot="private" virt="non-virtual"><scope>Hotel::Osoba</scope><name>pesel</name></member>
+      <member refid="class_hotel_1_1_osoba_1ac90364430dc2b28afe405e7a6aeb4774" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Pesel</name></member>
+      <member refid="class_hotel_1_1_osoba_1a977d861d8da0aa6eed04148c315bde99" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>ToString</name></member>
+      <member refid="class_hotel_1_1_osoba_1aa1031b31ba6d831ab8d872c179007d51" prot="public" virt="non-virtual"><scope>Hotel::Osoba</scope><name>Wiek</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

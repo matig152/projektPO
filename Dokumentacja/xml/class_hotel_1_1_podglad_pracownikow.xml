@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_podglad_pracownikow" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::PodgladPracownikow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_podglad_pracownikow_1a89cfe3616dcafa84c75aaff4efebccd5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hotel_1_1_kadra" kindref="compound">Kadra</ref></type>
+        <definition>Kadra Hotel.PodgladPracownikow.kadra</definition>
+        <argsstring></argsstring>
+        <name>kadra</name>
+        <qualifiedname>Hotel.PodgladPracownikow.kadra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PodgladPracownikow.xaml.cs" line="22" column="23" bodyfile="PodgladPracownikow.xaml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_podglad_pracownikow_1adb12c1e6e4c3a496f416db1a2ca4020e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.PodgladPracownikow.PodgladPracownikow</definition>
+        <argsstring>()</argsstring>
+        <name>PodgladPracownikow</name>
+        <qualifiedname>Hotel.PodgladPracownikow.PodgladPracownikow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PodgladPracownikow.xaml.cs" line="24" column="16" bodyfile="PodgladPracownikow.xaml.cs" bodystart="24" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hotel_1_1_podglad_pracownikow_1a9755419cb3ac2cebbe4bf1559cc75b53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.PodgladPracownikow.WypelnijListePracownikow</definition>
+        <argsstring>()</argsstring>
+        <name>WypelnijListePracownikow</name>
+        <qualifiedname>Hotel.PodgladPracownikow.WypelnijListePracownikow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PodgladPracownikow.xaml.cs" line="32" column="22" bodyfile="PodgladPracownikow.xaml.cs" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_podglad_pracownikow_1a0c3fec612bcbbe6450054f1174625635" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.PodgladPracownikow.Filtruj_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Filtruj_Click</name>
+        <qualifiedname>Hotel.PodgladPracownikow.Filtruj_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PodgladPracownikow.xaml.cs" line="37" column="22" bodyfile="PodgladPracownikow.xaml.cs" bodystart="37" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_podglad_pracownikow_1aa6a4f0c4ac3a637518127e9ba2f754ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.PodgladPracownikow.Odswiez_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Odswiez_Click</name>
+        <qualifiedname>Hotel.PodgladPracownikow.Odswiez_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="PodgladPracownikow.xaml.cs" line="54" column="22" bodyfile="PodgladPracownikow.xaml.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logika interakcji dla klasy PodgladPracownikow.xaml. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hotel.PodgladPracownikow</label>
+        <link refid="class_hotel_1_1_podglad_pracownikow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hotel.PodgladPracownikow</label>
+        <link refid="class_hotel_1_1_podglad_pracownikow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="PodgladPracownikow.xaml.cs" line="20" column="19" bodyfile="PodgladPracownikow.xaml.cs" bodystart="21" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_podglad_pracownikow_1a0c3fec612bcbbe6450054f1174625635" prot="private" virt="non-virtual"><scope>Hotel::PodgladPracownikow</scope><name>Filtruj_Click</name></member>
+      <member refid="class_hotel_1_1_podglad_pracownikow_1a89cfe3616dcafa84c75aaff4efebccd5" prot="private" virt="non-virtual"><scope>Hotel::PodgladPracownikow</scope><name>kadra</name></member>
+      <member refid="class_hotel_1_1_podglad_pracownikow_1aa6a4f0c4ac3a637518127e9ba2f754ff" prot="private" virt="non-virtual"><scope>Hotel::PodgladPracownikow</scope><name>Odswiez_Click</name></member>
+      <member refid="class_hotel_1_1_podglad_pracownikow_1adb12c1e6e4c3a496f416db1a2ca4020e" prot="public" virt="non-virtual"><scope>Hotel::PodgladPracownikow</scope><name>PodgladPracownikow</name></member>
+      <member refid="class_hotel_1_1_podglad_pracownikow_1a9755419cb3ac2cebbe4bf1559cc75b53" prot="private" virt="non-virtual"><scope>Hotel::PodgladPracownikow</scope><name>WypelnijListePracownikow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

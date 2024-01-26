@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_lista_pobytow" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::ListaPobytow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_lista_pobytow_1a046802dccb9894ad2f10728b92a57ef2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_hotel_1_1_rejestr_gosci" kindref="compound">RejestrGosci</ref></type>
+        <definition>RejestrGosci Hotel.ListaPobytow.rejestrGosci</definition>
+        <argsstring></argsstring>
+        <name>rejestrGosci</name>
+        <qualifiedname>Hotel.ListaPobytow.rejestrGosci</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaPobytow.xaml.cs" line="22" column="30" bodyfile="ListaPobytow.xaml.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_lista_pobytow_1a1e6839394df430dbe794deb71eabdebd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.ListaPobytow.ListaPobytow</definition>
+        <argsstring>()</argsstring>
+        <name>ListaPobytow</name>
+        <qualifiedname>Hotel.ListaPobytow.ListaPobytow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaPobytow.xaml.cs" line="24" column="16" bodyfile="ListaPobytow.xaml.cs" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hotel_1_1_lista_pobytow_1aa03b8f2841015dc6ac0323e4968a8b40" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.ListaPobytow.WypelnijListePobytow</definition>
+        <argsstring>()</argsstring>
+        <name>WypelnijListePobytow</name>
+        <qualifiedname>Hotel.ListaPobytow.WypelnijListePobytow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaPobytow.xaml.cs" line="31" column="22" bodyfile="ListaPobytow.xaml.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pobytow_1aa3a8df20e714bc816a03799112b760cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.ListaPobytow.Filtruj_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Filtruj_Click</name>
+        <qualifiedname>Hotel.ListaPobytow.Filtruj_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaPobytow.xaml.cs" line="36" column="22" bodyfile="ListaPobytow.xaml.cs" bodystart="36" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pobytow_1a4e3b32decbd2ee8cdbc30f99f944eea9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.ListaPobytow.Odswiez_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Odswiez_Click</name>
+        <qualifiedname>Hotel.ListaPobytow.Odswiez_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaPobytow.xaml.cs" line="53" column="22" bodyfile="ListaPobytow.xaml.cs" bodystart="53" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Logika interakcji dla klasy ListaPobytow.xaml. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hotel.ListaPobytow</label>
+        <link refid="class_hotel_1_1_lista_pobytow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hotel.ListaPobytow</label>
+        <link refid="class_hotel_1_1_lista_pobytow"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="ListaPobytow.xaml.cs" line="20" column="19" bodyfile="ListaPobytow.xaml.cs" bodystart="21" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_lista_pobytow_1aa3a8df20e714bc816a03799112b760cd" prot="private" virt="non-virtual"><scope>Hotel::ListaPobytow</scope><name>Filtruj_Click</name></member>
+      <member refid="class_hotel_1_1_lista_pobytow_1a1e6839394df430dbe794deb71eabdebd" prot="public" virt="non-virtual"><scope>Hotel::ListaPobytow</scope><name>ListaPobytow</name></member>
+      <member refid="class_hotel_1_1_lista_pobytow_1a4e3b32decbd2ee8cdbc30f99f944eea9" prot="private" virt="non-virtual"><scope>Hotel::ListaPobytow</scope><name>Odswiez_Click</name></member>
+      <member refid="class_hotel_1_1_lista_pobytow_1a046802dccb9894ad2f10728b92a57ef2" prot="private" virt="non-virtual"><scope>Hotel::ListaPobytow</scope><name>rejestrGosci</name></member>
+      <member refid="class_hotel_1_1_lista_pobytow_1aa03b8f2841015dc6ac0323e4968a8b40" prot="private" virt="non-virtual"><scope>Hotel::ListaPobytow</scope><name>WypelnijListePobytow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

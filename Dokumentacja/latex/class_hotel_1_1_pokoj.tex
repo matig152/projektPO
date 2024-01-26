@@ -1,0 +1,135 @@
+\hypertarget{class_hotel_1_1_pokoj}{}\doxysection{Hotel.\+Pokoj Class Reference}
+\label{class_hotel_1_1_pokoj}\index{Hotel.Pokoj@{Hotel.Pokoj}}
+
+
+Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji.  
+
+
+Inheritance diagram for Hotel.\+Pokoj\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hotel_1_1_pokoj}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a934a1d701557d8f71fc13a19ae7ee226}\label{class_hotel_1_1_pokoj_a934a1d701557d8f71fc13a19ae7ee226}} 
+{\bfseries Pokoj} (Enum\+Budynek budynek, Enum\+Pietro pietro, Enum\+Nr\+Pokoju nr\+Pokoju, int rozmiar)
+\item 
+void \mbox{\hyperlink{class_hotel_1_1_pokoj_a3f4ba34935b514b388aef85b34dd12bc}{Dodaj\+Id\+Pobytu}} (string p)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu dodanie ID pobytu do historii pokoju. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pobyt}{Pobyt}} $>$ \mbox{\hyperlink{class_hotel_1_1_pokoj_ad20c649385c07fbcd9fed7c4ec603b68}{Lista\+Pobytow\+WPokoju}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hotel_1_1_pokoj_a466631bd9c6f2fc6b7c491a5a6250de5}{Zapis\+Xml}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML... \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_hotel_1_1_pokoj_a351711f5755ec27879da193ef47dd766}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zwrócenie informacji na temat pokoju. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_hotel_1_1_pokoj_ab85fbccb02fc7afd5278d413fa0513a6}{Compare\+To}} (\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}}? other)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu ustalenie kolejności w procesie porównywania. Sortowanie będzie następować rosnąco według ID pokoju. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_ac3aa1109f1b7b98e4388d0cf9ea3bf4d}\label{class_hotel_1_1_pokoj_ac3aa1109f1b7b98e4388d0cf9ea3bf4d}} 
+Enum\+Budynek {\bfseries Budynek}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_afffbc648568fd5f7933f1f451d97c6e2}\label{class_hotel_1_1_pokoj_afffbc648568fd5f7933f1f451d97c6e2}} 
+Enum\+Pietro {\bfseries Pietro}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a16110c7c6c4437e4e4f04e236058c66b}\label{class_hotel_1_1_pokoj_a16110c7c6c4437e4e4f04e236058c66b}} 
+Enum\+Nr\+Pokoju {\bfseries Nr\+Pokoju}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_ab8b3930ac26e43bb29f84fdfd38b7983}\label{class_hotel_1_1_pokoj_ab8b3930ac26e43bb29f84fdfd38b7983}} 
+string {\bfseries Id\+Pokoju}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a0f1f2916e9f9168ba47be819cdf7ce24}\label{class_hotel_1_1_pokoj_a0f1f2916e9f9168ba47be819cdf7ce24}} 
+int {\bfseries Rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_acfabea1a8d1dbc5339d27700296b0e56}\label{class_hotel_1_1_pokoj_acfabea1a8d1dbc5339d27700296b0e56}} 
+List$<$ string $>$ {\bfseries Id\+Pobytow}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_ab85fbccb02fc7afd5278d413fa0513a6}\label{class_hotel_1_1_pokoj_ab85fbccb02fc7afd5278d413fa0513a6}} 
+\index{Hotel.Pokoj@{Hotel.Pokoj}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!Hotel.Pokoj@{Hotel.Pokoj}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int Hotel.\+Pokoj.\+Compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}}?}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu ustalenie kolejności w procesie porównywania. Sortowanie będzie następować rosnąco według ID pokoju. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wartość -\/1, 0 lub 1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a3f4ba34935b514b388aef85b34dd12bc}\label{class_hotel_1_1_pokoj_a3f4ba34935b514b388aef85b34dd12bc}} 
+\index{Hotel.Pokoj@{Hotel.Pokoj}!DodajIdPobytu@{DodajIdPobytu}}
+\index{DodajIdPobytu@{DodajIdPobytu}!Hotel.Pokoj@{Hotel.Pokoj}}
+\doxysubsubsection{\texorpdfstring{DodajIdPobytu()}{DodajIdPobytu()}}
+{\footnotesize\ttfamily void Hotel.\+Pokoj.\+Dodaj\+Id\+Pobytu (\begin{DoxyParamCaption}\item[{string}]{p }\end{DoxyParamCaption})}
+
+
+
+Metoda ma na celu dodanie ID pobytu do historii pokoju. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & ID pobytu. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_ad20c649385c07fbcd9fed7c4ec603b68}\label{class_hotel_1_1_pokoj_ad20c649385c07fbcd9fed7c4ec603b68}} 
+\index{Hotel.Pokoj@{Hotel.Pokoj}!ListaPobytowWPokoju@{ListaPobytowWPokoju}}
+\index{ListaPobytowWPokoju@{ListaPobytowWPokoju}!Hotel.Pokoj@{Hotel.Pokoj}}
+\doxysubsubsection{\texorpdfstring{ListaPobytowWPokoju()}{ListaPobytowWPokoju()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hotel_1_1_pobyt}{Pobyt}} $>$ Hotel.\+Pokoj.\+Lista\+Pobytow\+WPokoju (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju. 
+
+\begin{DoxyReturn}{Returns}
+Lista pobytów. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a351711f5755ec27879da193ef47dd766}\label{class_hotel_1_1_pokoj_a351711f5755ec27879da193ef47dd766}} 
+\index{Hotel.Pokoj@{Hotel.Pokoj}!ToString@{ToString}}
+\index{ToString@{ToString}!Hotel.Pokoj@{Hotel.Pokoj}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Hotel.\+Pokoj.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zwrócenie informacji na temat pokoju. 
+
+\begin{DoxyReturn}{Returns}
+Tekst. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_pokoj_a466631bd9c6f2fc6b7c491a5a6250de5}\label{class_hotel_1_1_pokoj_a466631bd9c6f2fc6b7c491a5a6250de5}} 
+\index{Hotel.Pokoj@{Hotel.Pokoj}!ZapisXml@{ZapisXml}}
+\index{ZapisXml@{ZapisXml}!Hotel.Pokoj@{Hotel.Pokoj}}
+\doxysubsubsection{\texorpdfstring{ZapisXml()}{ZapisXml()}}
+{\footnotesize\ttfamily void Hotel.\+Pokoj.\+Zapis\+Xml (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & ... o podanej nazwie. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pokoj.\+cs\end{DoxyCompactItemize}

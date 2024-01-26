@@ -1,0 +1,430 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_lista_pokoi" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::ListaPokoi</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_lista_pokoi_1a724cf658b2407bdfb641893a54d1dcf4" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref> &gt;</type>
+        <definition>List&lt;Pokoj&gt; Hotel.ListaPokoi.pokoje</definition>
+        <argsstring></argsstring>
+        <name>pokoje</name>
+        <qualifiedname>Hotel.ListaPokoi.pokoje</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="152" column="21" bodyfile="Pokoj.cs" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1ad89b906f23fea7606421b9ed30b40dd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.ListaPokoi.ListaPokoi</definition>
+        <argsstring>()</argsstring>
+        <name>ListaPokoi</name>
+        <qualifiedname>Hotel.ListaPokoi.ListaPokoi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="159" column="16" bodyfile="Pokoj.cs" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1a84fbab98c2c0126072479bb73b238426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.ListaPokoi.ListaPokoi</definition>
+        <argsstring>(List&lt; Pokoj &gt; lista)</argsstring>
+        <name>ListaPokoi</name>
+        <qualifiedname>Hotel.ListaPokoi.ListaPokoi</qualifiedname>
+        <param>
+          <type>List&lt; <ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref> &gt;</type>
+          <declname>lista</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="160" column="16" bodyfile="Pokoj.cs" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1ac95cb4df5ee53e1c25a675599722309b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref></type>
+        <definition>Pokoj Hotel.ListaPokoi.WybierzPokoj</definition>
+        <argsstring>(string idpokoju)</argsstring>
+        <name>WybierzPokoj</name>
+        <qualifiedname>Hotel.ListaPokoi.WybierzPokoj</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>idpokoju</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu wybór pokoju o podanym ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idpokoju</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID pokoju. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pokój. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BrakPokojuException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="171" column="22" bodyfile="Pokoj.cs" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1a6b7651dabbc3b01e93e2cf4513044cb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref>?</type>
+        <definition>Pokoj? Hotel.ListaPokoi.WybierzPokojAutomatycznie</definition>
+        <argsstring>(int rozmiar, DateTime poczatek, DateTime koniec)</argsstring>
+        <name>WybierzPokojAutomatycznie</name>
+        <qualifiedname>Hotel.ListaPokoi.WybierzPokojAutomatycznie</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rozmiar</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>poczatek</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>koniec</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu wybranie pokoju w sposób automatyczny (jeśli jest to możliwe). Przyjmuje informacje o: </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rozmiar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- liczbie gości, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poczatek</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- początku trwanie planowanego pobytu, </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>koniec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- końcu planowanego pobytu.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pokój, który spełnia podane warunki, jeśli ten istnieje. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="185" column="22" bodyfile="Pokoj.cs" bodystart="185" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1a14dbccf3f76cd72de773989d95bc088a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.ListaPokoi.ZapisXml</definition>
+        <argsstring>(string nazwaPliku)</argsstring>
+        <name>ZapisXml</name>
+        <qualifiedname>Hotel.ListaPokoi.ZapisXml</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nazwaPliku</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu dokonanie zapisu informacji zawartych w instancji klasy ListaPokoi do pliku XML... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>... o podanej nazwie. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="304" column="21" bodyfile="Pokoj.cs" bodystart="304" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1a820b1925f4128d352acced005ed57318" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Hotel.ListaPokoi.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Hotel.ListaPokoi.ToString</qualifiedname>
+        <briefdescription>
+<para>Metoda ma na celu zwrócenie informacji na temat pokoi znajdujących się w liście. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tekst. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="327" column="32" bodyfile="Pokoj.cs" bodystart="327" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1a42281f95cb24d4f86282b400ef1f78bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref></type>
+        <definition>Pokoj Hotel.ListaPokoi.ZnajdzWolnyPokoj</definition>
+        <argsstring>(int liczbaOsob)</argsstring>
+        <name>ZnajdzWolnyPokoj</name>
+        <qualifiedname>Hotel.ListaPokoi.ZnajdzWolnyPokoj</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>liczbaOsob</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu znalezienie wolengo pokoju o podanej ilości osób. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>liczbaOsob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ilość osób. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pokój. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BrakPokojuException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="340" column="22" bodyfile="Pokoj.cs" bodystart="340" bodyend="345"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1aa1700b4d1d145004f55030ac01ca5d09" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref> &gt;</type>
+        <definition>static List&lt; Pokoj &gt; Hotel.ListaPokoi.FiltrujPokojePoGosciach</definition>
+        <argsstring>(Gosc gosc, RejestrGosci rejestr)</argsstring>
+        <name>FiltrujPokojePoGosciach</name>
+        <qualifiedname>Hotel.ListaPokoi.FiltrujPokojePoGosciach</qualifiedname>
+        <param>
+          <type><ref refid="class_hotel_1_1_gosc" kindref="compound">Gosc</ref></type>
+          <declname>gosc</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hotel_1_1_rejestr_gosci" kindref="compound">RejestrGosci</ref></type>
+          <declname>rejestr</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma za zadanie znaleźć pokoje w podanym rejestrze, w których bytował, bytuje lub bytował będzie podany gość. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gosc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gość. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rejestr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rejstr gości. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista pokoi. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="223" column="28" bodyfile="Pokoj.cs" bodystart="223" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1ad281e8720277083161f018a83c4b9b19" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref> &gt;</type>
+        <definition>static List&lt; Pokoj &gt; Hotel.ListaPokoi.FiltrujPokojePoDacie</definition>
+        <argsstring>(DateTime data, RejestrGosci rejestr)</argsstring>
+        <name>FiltrujPokojePoDacie</name>
+        <qualifiedname>Hotel.ListaPokoi.FiltrujPokojePoDacie</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hotel_1_1_rejestr_gosci" kindref="compound">RejestrGosci</ref></type>
+          <declname>rejestr</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu znalezienie pokoi w podanym rejestrze, które są okupowane w podanym czasie (pojedyncza data). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rejestr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rejestr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista pokoi. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="250" column="28" bodyfile="Pokoj.cs" bodystart="250" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1af2e015f6b7c50b4595cb57ef73a1014d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref> &gt;</type>
+        <definition>static List&lt; Pokoj &gt; Hotel.ListaPokoi.PokojeZajeteWPodanymCzasie</definition>
+        <argsstring>(DateTime poczatek, DateTime koniec, RejestrGosci rejestr)</argsstring>
+        <name>PokojeZajeteWPodanymCzasie</name>
+        <qualifiedname>Hotel.ListaPokoi.PokojeZajeteWPodanymCzasie</qualifiedname>
+        <param>
+          <type>DateTime</type>
+          <declname>poczatek</declname>
+        </param>
+        <param>
+          <type>DateTime</type>
+          <declname>koniec</declname>
+        </param>
+        <param>
+          <type><ref refid="class_hotel_1_1_rejestr_gosci" kindref="compound">RejestrGosci</ref></type>
+          <declname>rejestr</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu znalezienie pokoi w podanym rejestrze, które w podanym zakresie czasu są okupowane. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>poczatek</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Początkowa data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>koniec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data końcowa. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rejestr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rejestr. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista pokoi. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="276" column="28" bodyfile="Pokoj.cs" bodystart="276" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_lista_pokoi_1ac29b4bc13d1ed0eaec5357868f8f7b2d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>? <ref refid="class_hotel_1_1_lista_pokoi" kindref="compound">ListaPokoi</ref></type>
+        <definition>static ? ListaPokoi Hotel.ListaPokoi.OdczytXml</definition>
+        <argsstring>(string nazwaPliku)</argsstring>
+        <name>OdczytXml</name>
+        <qualifiedname>Hotel.ListaPokoi.OdczytXml</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nazwaPliku</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu odczyt informacji zapisanych jako lista pokoi z pliku XML... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>... o podanej nazwie. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista pokoi. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="316" column="34" bodyfile="Pokoj.cs" bodystart="316" bodyend="321"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa ListaPokoi zawiera informacje na temat zagreogwanej ilości pokoi i pozwala dokonywać operacji na tychże. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Pokoj.cs" line="149" column="11" bodyfile="Pokoj.cs" bodystart="150" bodyend="347"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_lista_pokoi_1ad281e8720277083161f018a83c4b9b19" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>FiltrujPokojePoDacie</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1aa1700b4d1d145004f55030ac01ca5d09" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>FiltrujPokojePoGosciach</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1ad89b906f23fea7606421b9ed30b40dd6" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>ListaPokoi</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a84fbab98c2c0126072479bb73b238426" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>ListaPokoi</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1ac29b4bc13d1ed0eaec5357868f8f7b2d" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>OdczytXml</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a724cf658b2407bdfb641893a54d1dcf4" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>pokoje</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1af2e015f6b7c50b4595cb57ef73a1014d" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>PokojeZajeteWPodanymCzasie</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a820b1925f4128d352acced005ed57318" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>ToString</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1ac95cb4df5ee53e1c25a675599722309b" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>WybierzPokoj</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a6b7651dabbc3b01e93e2cf4513044cb5" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>WybierzPokojAutomatycznie</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a14dbccf3f76cd72de773989d95bc088a" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>ZapisXml</name></member>
+      <member refid="class_hotel_1_1_lista_pokoi_1a42281f95cb24d4f86282b400ef1f78bb" prot="public" virt="non-virtual"><scope>Hotel::ListaPokoi</scope><name>ZnajdzWolnyPokoj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

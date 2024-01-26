@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_brak_pokoju_exception" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::BrakPokojuException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_brak_pokoju_exception_1ad33e945a351566c596de0004931e193e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.BrakPokojuException.BrakPokojuException</definition>
+        <argsstring>()</argsstring>
+        <name>BrakPokojuException</name>
+        <qualifiedname>Hotel.BrakPokojuException.BrakPokojuException</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="30" column="16" bodyfile="Pokoj.cs" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wyjątek jest wywoływany w sytuacji, kiedy pokój, do którego pragniemy się odwołać nie istnieje. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Hotel.BrakPokojuException</label>
+        <link refid="class_hotel_1_1_brak_pokoju_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>Hotel.BrakPokojuException</label>
+        <link refid="class_hotel_1_1_brak_pokoju_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Pokoj.cs" line="28" column="11" bodyfile="Pokoj.cs" bodystart="29" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_brak_pokoju_exception_1ad33e945a351566c596de0004931e193e" prot="public" virt="non-virtual"><scope>Hotel::BrakPokojuException</scope><name>BrakPokojuException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
