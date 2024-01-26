@@ -6,5 +6,5 @@
 ### Diagram UML
 ![Diagram](./DiagramKlasHotel.png)
 ### Diagram UML - wersja uproszczona
-![Diagram](./UmlDiagramSimplified.png)
+![Diagram](./UmlDiagramSimplified.jpg)
 
