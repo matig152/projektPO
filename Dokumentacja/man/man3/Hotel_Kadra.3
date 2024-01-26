@@ -1,0 +1,178 @@
+.TH "Hotel.Kadra" 3 "Fri Jan 26 2024" "Dokumentacja Projektu "System obsługi hotelu"" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hotel.Kadra \- Klasa kadra przechowuje informacje na temat kadry pracowników\&. Pozwala na zapis i odczyt listy, poszerzenie jej o nowych pracowników i znajdywanie tych, którzy spełniają zadane warunki\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "List< \fBPracownik\fP > \fBFiltrujPracownikowPoWydziale\fP (EnumWydzial wydzial)"
+.br
+.RI "Metoda ma na celu znalezienie wszystkich pracowników pracujących w danym wydziale\&. "
+.ti -1c
+.RI "List< \fBPracownik\fP > \fBFiltrujPracownikowPoImieniu\fP (string imie)"
+.br
+.RI "Metoda ma na celu znalezienie pracowników o podanym imieniu\&. "
+.ti -1c
+.RI "List< \fBPracownik\fP > \fBFiltrujPracownikowPoNazwisku\fP (string nazwisko)"
+.br
+.RI "Metoda ma na celu znalezienie pracowników o podanym nazwisku\&. "
+.ti -1c
+.RI "List< \fBPracownik\fP > \fBFiltrujPracownikowMinimalnaIlosciLatDoswiadczenia\fP (int lataDoswiadczenia)"
+.br
+.RI "Metoda ma na celu znalezienie pracowników, którzy posiadają daną\&.\&.\&. "
+.ti -1c
+.RI "void \fBDodajPracownika\fP (\fBPracownik\fP p)"
+.br
+.RI "Metoda ma na celu dodanie pracownika do listy zatrudnionych\&. "
+.ti -1c
+.RI "void \fBZapisXml\fP (string nazwaPliku)"
+.br
+.RI "Metoda ma na celu zapis informacji z instacnji klasy Kadra do pliku XML\&.\&.\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Metoda ma na celu przedstawienie informacji na temat kadry pracowników\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static ? \fBKadra\fP \fBOdczytXml\fP (string nazwaPliku)"
+.br
+.RI "Metoda ma na celu odczyt informacji zapisanych uprzednio w postaci instancji klasy Kadra z pliku XML\&.\&.\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBPracownik\fP > \fBListaPracownikow\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Klasa kadra przechowuje informacje na temat kadry pracowników\&. Pozwala na zapis i odczyt listy, poszerzenie jej o nowych pracowników i znajdywanie tych, którzy spełniają zadane warunki\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Hotel\&.Kadra\&.DodajPracownika (\fBPracownik\fP p)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu dodanie pracownika do listy zatrudnionych\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP Pracownik\&. 
+.RE
+.PP
+
+.SS "List< \fBPracownik\fP > Hotel\&.Kadra\&.FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia (int lataDoswiadczenia)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie pracowników, którzy posiadają daną\&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIlataDoswiadczenia\fP \&.\&.\&. minimalną ilość lat doświadczenia\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista pracowników\&. 
+.RE
+.PP
+
+.SS "List< \fBPracownik\fP > Hotel\&.Kadra\&.FiltrujPracownikowPoImieniu (string imie)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie pracowników o podanym imieniu\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimie\fP Imie\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista pracowników\&. 
+.RE
+.PP
+
+.SS "List< \fBPracownik\fP > Hotel\&.Kadra\&.FiltrujPracownikowPoNazwisku (string nazwisko)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie pracowników o podanym nazwisku\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwisko\fP Nazwisko\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista pracowników\&. 
+.RE
+.PP
+
+.SS "List< \fBPracownik\fP > Hotel\&.Kadra\&.FiltrujPracownikowPoWydziale (EnumWydzial wydzial)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie wszystkich pracowników pracujących w danym wydziale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIwydzial\fP Wydział\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista pracowników\&. 
+.RE
+.PP
+
+.SS "static ? \fBKadra\fP Hotel\&.Kadra\&.OdczytXml (string nazwaPliku)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Metoda ma na celu odczyt informacji zapisanych uprzednio w postaci instancji klasy Kadra z pliku XML\&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwaPliku\fP \&.\&.\&. o podanej nazwie
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Instancję klasy kadra lub null\&. 
+.RE
+.PP
+
+.SS "override string Hotel\&.Kadra\&.ToString ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu przedstawienie informacji na temat kadry pracowników\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Tekst\&. 
+.RE
+.PP
+
+.SS "void Hotel\&.Kadra\&.ZapisXml (string nazwaPliku)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zapis informacji z instacnji klasy Kadra do pliku XML\&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwaPliku\fP \&.\&.\&. o podanej nazwie\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Dokumentacja Projektu 'System obsługi hotelu' from the source code\&.

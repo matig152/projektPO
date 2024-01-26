@@ -1,0 +1,129 @@
+.TH "Hotel.Pokoj" 3 "Fri Jan 26 2024" "Dokumentacja Projektu "System obsługi hotelu"" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hotel.Pokoj \- Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits IComparable< Pokoj >\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPokoj\fP (EnumBudynek budynek, EnumPietro pietro, EnumNrPokoju nrPokoju, int rozmiar)"
+.br
+.ti -1c
+.RI "void \fBDodajIdPobytu\fP (string p)"
+.br
+.RI "Metoda ma na celu dodanie ID pobytu do historii pokoju\&. "
+.ti -1c
+.RI "List< \fBPobyt\fP > \fBListaPobytowWPokoju\fP ()"
+.br
+.RI "Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju\&. "
+.ti -1c
+.RI "void \fBZapisXml\fP (string nazwaPliku)"
+.br
+.RI "Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML\&.\&.\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Metoda ma na celu zwrócenie informacji na temat pokoju\&. "
+.ti -1c
+.RI "int \fBCompareTo\fP (\fBPokoj\fP? other)"
+.br
+.RI "Metoda ma na celu ustalenie kolejności w procesie porównywania\&. Sortowanie będzie następować rosnąco według ID pokoju\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "EnumBudynek \fBBudynek\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EnumPietro \fBPietro\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "EnumNrPokoju \fBNrPokoju\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBIdPokoju\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "int \fBRozmiar\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "List< string > \fBIdPobytow\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "int Hotel\&.Pokoj\&.CompareTo (\fBPokoj\fP? other)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu ustalenie kolejności w procesie porównywania\&. Sortowanie będzie następować rosnąco według ID pokoju\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIother\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Wartość -1, 0 lub 1 
+.RE
+.PP
+
+.SS "void Hotel\&.Pokoj\&.DodajIdPobytu (string p)"
+
+.PP
+Metoda ma na celu dodanie ID pobytu do historii pokoju\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP ID pobytu\&. 
+.RE
+.PP
+
+.SS "List< \fBPobyt\fP > Hotel\&.Pokoj\&.ListaPobytowWPokoju ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Lista pobytów\&. 
+.RE
+.PP
+
+.SS "override string Hotel\&.Pokoj\&.ToString ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zwrócenie informacji na temat pokoju\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Tekst\&. 
+.RE
+.PP
+
+.SS "void Hotel\&.Pokoj\&.ZapisXml (string nazwaPliku)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML\&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwaPliku\fP \&.\&.\&. o podanej nazwie\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Dokumentacja Projektu 'System obsługi hotelu' from the source code\&.

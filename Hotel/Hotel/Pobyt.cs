@@ -6,6 +6,9 @@ using System.Windows;
 
 namespace Hotel
 {
+    /// <summary>
+    /// Klasa Pobyt zawiera informacje na temat pobytu grupy gości oraz pozwala stwierdzić, czy rezerwacja takiegoż jest w ogóle możliwa.
+    /// </summary>
     public class Pobyt
     {
         #region Pola
@@ -43,8 +46,24 @@ namespace Hotel
         #endregion
 
         #region Metody
+
+        /// <summary>
+        /// Metoda ma za zadanie podanie informacji na temat długości pobytu.
+        /// </summary>
+        /// <returns> Długosć pobytu w dniach. </returns>
         public int Dlugosc() => (koniec.Date - poczatek.Date).Days;
+
+        /// <summary>
+        /// Metoda ma za zadanie podanie ilości osób z grupy przypisanej do pobytu.
+        /// </summary>
+        /// <returns> Ilość osób. </returns>
         public int LiczbaOsob() => pozostaliGoscie.Count + 1;
+        
+        
+        /// <summary>
+        /// Metoda informuje o cenie łącznej za pobyt, zależnej od ilości członków, wieku oraz długości pobytu.
+        /// </summary>
+        /// <returns> Cena. </returns>
         public decimal Cena()
         {
             decimal cena = 0;
@@ -60,6 +79,12 @@ namespace Hotel
             return cena;
         }
 
+        /// <summary>
+        /// Metoda ma na celu zwrócenie informacji na temat tego, czy pobyt nachodzi na pewien inny.
+        /// </summary>
+        /// <param name="poczatek2"> początek pobytu. </param>
+        /// <param name="koniec2"> koniec pobytu. </param>
+        /// <returns> Wartość logiczna. </returns>
         public bool CzyNachodzi(DateTime poczatek2, DateTime koniec2)
         {
             DateTime poczatek1 = poczatek.Date;
@@ -78,7 +103,10 @@ namespace Hotel
             return false;
         }
 
-
+        /// <summary>
+        /// Metoda wypisuje informacje na temat pobytu: jej początek, koniec, długość, gości, ich liczbę, cenę etc.
+        /// </summary>
+        /// <returns> Tekst. </returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -96,7 +124,6 @@ namespace Hotel
         }
         #endregion
     }
-
 
 
 }

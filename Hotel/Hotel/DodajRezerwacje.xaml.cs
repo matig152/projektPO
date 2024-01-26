@@ -51,12 +51,12 @@ namespace Hotel
                 var wybranyGoscStr = cbGosc.SelectedItem as string;
                 Gosc? wybranyGosc = null;
                 foreach (Gosc g in rejestrGosci.ListaGosci) { if (wybranyGoscStr == $"{g.Imie} {g.Nazwisko} ({g.Pesel})") { wybranyGosc = g; }; }
-                if(wybranyGosc == null) { MessageBox.Show("Błąd wyboru gościa rezerwującego"); }
+                if(wybranyGosc == null) { MessageBox.Show("Błąd wyboru gościa rezerwującego");return; }
                 //Zbierz zakladajacego
                 var zakladajacyString = cbZakladajacy.SelectedItem as string;
                 Pracownik? zakladajacy = null;
                 foreach(Pracownik p in kdr.ListaPracownikow) { if (zakladajacyString == $"{p.Imie} {p.Nazwisko} ({p.Pesel})") { zakladajacy = p; } ; }
-                if(zakladajacy == null) { MessageBox.Show("Błąd wybierania pracownika"); }
+                if(zakladajacy == null) { MessageBox.Show("Błąd wybierania pracownika");return; }
                 //Zbierz dodatkowych gosci
                 var dodatkowiGoscieStr = lbDodatkowiGoscie.SelectedItems.Cast<string>().ToList();
                 List<Gosc> dodatkowiGoscie = new List<Gosc>();
@@ -68,6 +68,8 @@ namespace Hotel
 
                 DateTime poczatek = dpPoczatek.SelectedDate.Value;
                 DateTime koniec = dpKoniec.SelectedDate.Value;
+                if (poczatek > koniec) { MessageBox.Show("Nieprawidłowa data!"); return; }
+
 
                 if (cbPokoj.SelectedIndex == -1) // Automatyczny dobór pokoju
                 {

@@ -1,0 +1,227 @@
+\hypertarget{class_hotel_1_1_lista_pokoi}{}\doxysection{Hotel.\+Lista\+Pokoi Class Reference}
+\label{class_hotel_1_1_lista_pokoi}\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+
+
+Klasa Lista\+Pokoi zawiera informacje na temat zagreogwanej ilości pokoi i pozwala dokonywać operacji na tychże.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a84fbab98c2c0126072479bb73b238426}\label{class_hotel_1_1_lista_pokoi_a84fbab98c2c0126072479bb73b238426}} 
+{\bfseries Lista\+Pokoi} (List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ lista)
+\item 
+\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_ac95cb4df5ee53e1c25a675599722309b}{Wybierz\+Pokoj}} (string idpokoju)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu wybór pokoju o podanym ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}}? \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_a6b7651dabbc3b01e93e2cf4513044cb5}{Wybierz\+Pokoj\+Automatycznie}} (int rozmiar, Date\+Time poczatek, Date\+Time koniec)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu wybranie pokoju w sposób automatyczny (jeśli jest to możliwe). Przyjmuje informacje o\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_a14dbccf3f76cd72de773989d95bc088a}{Zapis\+Xml}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu dokonanie zapisu informacji zawartych w instancji klasy Lista\+Pokoi do pliku XML... \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_a820b1925f4128d352acced005ed57318}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zwrócenie informacji na temat pokoi znajdujących się w liście. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_a42281f95cb24d4f86282b400ef1f78bb}{Znajdz\+Wolny\+Pokoj}} (int liczba\+Osob)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie wolengo pokoju o podanej ilości osób. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_aa1700b4d1d145004f55030ac01ca5d09}{Filtruj\+Pokoje\+Po\+Gosciach}} (\mbox{\hyperlink{class_hotel_1_1_gosc}{Gosc}} gosc, \mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}} rejestr)
+\begin{DoxyCompactList}\small\item\em Metoda ma za zadanie znaleźć pokoje w podanym rejestrze, w których bytował, bytuje lub bytował będzie podany gość. \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_ad281e8720277083161f018a83c4b9b19}{Filtruj\+Pokoje\+Po\+Dacie}} (Date\+Time data, \mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}} rejestr)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie pokoi w podanym rejestrze, które są okupowane w podanym czasie (pojedyncza data). \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_af2e015f6b7c50b4595cb57ef73a1014d}{Pokoje\+Zajete\+WPodanym\+Czasie}} (Date\+Time poczatek, Date\+Time koniec, \mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}} rejestr)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie pokoi w podanym rejestrze, które w podanym zakresie czasu są okupowane. \end{DoxyCompactList}\item 
+static ? \mbox{\hyperlink{class_hotel_1_1_lista_pokoi}{Lista\+Pokoi}} \mbox{\hyperlink{class_hotel_1_1_lista_pokoi_ac29b4bc13d1ed0eaec5357868f8f7b2d}{Odczyt\+Xml}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu odczyt informacji zapisanych jako lista pokoi z pliku XML... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a724cf658b2407bdfb641893a54d1dcf4}\label{class_hotel_1_1_lista_pokoi_a724cf658b2407bdfb641893a54d1dcf4}} 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ {\bfseries pokoje}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa Lista\+Pokoi zawiera informacje na temat zagreogwanej ilości pokoi i pozwala dokonywać operacji na tychże. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_ad281e8720277083161f018a83c4b9b19}\label{class_hotel_1_1_lista_pokoi_ad281e8720277083161f018a83c4b9b19}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!FiltrujPokojePoDacie@{FiltrujPokojePoDacie}}
+\index{FiltrujPokojePoDacie@{FiltrujPokojePoDacie}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{FiltrujPokojePoDacie()}{FiltrujPokojePoDacie()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ Hotel.\+Lista\+Pokoi.\+Filtruj\+Pokoje\+Po\+Dacie (\begin{DoxyParamCaption}\item[{Date\+Time}]{data,  }\item[{\mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}}}]{rejestr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda ma na celu znalezienie pokoi w podanym rejestrze, które są okupowane w podanym czasie (pojedyncza data). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Data. \\
+\hline
+{\em rejestr} & Rejestr. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pokoi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_aa1700b4d1d145004f55030ac01ca5d09}\label{class_hotel_1_1_lista_pokoi_aa1700b4d1d145004f55030ac01ca5d09}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!FiltrujPokojePoGosciach@{FiltrujPokojePoGosciach}}
+\index{FiltrujPokojePoGosciach@{FiltrujPokojePoGosciach}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{FiltrujPokojePoGosciach()}{FiltrujPokojePoGosciach()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ Hotel.\+Lista\+Pokoi.\+Filtruj\+Pokoje\+Po\+Gosciach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hotel_1_1_gosc}{Gosc}}}]{gosc,  }\item[{\mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}}}]{rejestr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda ma za zadanie znaleźć pokoje w podanym rejestrze, w których bytował, bytuje lub bytował będzie podany gość. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gosc} & Gość. \\
+\hline
+{\em rejestr} & Rejstr gości. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pokoi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_ac29b4bc13d1ed0eaec5357868f8f7b2d}\label{class_hotel_1_1_lista_pokoi_ac29b4bc13d1ed0eaec5357868f8f7b2d}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!OdczytXml@{OdczytXml}}
+\index{OdczytXml@{OdczytXml}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{OdczytXml()}{OdczytXml()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_hotel_1_1_lista_pokoi}{Lista\+Pokoi}} Hotel.\+Lista\+Pokoi.\+Odczyt\+Xml (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda ma na celu odczyt informacji zapisanych jako lista pokoi z pliku XML... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & ... o podanej nazwie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pokoi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_af2e015f6b7c50b4595cb57ef73a1014d}\label{class_hotel_1_1_lista_pokoi_af2e015f6b7c50b4595cb57ef73a1014d}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!PokojeZajeteWPodanymCzasie@{PokojeZajeteWPodanymCzasie}}
+\index{PokojeZajeteWPodanymCzasie@{PokojeZajeteWPodanymCzasie}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{PokojeZajeteWPodanymCzasie()}{PokojeZajeteWPodanymCzasie()}}
+{\footnotesize\ttfamily static List$<$ \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} $>$ Hotel.\+Lista\+Pokoi.\+Pokoje\+Zajete\+WPodanym\+Czasie (\begin{DoxyParamCaption}\item[{Date\+Time}]{poczatek,  }\item[{Date\+Time}]{koniec,  }\item[{\mbox{\hyperlink{class_hotel_1_1_rejestr_gosci}{Rejestr\+Gosci}}}]{rejestr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda ma na celu znalezienie pokoi w podanym rejestrze, które w podanym zakresie czasu są okupowane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poczatek} & Początkowa data. \\
+\hline
+{\em koniec} & Data końcowa. \\
+\hline
+{\em rejestr} & Rejestr. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pokoi. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a820b1925f4128d352acced005ed57318}\label{class_hotel_1_1_lista_pokoi_a820b1925f4128d352acced005ed57318}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!ToString@{ToString}}
+\index{ToString@{ToString}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Hotel.\+Lista\+Pokoi.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zwrócenie informacji na temat pokoi znajdujących się w liście. 
+
+\begin{DoxyReturn}{Returns}
+Tekst. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_ac95cb4df5ee53e1c25a675599722309b}\label{class_hotel_1_1_lista_pokoi_ac95cb4df5ee53e1c25a675599722309b}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!WybierzPokoj@{WybierzPokoj}}
+\index{WybierzPokoj@{WybierzPokoj}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{WybierzPokoj()}{WybierzPokoj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} Hotel.\+Lista\+Pokoi.\+Wybierz\+Pokoj (\begin{DoxyParamCaption}\item[{string}]{idpokoju }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu wybór pokoju o podanym ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em idpokoju} & ID pokoju. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pokój. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Brak\+Pokoju\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a6b7651dabbc3b01e93e2cf4513044cb5}\label{class_hotel_1_1_lista_pokoi_a6b7651dabbc3b01e93e2cf4513044cb5}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!WybierzPokojAutomatycznie@{WybierzPokojAutomatycznie}}
+\index{WybierzPokojAutomatycznie@{WybierzPokojAutomatycznie}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{WybierzPokojAutomatycznie()}{WybierzPokojAutomatycznie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}}? Hotel.\+Lista\+Pokoi.\+Wybierz\+Pokoj\+Automatycznie (\begin{DoxyParamCaption}\item[{int}]{rozmiar,  }\item[{Date\+Time}]{poczatek,  }\item[{Date\+Time}]{koniec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu wybranie pokoju w sposób automatyczny (jeśli jest to możliwe). Przyjmuje informacje o\+: 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rozmiar} & -\/ liczbie gości, \\
+\hline
+{\em poczatek} & -\/ początku trwanie planowanego pobytu, \\
+\hline
+{\em koniec} & -\/ końcu planowanego pobytu.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pokój, który spełnia podane warunki, jeśli ten istnieje. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a14dbccf3f76cd72de773989d95bc088a}\label{class_hotel_1_1_lista_pokoi_a14dbccf3f76cd72de773989d95bc088a}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!ZapisXml@{ZapisXml}}
+\index{ZapisXml@{ZapisXml}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{ZapisXml()}{ZapisXml()}}
+{\footnotesize\ttfamily void Hotel.\+Lista\+Pokoi.\+Zapis\+Xml (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu dokonanie zapisu informacji zawartych w instancji klasy Lista\+Pokoi do pliku XML... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & ... o podanej nazwie. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hotel_1_1_lista_pokoi_a42281f95cb24d4f86282b400ef1f78bb}\label{class_hotel_1_1_lista_pokoi_a42281f95cb24d4f86282b400ef1f78bb}} 
+\index{Hotel.ListaPokoi@{Hotel.ListaPokoi}!ZnajdzWolnyPokoj@{ZnajdzWolnyPokoj}}
+\index{ZnajdzWolnyPokoj@{ZnajdzWolnyPokoj}!Hotel.ListaPokoi@{Hotel.ListaPokoi}}
+\doxysubsubsection{\texorpdfstring{ZnajdzWolnyPokoj()}{ZnajdzWolnyPokoj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hotel_1_1_pokoj}{Pokoj}} Hotel.\+Lista\+Pokoi.\+Znajdz\+Wolny\+Pokoj (\begin{DoxyParamCaption}\item[{int}]{liczba\+Osob }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu znalezienie wolengo pokoju o podanej ilości osób. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em liczba\+Osob} & ilość osób. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pokój. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Brak\+Pokoju\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Pokoj.\+cs\end{DoxyCompactItemize}

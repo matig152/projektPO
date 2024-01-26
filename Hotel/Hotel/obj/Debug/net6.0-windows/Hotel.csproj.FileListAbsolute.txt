@@ -29,3 +29,66 @@ D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-wind
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladGosci.g.cs
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.g.cs
 D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.exe
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.deps.json
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.runtimeconfig.json
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.dll
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.pdb
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.csproj.AssemblyReference.cache
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\DodajGoscia.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\ListaPobytow.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladGosci.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.baml
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\DodajGoscia.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\ListaPobytow.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladGosci.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel_MarkupCompile.cache
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.g.resources
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.AssemblyInfoInputs.cache
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.AssemblyInfo.cs
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.dll
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\refint\Hotel.dll
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.pdb
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.genruntimeconfig.cache
+C:\Users\Maciej Jedynak\Desktop\Projekt - System Obsługi Hotelu\Projekt\Hotel\obj\Debug\net6.0-windows\ref\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.exe
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.deps.json
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.runtimeconfig.json
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\bin\Debug\net6.0-windows\Hotel.pdb
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\DodajGoscia.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\ListaPobytow.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\MainWindow.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladGosci.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.baml
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\DodajGoscia.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\DodajRezerwacje.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\ListaPobytow.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladGosci.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPokoi.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\PodgladPracownikow.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\App.g.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel_MarkupCompile.cache
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.g.resources
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.AssemblyInfoInputs.cache
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.AssemblyInfo.cs
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.csproj.CoreCompileInputs.cache
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\refint\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.pdb
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.genruntimeconfig.cache
+D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\ref\Hotel.dll

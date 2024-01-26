@@ -1,0 +1,217 @@
+.TH "Hotel.RejestrGosci" 3 "Fri Jan 26 2024" "Dokumentacja Projektu "System obsługi hotelu"" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hotel.RejestrGosci \- Klasa RejestrGosci posiada informacje na temat gosci zarejestrowanych w hotelu\&. Pozwala na zapis i odczyt rejestru a także wyszukiwanie gosci czy pobytów spełniających wskazane warunki\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBDodajGoscia\fP (\fBGosc\fP g)"
+.br
+.RI "Metoda dodaje gościa do listy istniejących\&. "
+.ti -1c
+.RI "void \fBZapisXml\fP (string nazwaPliku)"
+.br
+.RI "Metoda ma na celu zapisanie informacji zawartych w instancji klasy RejestrGosci do pliku XML\&.\&.\&. "
+.ti -1c
+.RI "List< \fBPobyt\fP > \fBListaWszystkichPobytow\fP ()"
+.br
+.RI "Metoda ma na celu znalezienie wszsystkich zarejestrowanych pobytów\&. "
+.ti -1c
+.RI "List< \fBGosc\fP > \fBFiltrujGosciPoIdPobytu\fP (string idPobytu)"
+.br
+.RI "Metoda ma na celu znalezienie wszsystkich gości, którzy związani są z pobytem o podanym ID\&. "
+.ti -1c
+.RI "List< \fBGosc\fP > \fBFiltrujGosciPoImieniu\fP (string imie)"
+.br
+.RI "Metoda ma na celu znalezienie wszystkich gosci o podanym imieniu\&. "
+.ti -1c
+.RI "List< \fBGosc\fP > \fBFiltrujGosciPoNazwisku\fP (string nazwisko)"
+.br
+.RI "Metoda ma na celu znalezienie Gosci o podanym nazwisku\&. "
+.ti -1c
+.RI "List< \fBGosc\fP > \fBFiltrujGosciPoDacie\fP (DateTime data)"
+.br
+.RI "Metoda ma na celu znalezienie wszystkich gości, których wizyta trwa w podanej dacie\&. "
+.ti -1c
+.RI "List< \fBPobyt\fP > \fBFiltrujPobyty\fP (DateTime data)"
+.br
+.RI "Metoda ma na celu znalezienie pobytów, które mają miejsce o podanej dacie\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Metoda ma na celu zagregowanie i przedstawienie informacji na temat obecnych na liście gości\&. 
+.br
+ "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static ? \fBRejestrGosci\fP \fBOdczytXml\fP (string nazwaPliku)"
+.br
+.RI "Metoda ma na celu odczytanie informacji na zapisanych jako rejestr gości zawartych w pliku XML o \&.\&.\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBGosc\fP > \fBListaGosci\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Klasa RejestrGosci posiada informacje na temat gosci zarejestrowanych w hotelu\&. Pozwala na zapis i odczyt rejestru a także wyszukiwanie gosci czy pobytów spełniających wskazane warunki\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Hotel\&.RejestrGosci\&.DodajGoscia (\fBGosc\fP g)\fC [inline]\fP"
+
+.PP
+Metoda dodaje gościa do listy istniejących\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIg\fP w\&.w\&. Gość 
+.RE
+.PP
+
+.SS "List< \fBGosc\fP > Hotel\&.RejestrGosci\&.FiltrujGosciPoDacie (DateTime data)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie wszystkich gości, których wizyta trwa w podanej dacie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP Data\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista gości\&. 
+.RE
+.PP
+
+.SS "List< \fBGosc\fP > Hotel\&.RejestrGosci\&.FiltrujGosciPoIdPobytu (string idPobytu)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie wszsystkich gości, którzy związani są z pobytem o podanym ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIidPobytu\fP ID pobytu\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista gosci\&. 
+.RE
+.PP
+
+.SS "List< \fBGosc\fP > Hotel\&.RejestrGosci\&.FiltrujGosciPoImieniu (string imie)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie wszystkich gosci o podanym imieniu\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIimie\fP Imię\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista gości\&. 
+.RE
+.PP
+
+.SS "List< \fBGosc\fP > Hotel\&.RejestrGosci\&.FiltrujGosciPoNazwisku (string nazwisko)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie Gosci o podanym nazwisku\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwisko\fP Nazwisko\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Gość\&. 
+.RE
+.PP
+
+.SS "List< \fBPobyt\fP > Hotel\&.RejestrGosci\&.FiltrujPobyty (DateTime data)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie pobytów, które mają miejsce o podanej dacie\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP Data\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Lista pobytów\&. 
+.RE
+.PP
+
+.SS "List< \fBPobyt\fP > Hotel\&.RejestrGosci\&.ListaWszystkichPobytow ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu znalezienie wszsystkich zarejestrowanych pobytów\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Lista pobytów\&. 
+.RE
+.PP
+
+.SS "static ? \fBRejestrGosci\fP Hotel\&.RejestrGosci\&.OdczytXml (string nazwaPliku)\fC [inline]\fP, \fC [static]\fP"
+
+.PP
+Metoda ma na celu odczytanie informacji na zapisanych jako rejestr gości zawartych w pliku XML o \&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwaPliku\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\&.\&.\&. o podanej nazwie\&. 
+.RE
+.PP
+
+.SS "override string Hotel\&.RejestrGosci\&.ToString ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zagregowanie i przedstawienie informacji na temat obecnych na liście gości\&. 
+.br
+ 
+.PP
+\fBReturns\fP
+.RS 4
+Tekst\&. 
+.RE
+.PP
+
+.SS "void Hotel\&.RejestrGosci\&.ZapisXml (string nazwaPliku)\fC [inline]\fP"
+
+.PP
+Metoda ma na celu zapisanie informacji zawartych w instancji klasy RejestrGosci do pliku XML\&.\&.\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fInazwaPliku\fP \&.\&.\&. o podanej nazwie\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Dokumentacja Projektu 'System obsługi hotelu' from the source code\&.

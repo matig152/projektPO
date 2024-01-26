@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Hotel.App">
+    <Position X="14.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.DodajGoscia" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAACA=</HashCode>
+      <FileName>DodajGoscia.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rejestrGosci" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.DodajRezerwacje" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="22.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAIAAAAAABAAEhAAAAAAACEA=</HashCode>
+      <FileName>DodajRezerwacje.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kdr" />
+      <Field Name="rejestrGosci" />
+      <Field Name="listaPokoi" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.ListaPobytow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="18" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAABAAAAAAABEAAAAAAAAAAA=</HashCode>
+      <FileName>ListaPobytow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rejestrGosci" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="19" Y="17.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAICAAAAAIAQAAAAAIAAIAAAIAAEAABAgAAAQIA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kadra" />
+      <Field Name="listaPokoi" />
+      <Field Name="rejestrGosci" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.ZlyPeselException">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.NieprawidlowyNumerException">
+    <Position X="5.75" Y="4.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Adres">
+    <Position X="8" Y="12.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAMAAAAAAAAIAgAACAMAAAgBAAAIAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kodPocztowy" />
+      <Field Name="miejscowosc" />
+      <Field Name="ulica" />
+      <Field Name="nrLokalu" />
+      <Field Name="nrDomu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.Osoba">
+    <Position X="0.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAQAABAEIAAQACEAAAAAAAAAAgAAAAIAAAgAACAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="adres" />
+      <Field Name="dataUrodzenia" />
+      <Field Name="imie" />
+      <Field Name="nazwisko" />
+      <Field Name="pesel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.Gosc">
+    <Position X="10" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAEAAAAgAAAAAAAAAAEAAAABAAAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listaPobytow" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.Pracownik">
+    <Position X="0.5" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAAAAAAAAAAEBAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataWstapienia" />
+      <Field Name="wydzial" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.RejestrGosci">
+    <Position X="6" Y="15" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIACAACAAAAAAQIEAAAAAgAAAAAFAAIEgAAAAAAAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listaGosci" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.Kadra">
+    <Position X="13.75" Y="18.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAAAAUAAAAAAAAAAAEAAYACAAAQAAAAAg=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listaPracownikow" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.Pobyt">
+    <Position X="22.25" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEgAAAAAAAAEAAAAAgAABgBERAQIQAQASAAAAEA=</HashCode>
+      <FileName>Pobyt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="idPobytu" />
+      <Field Name="koniec" />
+      <Field Name="liczbaPorzadkowa" />
+      <Field Name="poczatek" />
+      <Field Name="pokoj" />
+      <Field Name="pozostaliGoscie" />
+      <Field Name="zakladajacyRezerwacje" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Hotel.PodgladGosci" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="16" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAABEAAAAAAAAAEA=</HashCode>
+      <FileName>PodgladGosci.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="rejestrGosci" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.PodgladPokoi" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="24" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAIAAAAAAAABEgAAAAAAAAAA=</HashCode>
+      <FileName>PodgladPokoi.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="listaPokoi" />
+      <Field Name="rejestrGosci" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.PodgladPracownikow" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="22.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAIAAABABAAAAAAAAAAAA=</HashCode>
+      <FileName>PodgladPracownikow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="kadra" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.TworzenieNowegoPokojuException">
+    <Position X="25" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.BrakPokojuException">
+    <Position X="25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hotel.Pokoj" BaseTypeListCollapsed="true">
+    <Position X="22.25" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAIQEAAKAAAACABAFNAAQACAACAAIAAg=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="budynek" />
+      <Field Name="idPobytow" />
+      <Field Name="idPokoju" />
+      <Field Name="liczbaPokoi" />
+      <Field Name="nrPokoju" />
+      <Field Name="pietro" />
+      <Field Name="rozmiar" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Hotel.ListaPokoi">
+    <Position X="22.25" Y="22.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAABADAAAAAEAAACAgAAAAAEAAIAAAAAAAAAACA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pokoje" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="19.75" Y="15" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.String" Collapsed="true">
+    <Position X="8.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.DateTime" Collapsed="true">
+    <Position X="17" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Int32" Collapsed="true">
+    <Position X="12.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="Hotel.EnumWydzial">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIEAAAAA=</HashCode>
+      <FileName>Osoba.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Hotel.EnumBudynek">
+    <Position X="25.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApAEAAAA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Hotel.EnumPietro">
+    <Position X="25.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAIAAA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Hotel.EnumNrPokoju">
+    <Position X="25.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAABQgAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Pokoj.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

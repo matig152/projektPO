@@ -1,0 +1,129 @@
+.TH "Hotel.Gosc" 3 "Fri Jan 26 2024" "Dokumentacja Projektu "System obsługi hotelu"" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Hotel.Gosc \- Klasa gość ma za zadanie przechowywanie informacji na temat gościa oraz zezwolić m\&. in\&. na wybór warunków rezerwacji\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBHotel\&.Osoba\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGosc\fP (string imie, string nazwisko, string pesel, \fBAdres\fP adres, DateTime dataUrodzenia, List< \fBPobyt\fP > listaPobytow)"
+.br
+.ti -1c
+.RI "void \fBZalozRezerwacje\fP (DateTime poczatek, DateTime koniec, List< \fBGosc\fP > pozostaliGoscie, \fBPracownik\fP zakladajacyRezerwacje, \fBListaPokoi\fP listaPokoi, bool automatycznie=true, string idPokoju='')"
+.br
+.RI "Metoda ma za zadanie umożliwić rezerwację dla gościa (Gosc) o podanych polach: "
+.ti -1c
+.RI "\fBPobyt\fP? \fBWyszukajPobytPoId\fP (string idpobytu)"
+.br
+.RI "Metoda ma na celu znalezienie pobytu o podanym ID\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Metoda ma na celu wypisanie istotnych informacji dotyczących gościa i jego/jej pobytów\&. "
+.in -1c
+
+Public Member Functions inherited from \fBHotel\&.Osoba\fP
+.in +1c
+.ti -1c
+.RI "\fBOsoba\fP (string imie, string nazwisko, string pesel, \fBAdres\fP adres, DateTime dataUrodzenia)"
+.br
+.ti -1c
+.RI "int \fBWiek\fP ()"
+.br
+.RI "Metoda ma za zadanie odpowiedzenie na pytanie o wiek osoby\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBPobyt\fP > \fBListaPobytow\fP\fC [get]\fP"
+.br
+.in -1c
+
+Properties inherited from \fBHotel\&.Osoba\fP
+.in +1c
+.ti -1c
+.RI "string \fBImie\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBNazwisko\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "DateTime \fBDataUrodzenia\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "string \fBPesel\fP\fC [get, set]\fP"
+.br
+.ti -1c
+.RI "\fBAdres\fP \fBAdres\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Klasa gość ma za zadanie przechowywanie informacji na temat gościa oraz zezwolić m\&. in\&. na wybór warunków rezerwacji\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "override string Hotel\&.Gosc\&.ToString ()\fC [inline]\fP"
+
+.PP
+Metoda ma na celu wypisanie istotnych informacji dotyczących gościa i jego/jej pobytów\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Tekst\&. 
+.RE
+.PP
+
+.SS "\fBPobyt\fP? Hotel\&.Gosc\&.WyszukajPobytPoId (string idpobytu)"
+
+.PP
+Metoda ma na celu znalezienie pobytu o podanym ID\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIidpobytu\fP ID pobytu 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Pobyt (jeśli ten istnieje)\&. 
+.RE
+.PP
+
+.SS "void Hotel\&.Gosc\&.ZalozRezerwacje (DateTime poczatek, DateTime koniec, List< \fBGosc\fP > pozostaliGoscie, \fBPracownik\fP zakladajacyRezerwacje, \fBListaPokoi\fP listaPokoi, bool automatycznie = \fCtrue\fP, string idPokoju = \fC''\fP)\fC [inline]\fP"
+
+.PP
+Metoda ma za zadanie umożliwić rezerwację dla gościa (Gosc) o podanych polach: 
+.PP
+\fBParameters\fP
+.RS 4
+\fIpoczatek\fP - początek pobytu, 
+.br
+\fIkoniec\fP - koniec pobytu, 
+.br
+\fIpozostaliGoscie\fP - lista pozostałych gości, 
+.br
+\fIzakladajacyRezerwacje\fP - pracownik zakładający rezerwację, 
+.br
+\fIlistaPokoi\fP - lista pokoi, 
+.br
+\fIautomatycznie\fP - wartość prawda/fałsz określająca, czy przydzielenie ma następować w skutek wyboru narzuconego przez system lub nie,
+.br
+\fIidPokoju\fP - ID pokoju\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Dokumentacja Projektu 'System obsługi hotelu' from the source code\&.

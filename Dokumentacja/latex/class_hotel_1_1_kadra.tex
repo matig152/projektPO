@@ -1,0 +1,179 @@
+\hypertarget{class_hotel_1_1_kadra}{}\doxysection{Hotel.\+Kadra Class Reference}
+\label{class_hotel_1_1_kadra}\index{Hotel.Kadra@{Hotel.Kadra}}
+
+
+Klasa kadra przechowuje informacje na temat kadry pracowników. Pozwala na zapis i odczyt listy, poszerzenie jej o nowych pracowników i znajdywanie tych, którzy spełniają zadane warunki.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ \mbox{\hyperlink{class_hotel_1_1_kadra_afec7ae3f156842a7c60a50d737dd0767}{Filtruj\+Pracownikow\+Po\+Wydziale}} (Enum\+Wydzial wydzial)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie wszystkich pracowników pracujących w danym wydziale. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ \mbox{\hyperlink{class_hotel_1_1_kadra_aac6682ae13a1dbcc9a855566582d5034}{Filtruj\+Pracownikow\+Po\+Imieniu}} (string imie)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie pracowników o podanym imieniu. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ \mbox{\hyperlink{class_hotel_1_1_kadra_aac6ed475277783ecbd99209135448972}{Filtruj\+Pracownikow\+Po\+Nazwisku}} (string nazwisko)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie pracowników o podanym nazwisku. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ \mbox{\hyperlink{class_hotel_1_1_kadra_a728043a0b31ccf5856752d6b4e25cd3b}{Filtruj\+Pracownikow\+Minimalna\+Ilosci\+Lat\+Doswiadczenia}} (int lata\+Doswiadczenia)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu znalezienie pracowników, którzy posiadają daną... \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hotel_1_1_kadra_af71d6db29480eaf83c85d1770e08641a}{Dodaj\+Pracownika}} (\mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} p)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu dodanie pracownika do listy zatrudnionych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hotel_1_1_kadra_a89c6fd7d4aba049701bae8314fa2c7f6}{Zapis\+Xml}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu zapis informacji z instacnji klasy Kadra do pliku XML... \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_hotel_1_1_kadra_a68ecd1dedcd209136b0b4fb1d2f8d2b1}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu przedstawienie informacji na temat kadry pracowników. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static ? \mbox{\hyperlink{class_hotel_1_1_kadra}{Kadra}} \mbox{\hyperlink{class_hotel_1_1_kadra_a318584acfff8ba5438d94e9bb0dfd8c4}{Odczyt\+Xml}} (string nazwa\+Pliku)
+\begin{DoxyCompactList}\small\item\em Metoda ma na celu odczyt informacji zapisanych uprzednio w postaci instancji klasy Kadra z pliku XML... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotel_1_1_kadra_ad49511df8c3e341d0e295d59c198774c}\label{class_hotel_1_1_kadra_ad49511df8c3e341d0e295d59c198774c}} 
+List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ {\bfseries Lista\+Pracownikow}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa kadra przechowuje informacje na temat kadry pracowników. Pozwala na zapis i odczyt listy, poszerzenie jej o nowych pracowników i znajdywanie tych, którzy spełniają zadane warunki. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_af71d6db29480eaf83c85d1770e08641a}\label{class_hotel_1_1_kadra_af71d6db29480eaf83c85d1770e08641a}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!DodajPracownika@{DodajPracownika}}
+\index{DodajPracownika@{DodajPracownika}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{DodajPracownika()}{DodajPracownika()}}
+{\footnotesize\ttfamily void Hotel.\+Kadra.\+Dodaj\+Pracownika (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu dodanie pracownika do listy zatrudnionych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pracownik. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_a728043a0b31ccf5856752d6b4e25cd3b}\label{class_hotel_1_1_kadra_a728043a0b31ccf5856752d6b4e25cd3b}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia@{FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia}}
+\index{FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia@{FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia()}{FiltrujPracownikowMinimalnaIlosciLatDoswiadczenia()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ Hotel.\+Kadra.\+Filtruj\+Pracownikow\+Minimalna\+Ilosci\+Lat\+Doswiadczenia (\begin{DoxyParamCaption}\item[{int}]{lata\+Doswiadczenia }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu znalezienie pracowników, którzy posiadają daną... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lata\+Doswiadczenia} & ... minimalną ilość lat doświadczenia. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pracowników. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_aac6682ae13a1dbcc9a855566582d5034}\label{class_hotel_1_1_kadra_aac6682ae13a1dbcc9a855566582d5034}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!FiltrujPracownikowPoImieniu@{FiltrujPracownikowPoImieniu}}
+\index{FiltrujPracownikowPoImieniu@{FiltrujPracownikowPoImieniu}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{FiltrujPracownikowPoImieniu()}{FiltrujPracownikowPoImieniu()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ Hotel.\+Kadra.\+Filtruj\+Pracownikow\+Po\+Imieniu (\begin{DoxyParamCaption}\item[{string}]{imie }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu znalezienie pracowników o podanym imieniu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imie} & Imie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pracowników. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_aac6ed475277783ecbd99209135448972}\label{class_hotel_1_1_kadra_aac6ed475277783ecbd99209135448972}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!FiltrujPracownikowPoNazwisku@{FiltrujPracownikowPoNazwisku}}
+\index{FiltrujPracownikowPoNazwisku@{FiltrujPracownikowPoNazwisku}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{FiltrujPracownikowPoNazwisku()}{FiltrujPracownikowPoNazwisku()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ Hotel.\+Kadra.\+Filtruj\+Pracownikow\+Po\+Nazwisku (\begin{DoxyParamCaption}\item[{string}]{nazwisko }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu znalezienie pracowników o podanym nazwisku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwisko} & Nazwisko. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pracowników. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_afec7ae3f156842a7c60a50d737dd0767}\label{class_hotel_1_1_kadra_afec7ae3f156842a7c60a50d737dd0767}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!FiltrujPracownikowPoWydziale@{FiltrujPracownikowPoWydziale}}
+\index{FiltrujPracownikowPoWydziale@{FiltrujPracownikowPoWydziale}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{FiltrujPracownikowPoWydziale()}{FiltrujPracownikowPoWydziale()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_hotel_1_1_pracownik}{Pracownik}} $>$ Hotel.\+Kadra.\+Filtruj\+Pracownikow\+Po\+Wydziale (\begin{DoxyParamCaption}\item[{Enum\+Wydzial}]{wydzial }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu znalezienie wszystkich pracowników pracujących w danym wydziale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wydzial} & Wydział. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lista pracowników. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_a318584acfff8ba5438d94e9bb0dfd8c4}\label{class_hotel_1_1_kadra_a318584acfff8ba5438d94e9bb0dfd8c4}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!OdczytXml@{OdczytXml}}
+\index{OdczytXml@{OdczytXml}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{OdczytXml()}{OdczytXml()}}
+{\footnotesize\ttfamily static ? \mbox{\hyperlink{class_hotel_1_1_kadra}{Kadra}} Hotel.\+Kadra.\+Odczyt\+Xml (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Metoda ma na celu odczyt informacji zapisanych uprzednio w postaci instancji klasy Kadra z pliku XML... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & ... o podanej nazwie\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instancję klasy kadra lub null. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_a68ecd1dedcd209136b0b4fb1d2f8d2b1}\label{class_hotel_1_1_kadra_a68ecd1dedcd209136b0b4fb1d2f8d2b1}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!ToString@{ToString}}
+\index{ToString@{ToString}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Hotel.\+Kadra.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu przedstawienie informacji na temat kadry pracowników. 
+
+\begin{DoxyReturn}{Returns}
+Tekst. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hotel_1_1_kadra_a89c6fd7d4aba049701bae8314fa2c7f6}\label{class_hotel_1_1_kadra_a89c6fd7d4aba049701bae8314fa2c7f6}} 
+\index{Hotel.Kadra@{Hotel.Kadra}!ZapisXml@{ZapisXml}}
+\index{ZapisXml@{ZapisXml}!Hotel.Kadra@{Hotel.Kadra}}
+\doxysubsubsection{\texorpdfstring{ZapisXml()}{ZapisXml()}}
+{\footnotesize\ttfamily void Hotel.\+Kadra.\+Zapis\+Xml (\begin{DoxyParamCaption}\item[{string}]{nazwa\+Pliku }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Metoda ma na celu zapis informacji z instacnji klasy Kadra do pliku XML... 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nazwa\+Pliku} & ... o podanej nazwie. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Osoba.\+cs\end{DoxyCompactItemize}

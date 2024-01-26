@@ -13,10 +13,18 @@ using System.Xml.Serialization;
 namespace Hotel
 {
     #region Wyjatki
+
+    /// <summary>
+    /// Wyjątek jest wywoływany w sytuacji, kiedy dochodzi do próby stworzenia pokoju.
+    /// </summary>
     public class TworzenieNowegoPokojuException : Exception
     {
         public TworzenieNowegoPokojuException() : base("Nie można stworzyć nowego pokoju!") { }
     }
+
+    /// <summary>
+    /// Wyjątek jest wywoływany w sytuacji, kiedy pokój, do którego pragniemy się odwołać nie istnieje. 
+    /// </summary>
     public class BrakPokojuException : Exception
     {
         public BrakPokojuException() : base("Brak takiego pokoju!") { }
@@ -29,6 +37,9 @@ namespace Hotel
     public enum EnumNrPokoju { jeden = 1, dwa = 2, trzy = 3, cztery = 4, piec = 5 }
     #endregion
     
+    /// <summary>
+    /// Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji.
+    /// </summary>
     public class Pokoj : IComparable<Pokoj>
     {
         #region Pola
@@ -68,8 +79,17 @@ namespace Hotel
         #endregion
 
         #region Metody
+        
+        /// <summary>
+        /// Metoda ma na celu dodanie ID pobytu do historii pokoju.
+        /// </summary>
+        /// <param name="p"> ID pobytu. </param>
         public void DodajIdPobytu(string p) => idPobytow.Add(p);
 
+        /// <summary>
+        /// Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju.
+        /// </summary>
+        /// <returns> Lista pobytów. </returns>
         public List<Pobyt> ListaPobytowWPokoju()
         {
             //WCZYTAJ LISTE WSZYSTKICH POBYTOW
@@ -87,11 +107,21 @@ namespace Hotel
             }
             return lista;
         }
+
+        /// <summary>
+        /// Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML...
+        /// </summary>
+        /// <param name="nazwaPliku"> ... o podanej nazwie. </param>
         public void ZapisXml(string nazwaPliku)
         {
             using StreamWriter sw = new(nazwaPliku); XmlSerializer xs =
             new(typeof(Pokoj)); xs.Serialize(sw, this);
         }
+
+        /// <summary>
+        /// Metoda ma na celu zwrócenie informacji na temat pokoju.
+        /// </summary>
+        /// <returns> Tekst. </returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -99,17 +129,23 @@ namespace Hotel
             return $"Pokój {idPokoju}, {rozmiar}-osobowy \n{sb.ToString()}";
         }
 
-        
-        
+        /// <summary>
+        /// Metoda ma na celu ustalenie kolejności w procesie porównywania. Sortowanie będzie następować rosnąco według ID pokoju.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns> Wartość -1, 0 lub 1 </returns>
         public int CompareTo(Pokoj? other)
         {
             if (other is null) { return 1; }
             return NrPokoju.CompareTo((other as Pokoj).NrPokoju);
         }
-        
         #endregion
     }
 
+
+    /// <summary>
+    /// Klasa ListaPokoi zawiera informacje na temat zagreogwanej ilości pokoi i pozwala dokonywać operacji na tychże.
+    /// </summary>
     public class ListaPokoi
     {
         #region Pola
@@ -125,6 +161,13 @@ namespace Hotel
         #endregion
 
         #region Metody
+
+        /// <summary>
+        /// Metoda ma na celu wybór pokoju o podanym ID.
+        /// </summary>
+        /// <param name="idpokoju"> ID pokoju. </param>
+        /// <returns> Pokój. </returns>
+        /// <exception cref="BrakPokojuException"></exception>
         public Pokoj WybierzPokoj(string idpokoju) 
         {
             Pokoj? pokoj = pokoje.Where(x => x.IdPokoju == idpokoju).First();
@@ -132,6 +175,13 @@ namespace Hotel
             else { throw new BrakPokojuException(); }
         }
 
+        /// <summary>
+        /// Metoda ma na celu wybranie pokoju w sposób automatyczny (jeśli jest to możliwe). Przyjmuje informacje o:
+        /// </summary>
+        /// <param name="rozmiar"> - liczbie gości, </param>
+        /// <param name="poczatek"> - początku trwanie planowanego pobytu, </param>
+        /// <param name="koniec"> - końcu planowanego pobytu.</param>
+        /// <returns> Pokój, który spełnia podane warunki, jeśli ten istnieje. </returns>
         public Pokoj? WybierzPokojAutomatycznie(int rozmiar, DateTime poczatek, DateTime koniec)
         {
             bool pasuje = false;
@@ -164,6 +214,12 @@ namespace Hotel
             return pokoje[nrPok];
         }
 
+        /// <summary>
+        /// Metoda ma za zadanie znaleźć pokoje w podanym rejestrze, w których bytował, bytuje lub bytował będzie podany gość.
+        /// </summary>
+        /// <param name="gosc"> Gość. </param>
+        /// <param name="rejestr"> Rejstr gości. </param>
+        /// <returns> Lista pokoi. </returns>
         public static List<Pokoj> FiltrujPokojePoGosciach(Gosc gosc, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
@@ -185,6 +241,12 @@ namespace Hotel
             return res;
         }
 
+        /// <summary>
+        /// Metoda ma na celu znalezienie pokoi w podanym rejestrze, które są okupowane w podanym czasie (pojedyncza data).
+        /// </summary>
+        /// <param name="data"> Data. </param>
+        /// <param name="rejestr"> Rejestr. </param>
+        /// <returns> Lista pokoi. </returns>
         public static List<Pokoj> FiltrujPokojePoDacie(DateTime data, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
@@ -204,6 +266,13 @@ namespace Hotel
             return res;
         }
 
+        /// <summary>
+        /// Metoda ma na celu znalezienie pokoi w podanym rejestrze, które w podanym zakresie czasu są okupowane.
+        /// </summary>
+        /// <param name="poczatek"> Początkowa data. </param>
+        /// <param name="koniec"> Data końcowa. </param>
+        /// <param name="rejestr"> Rejestr. </param>
+        /// <returns> Lista pokoi. </returns>
         public static List<Pokoj> PokojeZajeteWPodanymCzasie(DateTime poczatek, DateTime koniec, RejestrGosci rejestr)
         {
             List<Pokoj> res = new List<Pokoj>();
@@ -227,24 +296,47 @@ namespace Hotel
             }
             return res;
         }
+
+        /// <summary>
+        /// Metoda ma na celu dokonanie zapisu informacji zawartych w instancji klasy ListaPokoi do pliku XML...
+        /// </summary>
+        /// <param name="nazwaPliku"> ... o podanej nazwie. </param>
         public void ZapisXml(string nazwaPliku)
         {
             using StreamWriter sw = new(nazwaPliku);
             XmlSerializer xs = new(typeof(ListaPokoi));
             xs.Serialize(sw, this);
         }
+
+        /// <summary>
+        /// Metoda ma na celu odczyt informacji zapisanych jako lista pokoi z pliku XML...
+        /// </summary>
+        /// <param name="nazwaPliku">...  o podanej nazwie. </param>
+        /// <returns> Lista pokoi. </returns>
         public static ListaPokoi? OdczytXml(string nazwaPliku)
         {
             using StreamReader sr = new(nazwaPliku);
             XmlSerializer xs = new(typeof(ListaPokoi));
             return (ListaPokoi?)xs.Deserialize(sr);
         }
+
+        /// <summary>
+        /// Metoda ma na celu zwrócenie informacji na temat pokoi znajdujących się w liście.
+        /// </summary>
+        /// <returns> Tekst. </returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             foreach (Pokoj p in pokoje) { sb.AppendLine(p.ToString()); }
             return sb.ToString();
         }
+
+        /// <summary>
+        /// Metoda ma na celu znalezienie wolengo pokoju o podanej ilości osób.
+        /// </summary>
+        /// <param name="liczbaOsob"> ilość osób. </param>
+        /// <returns> Pokój. </returns>
+        /// <exception cref="BrakPokojuException"></exception>
         public Pokoj ZnajdzWolnyPokoj(int liczbaOsob)
         {
             Pokoj p = pokoje.FirstOrDefault();

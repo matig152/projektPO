@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_hotel_1_1_pokoj" kind="class" language="C#" prot="public">
+    <compoundname>Hotel::Pokoj</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IComparable&lt; Pokoj &gt;</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1a5b307479819f2c7c093130f8c00d82eb" prot="private" static="no" mutable="no">
+        <type>EnumBudynek</type>
+        <definition>EnumBudynek Hotel.Pokoj.budynek</definition>
+        <argsstring></argsstring>
+        <name>budynek</name>
+        <qualifiedname>Hotel.Pokoj.budynek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="46" column="21" bodyfile="Pokoj.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1ae15e32c37281fa3b6505bb77a474e7e1" prot="private" static="no" mutable="no">
+        <type>EnumPietro</type>
+        <definition>EnumPietro Hotel.Pokoj.pietro</definition>
+        <argsstring></argsstring>
+        <name>pietro</name>
+        <qualifiedname>Hotel.Pokoj.pietro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="47" column="20" bodyfile="Pokoj.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1a4cfa75795685eaa5380cce04c9dd534b" prot="private" static="no" mutable="no">
+        <type>EnumNrPokoju</type>
+        <definition>EnumNrPokoju Hotel.Pokoj.nrPokoju</definition>
+        <argsstring></argsstring>
+        <name>nrPokoju</name>
+        <qualifiedname>Hotel.Pokoj.nrPokoju</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="48" column="22" bodyfile="Pokoj.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1a74da214c93151c9b6e9be53b67169a58" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Hotel.Pokoj.idPokoju</definition>
+        <argsstring></argsstring>
+        <name>idPokoju</name>
+        <qualifiedname>Hotel.Pokoj.idPokoju</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="49" column="16" bodyfile="Pokoj.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1aa5d8334088355cbe2c1d6134e51ce2ec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Hotel.Pokoj.rozmiar</definition>
+        <argsstring></argsstring>
+        <name>rozmiar</name>
+        <qualifiedname>Hotel.Pokoj.rozmiar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="50" column="13" bodyfile="Pokoj.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1a8510194cf75c5dbf5ff718006c0fffbc" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Hotel.Pokoj.idPobytow</definition>
+        <argsstring></argsstring>
+        <name>idPobytow</name>
+        <qualifiedname>Hotel.Pokoj.idPobytow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="52" column="14" bodyfile="Pokoj.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_hotel_1_1_pokoj_1a22d29a8d22a4ca3cb83dae15bbbf1ccc" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Hotel.Pokoj.liczbaPokoi</definition>
+        <argsstring></argsstring>
+        <name>liczbaPokoi</name>
+        <qualifiedname>Hotel.Pokoj.liczbaPokoi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="51" column="20" bodyfile="Pokoj.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1ac3aa1109f1b7b98e4388d0cf9ea3bf4d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>EnumBudynek</type>
+        <definition>EnumBudynek Hotel.Pokoj.Budynek</definition>
+        <argsstring></argsstring>
+        <name>Budynek</name>
+        <qualifiedname>Hotel.Pokoj.Budynek</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="56" column="28" bodyfile="Pokoj.cs" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1afffbc648568fd5f7933f1f451d97c6e2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>EnumPietro</type>
+        <definition>EnumPietro Hotel.Pokoj.Pietro</definition>
+        <argsstring></argsstring>
+        <name>Pietro</name>
+        <qualifiedname>Hotel.Pokoj.Pietro</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="57" column="27" bodyfile="Pokoj.cs" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1a16110c7c6c4437e4e4f04e236058c66b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>EnumNrPokoju</type>
+        <definition>EnumNrPokoju Hotel.Pokoj.NrPokoju</definition>
+        <argsstring></argsstring>
+        <name>NrPokoju</name>
+        <qualifiedname>Hotel.Pokoj.NrPokoju</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="58" column="29" bodyfile="Pokoj.cs" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1ab8b3930ac26e43bb29f84fdfd38b7983" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Hotel.Pokoj.IdPokoju</definition>
+        <argsstring></argsstring>
+        <name>IdPokoju</name>
+        <qualifiedname>Hotel.Pokoj.IdPokoju</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="59" column="23" bodyfile="Pokoj.cs" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1a0f1f2916e9f9168ba47be819cdf7ce24" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Hotel.Pokoj.Rozmiar</definition>
+        <argsstring></argsstring>
+        <name>Rozmiar</name>
+        <qualifiedname>Hotel.Pokoj.Rozmiar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="60" column="20" bodyfile="Pokoj.cs" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="property" id="class_hotel_1_1_pokoj_1acfabea1a8d1dbc5339d27700296b0e56" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Hotel.Pokoj.IdPobytow</definition>
+        <argsstring></argsstring>
+        <name>IdPobytow</name>
+        <qualifiedname>Hotel.Pokoj.IdPobytow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="61" column="21" bodyfile="Pokoj.cs" bodystart="61" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a04e5ddec13c80a4f9019b913bcbb2320" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>static</type>
+        <definition>static Hotel.Pokoj.Pokoj</definition>
+        <argsstring>()</argsstring>
+        <name>Pokoj</name>
+        <qualifiedname>Hotel.Pokoj.Pokoj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="65" column="16" bodyfile="Pokoj.cs" bodystart="65" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a0c0dab7ec037e06b5c621dca5e54a92c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.Pokoj.Pokoj</definition>
+        <argsstring>()</argsstring>
+        <name>Pokoj</name>
+        <qualifiedname>Hotel.Pokoj.Pokoj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="67" column="16" bodyfile="Pokoj.cs" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a934a1d701557d8f71fc13a19ae7ee226" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Hotel.Pokoj.Pokoj</definition>
+        <argsstring>(EnumBudynek budynek, EnumPietro pietro, EnumNrPokoju nrPokoju, int rozmiar)</argsstring>
+        <name>Pokoj</name>
+        <qualifiedname>Hotel.Pokoj.Pokoj</qualifiedname>
+        <param>
+          <type>EnumBudynek</type>
+          <declname>budynek</declname>
+        </param>
+        <param>
+          <type>EnumPietro</type>
+          <declname>pietro</declname>
+        </param>
+        <param>
+          <type>EnumNrPokoju</type>
+          <declname>nrPokoju</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rozmiar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="68" column="16" bodyfile="Pokoj.cs" bodystart="68" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a3f4ba34935b514b388aef85b34dd12bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.Pokoj.DodajIdPobytu</definition>
+        <argsstring>(string p)</argsstring>
+        <name>DodajIdPobytu</name>
+        <qualifiedname>Hotel.Pokoj.DodajIdPobytu</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu dodanie ID pobytu do historii pokoju. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID pobytu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="87" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1ad20c649385c07fbcd9fed7c4ec603b68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_hotel_1_1_pobyt" kindref="compound">Pobyt</ref> &gt;</type>
+        <definition>List&lt; Pobyt &gt; Hotel.Pokoj.ListaPobytowWPokoju</definition>
+        <argsstring>()</argsstring>
+        <name>ListaPobytowWPokoju</name>
+        <qualifiedname>Hotel.Pokoj.ListaPobytowWPokoju</qualifiedname>
+        <briefdescription>
+<para>Metoda ma na celu zwrócenie wszsystkich pobytów, jakie miały miejsce w tym pokoju. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Lista pobytów. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="93" column="21" bodyfile="Pokoj.cs" bodystart="93" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a466631bd9c6f2fc6b7c491a5a6250de5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hotel.Pokoj.ZapisXml</definition>
+        <argsstring>(string nazwaPliku)</argsstring>
+        <name>ZapisXml</name>
+        <qualifiedname>Hotel.Pokoj.ZapisXml</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nazwaPliku</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu zapis informacji zawartych w instancji klasy Pokoj w pliku XML... </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwaPliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>... o podanej nazwie. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="115" column="21" bodyfile="Pokoj.cs" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1a351711f5755ec27879da193ef47dd766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Hotel.Pokoj.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <qualifiedname>Hotel.Pokoj.ToString</qualifiedname>
+        <briefdescription>
+<para>Metoda ma na celu zwrócenie informacji na temat pokoju. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Tekst. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="125" column="32" bodyfile="Pokoj.cs" bodystart="125" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_hotel_1_1_pokoj_1ab85fbccb02fc7afd5278d413fa0513a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Hotel.Pokoj.CompareTo</definition>
+        <argsstring>(Pokoj? other)</argsstring>
+        <name>CompareTo</name>
+        <qualifiedname>Hotel.Pokoj.CompareTo</qualifiedname>
+        <param>
+          <type><ref refid="class_hotel_1_1_pokoj" kindref="compound">Pokoj</ref>?</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Metoda ma na celu ustalenie kolejności w procesie porównywania. Sortowanie będzie następować rosnąco według ID pokoju. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Wartość -1, 0 lub 1 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Pokoj.cs" line="137" column="20" bodyfile="Pokoj.cs" bodystart="137" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Klasa Pokój przechowuje informacje na temat pojedynczego pokoju i definiuje operacje, które można wykonywać na nim lub na grupie jej instancji. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Hotel.Pokoj</label>
+        <link refid="class_hotel_1_1_pokoj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IComparable&lt; Pokoj &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Hotel.Pokoj</label>
+        <link refid="class_hotel_1_1_pokoj"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IComparable&lt; Pokoj &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="Pokoj.cs" line="43" column="11" bodyfile="Pokoj.cs" bodystart="44" bodyend="143"/>
+    <listofallmembers>
+      <member refid="class_hotel_1_1_pokoj_1a5b307479819f2c7c093130f8c00d82eb" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>budynek</name></member>
+      <member refid="class_hotel_1_1_pokoj_1ac3aa1109f1b7b98e4388d0cf9ea3bf4d" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Budynek</name></member>
+      <member refid="class_hotel_1_1_pokoj_1ab85fbccb02fc7afd5278d413fa0513a6" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>CompareTo</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a3f4ba34935b514b388aef85b34dd12bc" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>DodajIdPobytu</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a8510194cf75c5dbf5ff718006c0fffbc" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>idPobytow</name></member>
+      <member refid="class_hotel_1_1_pokoj_1acfabea1a8d1dbc5339d27700296b0e56" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>IdPobytow</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a74da214c93151c9b6e9be53b67169a58" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>idPokoju</name></member>
+      <member refid="class_hotel_1_1_pokoj_1ab8b3930ac26e43bb29f84fdfd38b7983" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>IdPokoju</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a22d29a8d22a4ca3cb83dae15bbbf1ccc" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>liczbaPokoi</name></member>
+      <member refid="class_hotel_1_1_pokoj_1ad20c649385c07fbcd9fed7c4ec603b68" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>ListaPobytowWPokoju</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a4cfa75795685eaa5380cce04c9dd534b" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>nrPokoju</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a16110c7c6c4437e4e4f04e236058c66b" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>NrPokoju</name></member>
+      <member refid="class_hotel_1_1_pokoj_1ae15e32c37281fa3b6505bb77a474e7e1" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>pietro</name></member>
+      <member refid="class_hotel_1_1_pokoj_1afffbc648568fd5f7933f1f451d97c6e2" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Pietro</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a04e5ddec13c80a4f9019b913bcbb2320" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Pokoj</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a0c0dab7ec037e06b5c621dca5e54a92c" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Pokoj</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a934a1d701557d8f71fc13a19ae7ee226" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Pokoj</name></member>
+      <member refid="class_hotel_1_1_pokoj_1aa5d8334088355cbe2c1d6134e51ce2ec" prot="private" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>rozmiar</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a0f1f2916e9f9168ba47be819cdf7ce24" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>Rozmiar</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a351711f5755ec27879da193ef47dd766" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>ToString</name></member>
+      <member refid="class_hotel_1_1_pokoj_1a466631bd9c6f2fc6b7c491a5a6250de5" prot="public" virt="non-virtual"><scope>Hotel::Pokoj</scope><name>ZapisXml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
