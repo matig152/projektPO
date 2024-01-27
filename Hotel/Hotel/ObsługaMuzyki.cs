@@ -7,12 +7,12 @@ using System.Media;
 
 
 namespace Hotel
-{   
+{
     /// <summary>
     /// Klasa statyczna odpowiedzialna za ustawienia muzyki.
     /// </summary>
     public static class ObsługaMuzyki
-    {   
+    {
         /// <summary>
         /// Metoda ma na celu odtwarzanie muzyki w tle po uruchomieniu aplikacji.
         /// </summary>
