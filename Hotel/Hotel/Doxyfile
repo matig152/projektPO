@@ -61,14 +61,14 @@ PROJECT_BRIEF          = "Projekt stanowi implementację przykładowego systemu 
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = "C:/Users/Maciej Jedynak/Desktop/Projekt - System Obsługi Hotelu/Projekt/Hotel/morioh_grand_hotel_day.png"
+PROJECT_LOGO           = "C:/Users/Maciej Jedynak/Desktop/Projekt - System Obsługi Hotelu (Final)/Projekt/Hotel/morioh_grand_hotel_day.png"
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = "C:/Users/Maciej Jedynak/Desktop/Projekt - System Obsługi Hotelu/Dokumentacja"
+OUTPUT_DIRECTORY       = "C:/Users/Maciej Jedynak/Desktop/Projekt - System Obsługi Hotelu (Final)/Dokumentacja"
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create up to 4096
 # sub-directories (in 2 levels) under the output directory of each output format
@@ -299,7 +299,7 @@ OPTIMIZE_OUTPUT_FOR_C  = NO
 # qualified scopes will look different, etc.
 # The default value is: NO.
 
-OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_OUTPUT_JAVA   = YES
 
 # Set the OPTIMIZE_FOR_FORTRAN tag to YES if your project consists of Fortran
 # sources. Doxygen will then generate output that is tailored for Fortran.
@@ -2174,7 +2174,7 @@ RTF_EXTENSIONS_FILE    =
 # classes and files.
 # The default value is: NO.
 
-GENERATE_MAN           = YES
+GENERATE_MAN           = NO
 
 # The MAN_OUTPUT tag is used to specify where the man pages will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of

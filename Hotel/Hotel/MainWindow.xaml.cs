@@ -62,6 +62,8 @@ namespace Hotel
             foreach (Gosc g in rejestrGosci.ListaGosci) { liczbaPobytow += g.ListaPobytow.Count(); }
             txtBlLiczbaPracowników.Text = $"Liczba pobytów: {liczbaPobytow}";
 
+            //Muzyka
+            ObsługaMuzyki.GrajMuzykeWTle("Paul Gonsalves - Low Gravy.wav");
 
         }
 

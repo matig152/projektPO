@@ -32,7 +32,7 @@ namespace Hotel
 
         #region Konstruktory
         static Pobyt() { liczbaPorzadkowa = 1; }
-        public Pobyt() { pozostaliGoscie = new List<Gosc>(); zakladajacyRezerwacje = new Pracownik(); idPobytu = ""; }
+        public Pobyt() { }
         public Pobyt(DateTime poczatek, DateTime koniec, Pokoj pokoj, List<Gosc> pozostaliGoscie, Pracownik zakladajacyRezerwacje)
         {
             this.poczatek = poczatek;

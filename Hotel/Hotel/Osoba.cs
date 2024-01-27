@@ -70,7 +70,7 @@ namespace Hotel
         #endregion
 
         #region Konstruktory
-        public Adres() { ulica = ""; miejscowosc = ""; kodPocztowy = "00-000"; }
+        public Adres() { }
         public Adres(string ulica, int nrDomu, string miejscowosc, string kodPocztowy)
         {
             this.ulica = ulica;
@@ -128,7 +128,7 @@ namespace Hotel
         #endregion
 
         #region Konstruktory
-        public Osoba() {imie = "Brak"; nazwisko = "Brak"; pesel = "00000000000"; adres = new Adres(); }
+        public Osoba() { }
         public Osoba(string imie, string nazwisko, string pesel, Adres adres, DateTime dataUrodzenia)
         {
             this.imie = imie;

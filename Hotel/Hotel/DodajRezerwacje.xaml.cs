@@ -9,7 +9,6 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -52,12 +51,12 @@ namespace Hotel
                 var wybranyGoscStr = cbGosc.SelectedItem as string;
                 Gosc? wybranyGosc = null;
                 foreach (Gosc g in rejestrGosci.ListaGosci) { if (wybranyGoscStr == $"{g.Imie} {g.Nazwisko} ({g.Pesel})") { wybranyGosc = g; }; }
-                if(wybranyGosc == null) { MessageBox.Show("Błąd wyboru gościa rezerwującego");return; }
+                if(wybranyGosc == null) { MessageBox.Show("Błąd wyboru gościa rezerwującego"); }
                 //Zbierz zakladajacego
                 var zakladajacyString = cbZakladajacy.SelectedItem as string;
                 Pracownik? zakladajacy = null;
                 foreach(Pracownik p in kdr.ListaPracownikow) { if (zakladajacyString == $"{p.Imie} {p.Nazwisko} ({p.Pesel})") { zakladajacy = p; } ; }
-                if(zakladajacy == null) { MessageBox.Show("Błąd wybierania pracownika");return; }
+                if(zakladajacy == null) { MessageBox.Show("Błąd wybierania pracownika"); }
                 //Zbierz dodatkowych gosci
                 var dodatkowiGoscieStr = lbDodatkowiGoscie.SelectedItems.Cast<string>().ToList();
                 List<Gosc> dodatkowiGoscie = new List<Gosc>();
@@ -69,7 +68,6 @@ namespace Hotel
 
                 DateTime poczatek = dpPoczatek.SelectedDate.Value;
                 DateTime koniec = dpKoniec.SelectedDate.Value;
-
                 if (poczatek > koniec) { MessageBox.Show("Nieprawidłowa data!"); return; }
 
 
@@ -84,8 +82,9 @@ namespace Hotel
                     
                     int rozmiar = dodatkowiGoscie.Count();
                     rozmiar++;
-                    if(wybranyPokoj is null) { MessageBox.Show("Błąd wyboru pokoju"); return; }
-                    if(wybranyPokoj.Rozmiar != rozmiar) { MessageBox.Show("Niewłaściwy rozmiar pokoju!"); return; }
+
+                    if (wybranyPokoj is null) { MessageBox.Show("Błąd wyboru pokoju"); return; }
+                    if (wybranyPokoj.Rozmiar != rozmiar) { MessageBox.Show("Niewłaściwy rozmiar pokoju!"); return; }
 
                     List<Pobyt> listaPobytowPokoju = wybranyPokoj.ListaPobytowWPokoju();
                     if(listaPobytowPokoju.Count() != 0)
@@ -95,7 +94,7 @@ namespace Hotel
                             if(p.CzyNachodzi(poczatek, koniec)) { MessageBox.Show("Pokój zajęty w podanym terminie!");return; }
                         }
                     }
-                    wybranyGosc.ZalozRezerwacje(poczatek, koniec, dodatkowiGoscie, zakladajacy, listaPokoi, false, wybranyPokoj.IdPokoju);
+                    wybranyGosc.ZalozRezerwacje(poczatek, koniec, dodatkowiGoscie, zakladajacy, listaPokoi, false, wybranyPokoj?.IdPokoju);
                     
                     
                 }

@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Hotel.DodajRezerwacje"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Dodaj Rezerwację" Height="520" Width="450" Background="#c77730">
+        Title="Dodaj Rezerwację" Height="500" Width="450" Background="#c77730">
     <Window.Resources>
         <Style x:Key = "ButtonStyle" TargetType = "Button">
             <Setter Property = "Height" Value = "40"/>

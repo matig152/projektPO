@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "XVWN22cuEdPx8h/Evs4KL48i2RTWmydDCjTruLSn99UWJXa3Ca/qWC0tBS0eDbwuBPdBpgZOaAnUWIoVur+1JQ==",
+  "dgSpecHash": "YoP+L0Eruh7nc4IK/Bglt1rEsms5D/MiwaKaBXmdRUymvTwqugDyFwxI6zq91JQbBDutrLz4VoSLMVWatIplyQ==",
   "success": true,
   "projectFilePath": "D:\\Studia\\IIRok\\ProgObiekt\\projektZaliczeniowy\\Hotel\\Hotel\\Hotel.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Mateusz\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\Mateusz\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+  ],
   "logs": []
 }

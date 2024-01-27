@@ -92,3 +92,6 @@ D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\ob
 D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.pdb
 D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\Hotel.genruntimeconfig.cache
 D:\Studia\IIRok\ProgObiekt\Projekt_-_System_Obsugi_Hotelu_Final\Projekt\Hotel\obj\Debug\net6.0-windows\ref\Hotel.dll
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\bin\Debug\net6.0-windows\FluentAssertions.dll
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel.csproj.AssemblyReference.cache
+D:\Studia\IIRok\ProgObiekt\projektZaliczeniowy\Hotel\Hotel\obj\Debug\net6.0-windows\Hotel.csproj.CopyComplete
